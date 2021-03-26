@@ -1,0 +1,551 @@
+/*------------------------------------------------------------------ IMPORT FONTS -------------------------------------------------------------------*/
+ @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+ @import url('https://fonts.googleapis.com/css2?family=DM+Mono'); 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat'); 
+
+ @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister');
+ @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter');
+ @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market');
+ @import url('https://fonts.googleapis.com/css2?family=Carter+One');
+ @import url('https://fonts.googleapis.com/css2?family=Mansalva');
+ @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans');
+ @import url('https://fonts.googleapis.com/css2?family=Joti+One');
+ @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy');
+ @import url('https://fonts.googleapis.com/css2?family=Ribeye');
+ @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great');
+ @import url('https://fonts.googleapis.com/css2?family=Yusei Magic');
+ @import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+/*------------------------------------------------------------------ IMPORT FILES -------------------------------------------------------------------*/
+ @import url(font-awesome.min.css);
+
+/*------------------------------------------------------------------ RESET  -------------------------------------------------------------------*/
+html, body, h1, h2, h3, ul {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+li { list-style: none}
+
+/*------------------------------------------------------------------ DEFAULTS  -------------------------------------------------------------------*/
+html { 
+	background: #1d1d1d; 
+	height: 100vh;
+	scroll-behavior: smooth; 
+}
+
+/* Body font */
+body { 
+	font-size: 16px !important; 
+	background: #eee;
+	width: 100%;
+	font-family: "Poppins";
+	font-weight: 300;
+	color: #3f3f3f; }
+
+.section { 
+	padding: 30px 10px; 
+}
+
+.theme-bg { background: #125f9c !important; }
+
+.theme-text { color: #125f9c; }
+
+#values p, #portfolio, #portfolio h4, #about, #about a { 
+	color: #666666 !important; }
+
+#portfolio a { 
+	color: #07528d; 
+	color: #125f9c; 
+}
+
+h2 { 
+	padding-bottom: 20px;
+	font-size: 1.6em;
+	font-family: "Source Sans Pro";
+}
+
+#stroke img { 
+	margin-bottom: -10px; 
+	width: 100%; }
+
+/*------------------------------------------------------------------
+    1. NAVIGATION
+-------------------------------------------------------------------*/
+#primarynav { 
+	padding: 0px !important;
+	background: #125f9c !important; 
+	background: #eee !important; }
+
+#primarynav a { 
+	color: #3f3f3f !important;
+	font-family: "Source Sans Pro";
+	padding-left: 20px; 
+	font-weight: 100; 
+}
+
+#primarynav i { 
+	font-size: 30px;
+	color: #07528d; 
+	color: #3f3f3f !important; }
+
+#primarynav button:hover { 
+	border: none !important; 
+}
+
+#primarynav .close {
+	opacity: 1;
+	display: none; 
+}
+
+#primarynav .active, #primarynav a:hover { color: #125f9c !important; }
+
+/*------------------------------------------------------------------
+    LOGO
+-------------------------------------------------------------------*/
+#top-logo { width: 40px; }
+
+/*------------------------------------------------------------------
+    BANNER
+-------------------------------------------------------------------*/
+#banner { 
+	background: #eee;
+	color: #3f3f3f;
+	padding: 40px 20px 10px 20px; }
+
+#banner h1 { 
+	font-family: "Source Sans Pro";
+	font-size: 2em;
+	padding-bottom: 20px; }
+
+#banner h1 span { 
+	font-family: "Source Sans Pro";
+	color: #125f9c; }
+
+#banner h2 { 
+	font-weight: 300 !important;  
+	font-family: 'Poppins';
+}
+
+#banner .slogan {
+	font-family: "Architects Daughter";
+	color: #125f9c;
+}
+
+#banner span {
+	font-family: "DM Mono";
+	color: #3f3f3f;
+}
+
+#banner .w3-btn {
+	background: #125f9c;
+	padding: 5px 60px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 300;
+	margin-top: 5px;
+	margin: auto !important;
+	border-radius: 3px;
+}
+
+#banner .w3-btn:hover {
+	background: #3f3f3f;
+	box-shadow: 0px 0px 4px 0px #3f3f3f;
+}
+
+#banner a {
+	color: #fff;
+}
+
+#banner img { 
+	width: 80%; }
+
+#banner2 img { 
+	width: 80%; }
+
+#splash { 
+	width: 60%;
+	margin: auto; 
+	padding: 20px 0px 0px; }
+
+#splash2 { 
+	width: 40%;
+	margin: auto; 
+	padding: 10px 0px 0px 80px; }
+
+/*------------------------------------------------------------------
+    VALUES
+-------------------------------------------------------------------*/
+#values { 
+	background: #eee;
+	padding: 50px 20px 40px 20px; }
+
+#values h2 { 
+	font-size: 1.2em;
+	margin: 10px;
+	color: #3f3f3f; }
+
+#values img { width: 100px; }
+
+/*------------------------------------------------------------------
+    SERVICE
+-------------------------------------------------------------------*/
+#services, #about { 
+	background: #fff;
+	text-align: center;
+	color: #3f3f3f;
+	border-bottom: 1px solid lightgrey; }
+
+#services span { color: #125f9c; }
+
+#about { 
+	background: #fff;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid #000; }
+
+#services .subtitle { padding-bottom: 30px; }
+
+#services .subtitle h2 { 
+	padding: 10px;
+	font-size: 2em; }
+
+#services h2 { 
+	padding: 20px 0px;
+	font-size: 1.8em; }
+
+#services h3 { 
+	margin: 0px;
+	padding-bottom: 10px; 
+	font-weight: 700; }
+
+#services img { width: 60%; }
+
+#services { 
+	text-align: left; }
+
+#services li { 
+	padding-left: 40px; }
+
+.website, .mobile {
+	width: 100%;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#mobile-preview {
+	float: right
+}
+
+/*------------------------------------------------------------------
+    PORTFOLIO
+-------------------------------------------------------------------*/
+#portfolio h2, #portfolio p { text-align: center; }
+
+#projectList { 
+	background: white; 
+	box-shadow: 0px 0px 8px 0px #adadad;
+}
+
+#projectList h2 { 
+	background: #1d5e99; 
+	background: #125f9c; 
+	color: #fff;
+	padding: 10px;
+	font-size: 1em;
+}
+
+#projectList p { text-align: left; }
+
+h3 { 
+	font-size: 1.1em; 
+}
+
+#projectCarousel { width: 100%; }
+
+#projectCarousel .img-carousel { 
+	width: 80% !important;
+	margin: auto !important;
+	padding: 20px;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next { 
+	opacity: 0.2 !important;
+	background: #000;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	margin-top: 150px;
+}
+
+.carousel a:hover  { 
+	opacity: 1 !important;
+}
+
+.carousel h3  { 
+	font-size: 1em;
+}
+
+.carousel-indicators { 
+	margin-top: 20px;
+}
+
+.carousel-indicators li { 
+	border: 1px solid #bbb;
+	background: #fff;
+}
+
+.carousel-indicators .active { 
+	background: #000;
+}
+
+.tech-icon { 
+	width: 25px; 
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.tech-list li { 
+	display: inline;
+}
+
+.buttons {
+	background: #eee;
+	width: 100%;
+	padding: 0px 0px 50px 0px;
+	margin-top: 20px;
+}
+
+.button {
+	margin: auto;
+	background: #dadada;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	color: #3f3f3f;
+}
+
+.button:last-of-type {
+	border-left: 1px solid #bbb;
+}
+
+.button i, .button a {
+	font-size: 0.8em;
+	color: #3f3f3f !important;
+}
+
+.button:hover {
+	border: 1px solid #1d5e99;
+	background: #c0c0c0;
+	cursor: pointer;
+}
+
+.button i {
+  	margin-right: 20px;
+	font-size: 20px;
+}
+
+#slideCount .active { background: #1d5e99 !important; }
+
+/*------------------------------------------------------------------
+    ABOUT
+-------------------------------------------------------------------*/
+#about { color: #f2f2f2 !important; }
+
+#about a { color: lightgrey !important; }
+
+#about img { 
+	width: 260px;
+	margin: auto; }
+
+.designer-content {
+	border: 1px solid lightgrey;
+    padding: 20px;
+    background: #e7e7e7;
+}
+  
+/*------------------------------------------------------------------
+    FOOTER
+-------------------------------------------------------------------*/
+#footer { 
+	background: linear-gradient(#3f3f3f, #141414); 
+	background: #141414; 
+}
+
+#footer h2 { color: #adadad; }
+
+#footer-logo { 
+	margin: 0px;
+	padding: 10px 0px 50px; }
+
+#footer dd { 
+	padding-top: 10px;
+	font-size: 0.8em; }
+
+.social-icons {
+	margin-top: 20px;
+}
+
+.social-icons li {
+	display: inline;
+	padding: 5px;
+}
+
+.social-icons li i {
+	color: #000;
+	background: #fff;
+	border-radius: 100%;
+	padding: 8px;
+}
+
+#copyright {
+	background: #3f3f3f;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 0.7em;
+}
+
+#copyright p {
+	margin: 0px;
+}
+
+#to-top { 
+	position: absolute;
+	background: #000;
+	padding: 5px 10px;
+	border-radius: 100%;
+	right: 30px;
+	color: #fff; 
+	width: 40px; 
+	height: 40px; }
+
+/*------------------------------------------------------------------
+    MEDIA QUERIES
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+	/* Body font */
+	body { font-size: 20px !important; }
+	
+	#banner { padding: 40px 20px 20px 20px; }
+	
+	#banner .banner-text { 
+		margin-top: 50px;
+		font-size: 1.3em;
+		text-align: left !important; }
+	
+	#banner h1 { font-size: 2em; }
+	
+	#banner img { 
+		width: 75%;
+		padding: 20px; }
+	
+	#banner h2 { font-size: 1.6em; }
+	
+	.section { padding: 50px 10px; }
+	
+	h2 { font-size: 1.6em; }
+	
+	#services { text-align: left; }
+	
+	#services .subtitle h2 { font-size: 2em; }
+	
+	#services li { padding: 0px; }
+	
+	h3 { 
+		font-size: 1.3em; 
+		margin-top: 20px;
+	}
+	
+	#services img { 
+		width: 50%;
+		margin: auto;
+	}
+	
+	#projectCarousel .img-carousel { 
+		width: 90% !important;
+		margin: auto !important;
+		padding: 20px 0px;
+	}
+
+	#mobile { margin-top: 50px; }
+	
+	#mobile-desc { float: right; }
+	
+	.button {
+		width: 250px;
+	}
+	
+	.tech-icon { 
+		width: 30px; 
+		margin-right: 8px;
+	}
+	
+	#about img { 
+		width: 400px;
+		margin: auto; }	
+}
+	
+@media only screen and (min-width: 991px) {
+	/* Body font */
+	body { 
+		font-size: 22px !important; 
+		width: 100%;
+		max-width: 70em;
+		margin: auto;
+		box-shadow: 0px 0px 4px 0px #3f3f3f;
+	}
+	
+	.main-content { 
+		width: 65%;
+		margin: auto;
+		max-width: 60em;
+	}
+	
+	.main-content2 { 
+		width: 900px;
+		margin: auto;
+	}
+	
+	.navbar-collapse { justify-content: flex-end; }
+	
+	#banner { padding: 60px 40px 0px 40px; }
+	
+	#banner h1 { font-size: 2em; }
+	
+	#banner h2 { font-size: 1.4em; }
+	
+	#banner img { width: 100%; }
+	
+	#banner .banner-text { text-align: left !important; }
+	
+	h2 { font-size: 1.8em; }
+	
+	.section { padding: 80px 20px; }
+	
+	#services .subtitle h2 { font-size: 2.5em; }
+	
+	#services img { 
+		width: 70%;
+		margin: auto;
+	}
+	
+	#projectCarousel { 
+		width: 80% !important;
+		margin: auto !important;
+	}
+	
+	#projectCarousel .img-carousel { 
+		width: 90% !important;
+		margin: auto !important;
+		padding: 20px 0px;
+	}
+
+	.tech-icon { 
+		width: 45px; 
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,60 @@
+[
+
+	{
+		"name": "UI Design",
+		"image": "ui",
+		"description": "Interactive interfaces.",
+		"technologies": ["html", "css"]
+
+	},
+	
+	{
+		"name": "Responsive Design",
+		"image": "devices",
+		"description": "Responsive for all devices.",
+		"technologies": ["html", "css"]
+	},
+	
+	{
+		"name": "Image Manipution",
+		"image": "image",
+		"description": "Creation and manipulation.",
+		"technologies": ["Krita", "Gimp"]
+	},
+	
+	{
+		"name": "3D Modelling",
+		"image": "modelling",
+		"description": "Creation of assets.",
+		"technologies": ["maya", "blender", "zbrush"]
+	},
+	
+	{
+		"name": "Database",
+		"image": "Database",
+		"description": "Secure data storage.",
+		"technologies": ["sql", "mysql"]
+	},
+	
+	{
+		"name": "Project Development",
+		"image": "uml",
+		"description": "Analysis and documentation.",
+		"technologies": ["uml"]
+	},
+	
+	{
+		"name": "Frameworks",
+		"image": "framework",
+		"description": "Rapid development.",
+		"technologies": ["laravel", "djamgo"]
+	},
+	
+	{
+		"name": "Version Control",
+		"image": "version",
+		"description": "Control of the version.",
+		"technologies": ["git"]
+	}
+	
+]
