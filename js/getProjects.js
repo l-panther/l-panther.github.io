@@ -279,7 +279,7 @@ $(document).ready(function() {
 		output += "<div class='w3-padding' title='View website in new tab'><i class='fa fa-globe'></i><a href='data/projects/" + projects[i].url + "' target='_blank'><span class='w3-hide-small'>VIEW</span> WEBSITE</a></div>";
 		output += "</div> <!-- End column -->";
 		output += "<div class='w3-col s6 m6 l6 button'> <!-- Column -->";
-		output += "<div class='w3-padding' title='View source code in Github'><i class='fa fa-list'></i><a href='https://github.com/l-panther/" + projects[i].git + "' target='_blank' class='w3-hover-text-white'><span class='w3-hide-small'>VIEW</span> CODE</a></div>";
+		output += "<div class='w3-padding' title='View source code in Github'><i class='fa fa-list'></i><a href='https://github.com/l-panther/" + projects[i].git + "' target='_blank'><span class='w3-hide-small'>VIEW</span> CODE</a></div>";
 		output += "</div> <!-- End column -->";
 		output += "</div <!-- End row -->";
 		output += "</div <!-- End row -->";
