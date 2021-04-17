@@ -219,10 +219,10 @@ $(document).ready(function() {
 
 		if(projects[i].id == 1) { 
 			output += "<div class='carousel-item active'> <!-- Carousel item -->"; 
-			output2 += "<li data-target='#projectCarousel' data-slide-to='" + i + "' class='active'></li>"; 
+			output2 += "<li data-target='#projectCarousel' data-slide-to='" + i + "' class='active'>" + i + "</li>"; 
 		} else if (projects[i].id != 1) {
 			output += "<div class='carousel-item'> <!-- Carousel item -->";
-			output2 += "<li data-target='#projectCarousel' data-slide-to='" + i + "'></li>"; 
+			output2 += "<li data-target='#projectCarousel' data-slide-to='" + i + "'>" + i + "</li>"; 
 		}
 
 		// Output
@@ -274,18 +274,26 @@ $(document).ready(function() {
 	
 		output += "</div> <!-- End row -->";
 		
+		/* Mockup button
 		output += "<div class='w3-row w3-center buttons'> <!-- Row -->";
-		output += "<div class='w3-col s6 m6 l6 button'> <!-- Column -->";
+		output += "<div class='w3-col s4 m4 l4 button'> <!-- Column -->";
 		output += "<div class='w3-padding' title='View website in new tab'><i class='fa fa-globe'></i><a href='data/projects/" + projects[i].url + "' target='_blank'><span class='w3-hide-small'>VIEW</span> WEBSITE</a></div>";
 		output += "</div> <!-- End column -->";
+		*/
+		
+		// Website button
+		output += "<div class='w3-row w3-center buttons'> <!-- Row -->";
 		output += "<div class='w3-col s6 m6 l6 button'> <!-- Column -->";
-		output += "<div class='w3-padding' title='View source code in Github'><i class='fa fa-list'></i><a href='https://github.com/l-panther/" + projects[i].git + "' target='_blank'><span class='w3-hide-small'>VIEW</span> CODE</a></div>";
+		output += "<div class='w3-padding' title='View mockup'><i class='fa fa-file'></i><a href='data/reports/" + projects[i].image + ".pdf' target='_blank'><span class='w3-hide-small'>VIEW</span> MOCKUP</a></div>";
+		output += "</div> <!-- End column -->";
+		
+		// Code button
+		output += "<div class='w3-col s6 m6 l6 button'> <!-- Column -->";
+		output += "<div class='w3-padding' title='View source code in Github'><i class='fa fa-list'></i><a href='https://github.com/l-panther/" + projects[i].git + "'><span class='w3-hide-small'>VIEW</span> CODE</a></div>";
 		output += "</div> <!-- End column -->";
 		output += "</div <!-- End row -->";
 		output += "</div <!-- End row -->";
 		
-							
-		$("#modalHeader").html(projects[i].name); // Insert output into html 
 	}
 	               
 	// $("#website-dots").html(dots.repeat(projects.length)); // Insert content to element and refresh listview

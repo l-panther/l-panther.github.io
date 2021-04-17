@@ -119,6 +119,7 @@ h2 {
 
 #banner h1 { 
 	font-family: "Source Sans Pro";
+	font-family: "Bubblegum Sans";
 	font-size: 2em;
 	padding-bottom: 20px; }
 
@@ -162,21 +163,22 @@ h2 {
 	color: #fff;
 }
 
-#banner img { 
-	width: 80%; }
+#banner #animationImg { 
+	width: 90%;
+	margin-top: 30px; }
 
 #banner2 img { 
 	width: 80%; }
 
-#splash { 
-	width: 60%;
+#splash img { 
+	width: 40%;
 	margin: auto; 
 	padding: 20px 0px 0px; }
 
-#splash2 { 
-	width: 40%;
-	margin: auto; 
-	padding: 10px 0px 0px 80px; }
+#splash2 img { 
+	width: 70%;
+	margin: 0px auto !important;
+	padding-right: 150px; }
 
 /*------------------------------------------------------------------
     VALUES
@@ -223,7 +225,7 @@ h2 {
 	padding-bottom: 10px; 
 	font-weight: 700; }
 
-#services img { width: 60%; }
+#services img { width: 70%; }
 
 #services { 
 	text-align: left; }
@@ -275,7 +277,7 @@ h3 {
 
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next { 
-	opacity: 0.2 !important;
+	opacity: 0.1 !important;
 	background: #000;
 	border-radius: 100%;
 	width: 50px;
@@ -315,9 +317,9 @@ h3 {
 }
 
 .buttons {
-	background: #eee;
+	background: #fff;
 	width: 100%;
-	padding: 0px 0px 50px 0px;
+	padding: 0px 20px 50px 20px;
 	margin-top: 20px;
 }
 
@@ -334,7 +336,7 @@ h3 {
 }
 
 .button i, .button a {
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color: #3f3f3f !important;
 }
 
@@ -345,28 +347,56 @@ h3 {
 }
 
 .button i {
-  	margin-right: 20px;
-	font-size: 20px;
+  	margin-right: 8px;
+	font-size: 18px;
 }
 
 #slideCount .active { background: #1d5e99 !important; }
+
+
+/*------------------------------------------------------------------
+    MODAL
+-------------------------------------------------------------------*/
+#myModal {
+	padding: 0px !important;
+}
+
+.modal-content {
+	height: 80vh !important;
+	padding: 0px;
+}
+
+.modal-content .modal-header {
+	padding-bottom: 0px;
+}
+
+.modal-body {
+	padding-top: 0px;
+	overflow: hidden;
+}
+
+.modal-content h2 {
+	font-size: 1.1em;
+	color: #1d5e99;
+}
+
+iframe { 
+	width: 100%; 
+	border: 1px solid white;
+	height: 70vh; }
 
 /*------------------------------------------------------------------
     ABOUT
 -------------------------------------------------------------------*/
 #about { color: #f2f2f2 !important; }
 
-#about a { color: lightgrey !important; }
+#about a {
+	text-decoration: underline;
+	color: lightgrey !important; }
 
 #about img { 
 	width: 260px;
 	margin: auto; }
-
-.designer-content {
-	border: 1px solid lightgrey;
-    padding: 20px;
-    background: #e7e7e7;
-}
   
 /*------------------------------------------------------------------
     FOOTER
@@ -376,7 +406,9 @@ h3 {
 	background: #141414; 
 }
 
-#footer h2 { color: #adadad; }
+#footer h2 { 
+	color: #adadad;
+	font-size: 1.3em; }
 
 #footer-logo { 
 	margin: 0px;
@@ -438,10 +470,10 @@ h3 {
 		text-align: left !important; }
 	
 	#banner h1 { font-size: 2em; }
-	
-	#banner img { 
+
+	#banner #animationImg { 
 		width: 75%;
-		padding: 20px; }
+		padding: 20px 0px; }
 	
 	#banner h2 { font-size: 1.6em; }
 	
@@ -518,7 +550,9 @@ h3 {
 	
 	#banner h2 { font-size: 1.4em; }
 	
-	#banner img { width: 100%; }
+	#banner #animationImg { width: 100%; }
+	
+	#banner #splash img { width: 50%; }
 	
 	#banner .banner-text { text-align: left !important; }
 	
