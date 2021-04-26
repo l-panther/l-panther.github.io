@@ -1,0 +1,65 @@
+		
+		<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- Jquery -->
+		
+<!-- All Javascript Files -->
+		<script src="scripts/w3.js"></script> <!-- W3 JS -->
+		<script src="scripts/hideNav.js"></script>
+		<script src="scripts/logout.js"></script>
+		<script src="scripts/getDate.js"></script>
+		<script src="scripts/sidenav.js"></script>
+		<script src="scripts/graph.js"></script>
+		
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+		var l = window.innerWidth;
+		
+		function drawStuff() {
+			var data = new google.visualization.arrayToDataTable([
+			  ['Move', 'Percentage'],
+			  ["Distinction", 44],
+			  ["Merit", 31],
+			  ["Pass", 50],
+			  ["Fail", 10]
+			]);
+
+			var length = l - 200;
+			var options = {
+			  width: length,
+			  height: 300,
+			  legend: { position: 'none' },
+			  axes: {
+				x: {
+				  0: { side: 'top', label: ''} // Top x-axis.
+				}
+			  },
+			  bar: { groupWidth: "50%" }
+			};
+
+			
+			$(window).on("resize", function() {
+				
+				
+					options = {
+						width: l - 400,
+						height: 300,
+					}
+				
+			});
+			var chart = new google.charts.Bar(document.getElementById('barchart'));
+			// Convert the Classic options to Material options.
+			chart.draw(data, google.charts.Bar.convertOptions(options));
+			};
+    </script>
