@@ -183,7 +183,7 @@ $(document).ready(function() {
 
 			],
 			"description":"A website for company services.",
-			"url":"parees",
+			"url":"parees/index.html",
 			"git":"parees"
 		}
 			
