@@ -286,7 +286,7 @@ $(document).ready(function() {
 		output += "<div class='w3-row w3-center buttons'> <!-- Row -->";
 		
 		output += "<div class='w3-col s6 m6 l6 button'> <!-- Column -->";
-		output += "<div class='w3-padding' title='View website in new tab'><i class='fa fa-globe'></i><a href='../../data/projects/" + projects[i].url + "' target='_blank'><span class='w3-hide-small'>VIEW</span> WEBSITE</a></div>";
+		output += "<div class='w3-padding' title='View website in new tab'><i class='fa fa-globe'></i><a href='https://l-panther.github.io/data/projects/" + projects[i].url + "' target='_blank'><span class='w3-hide-small'>VIEW</span> WEBSITE</a></div>";
 		output += "</div> <!-- End column -->";		
 		
 		
