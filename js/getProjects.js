@@ -268,16 +268,14 @@ $(document).ready(function() {
 		
         // Array of projects
         projects = [project1, project2, project3, project4, project5, project6, project7];
+     let g = $("#typewriter").val();
 	
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
         carouselContent += projects[i].showCarousel(i);
         
 	}
-    for (var j = 0; j < projects.length; j++) {
-        projects[j].showReport();
-	}
-     
+
     // Insert output into html 
 	$("#projectList").html(carouselContent); 
 	$("#slideCount").html(slideCount); 
