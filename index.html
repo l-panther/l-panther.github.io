@@ -29,8 +29,8 @@
 		<script src="js/w3.js"></script>
 
 		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
 	</head>
@@ -201,7 +201,7 @@
 						<!-- The slideshow -->
 						<div class="carousel-inner" id="projectList"></div> 
 						
-						 <!-- Left and right controls -->
+				        <!-- Left and right controls -->
 						<a class="carousel-control-prev" href="#projectCarousel" data-slide="prev">
 							<span class="carousel-control-prev-icon"></span>
 						</a>
@@ -217,14 +217,12 @@
 							<!-- Modal content-->
 							<div class="modal-content">
 								<div class="modal-header w3-black">
-									<h4 class="w3-medium">Projects</h4>
+									<h2 class="w3-large w3-text-white">Development plan</h2>
 									<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
 								</div>
-								<div class="modal-body">
-									<img src="/data/reports/cafe.pdf" />
+								<div class="modal-body" id="projectReport">      
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -236,9 +234,7 @@
 			<div id="about" class="section theme-bg">
 				<article class="container w3-center">
 
-					<!-- Animation -->
 					<div class="w3-row">
-
 						<div class="w3-col s12 m12 l7">
 							<h2>ABOUT LEROY</h2>
 							<p class="w3-margin-bottom">
@@ -249,11 +245,9 @@
 
 							<p class="w3-margin-top w3-margin-bottom">
 							For more information about skills and eperience, <a href="#f" target="_blank" data-toggle="modal" data-target="#cvModal" title="View my resume">check out my resume</a>. </p>
-
 						</div>
 
 						<div class="w3-col s12 m12 l5">
-							
 							<img src="images/main/portrait.png" alt="Portrait drawing of Leroy" />
 						</div>
 					</div>
@@ -352,6 +346,7 @@
 
 
 		<!-- ALL JS FILES -->
+		<script src="js/classes.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
