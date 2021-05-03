@@ -392,10 +392,9 @@ h3 {
 	opacity: 1;
 }
 
-.modal-body {
+#cvModal .modal-body {
 	padding: 0px;
-	height: 100vh;
-	overflow: scroll;
+	height: auto;
 }
 
 .modal-content h2 {
@@ -406,8 +405,12 @@ h3 {
 #cvModal img { 
 	width: 100% !important; 
 }
+#cvModal iframe { 
+	width: 100% !important; 
+	height: 100% !important; 
+}
 
-#viewerContainer { overflow:hidden !important; }
+iframe { border: none }
 
 #viewerContainer .page { margin: 0px !important; }
 
