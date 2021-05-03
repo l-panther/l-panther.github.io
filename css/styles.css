@@ -77,18 +77,13 @@ h2 {
 	position: fixed;
 	bottom: 20px;
 	background: #141414;
-	border: 1px solid grey;
-	padding: 2px 12px;
+	border: 1px solid #3f3f3f;
+	padding: 5px 13px;
 	border-radius: 100%;
 	right: 30px;
 	color: #fff; 
 	width: 40px; 
 	height: 40px; 
-}
-
-#scroll-to-top:hover {
-	box-shadow: 0px 0px 2px 0px #3f3f3f;
-	
 }
 
 /*------------------------------------------------------------------
@@ -147,6 +142,7 @@ h2 {
 #banner h2 { 
 	font-weight: 300 !important;  
 	font-family: "Poppins";
+    font-size: 1.3em
 }
 
 #banner .slogan {
@@ -168,7 +164,7 @@ h2 {
 
 #banner .w3-btn:hover {
 	background: #3f3f3f;
-	box-shadow: 0px 0px 4px 0px #3f3f3f;
+	box-shadow: 0px 0px 2px 0px #3f3f3f;
 }
 
 #banner a {
@@ -222,7 +218,7 @@ h2 {
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid #000; }
 
-#services .subtitle { padding-bottom: 30px; }
+#services .subtitle { padding-bottom: 0px; }
 
 #services .subtitle h2 { 
 	padding: 10px;
@@ -321,6 +317,11 @@ h3 {
 	background: #000;
 }
 
+#projectModal .modal-body img {
+    width: 90%;
+    margin: auto;
+}
+
 .tech-icon { 
 	width: 25px; 
 	margin-top: 8px;
@@ -394,7 +395,7 @@ h3 {
 .modal-body {
 	padding: 0px;
 	height: 100vh;
-	border: 1px solid #141414 !important;
+	overflow: scroll;
 }
 
 .modal-content h2 {
@@ -402,10 +403,8 @@ h3 {
 	color: #1d5e99;
 }
 
-iframe { 
-	width: 100%; 
-	height: 100%;
-	border: 1px solid #141414 !important;
+#cvModal img { 
+	width: 100% !important; 
 }
 
 #viewerContainer { overflow:hidden !important; }
@@ -479,6 +478,10 @@ iframe {
 	/* Body font */
 	body { font-size: 20px !important; }
 	
+	#scroll-to-top { 
+		padding: 2px 12px;
+	}
+	
 	#banner { padding: 40px 20px 40px 20px; }
 	
 	#banner .banner-text { 
@@ -489,7 +492,7 @@ iframe {
 	#banner h1 { font-size: 2em; }
 
 	#banner #animationImg { 
-		width: 70%;
+		width: 65%;
 		padding: 20px 0px; }
 	
 	.main-content2 { 
@@ -500,15 +503,16 @@ iframe {
 	#cvModal .modal-dialog {
 		margin-top: 20px !important;
 	}
-
 	
-	#banner h2 { font-size: 1.6em; }
+	#banner h2 { font-size: 1.2em; }
 	
 	.section { padding: 50px 10px; }
 	
 	h2 { font-size: 1.6em; }
 	
 	#services { text-align: left; }
+    
+    #services .subtitle { padding-bottom: 30px; }
 	
 	#services .subtitle h2 { font-size: 2em; }
 	
@@ -520,7 +524,7 @@ iframe {
 	}
 	
 	#services img { 
-		width: 50%;
+		width: 60%;
 		margin: auto;
 	}
 	
@@ -555,6 +559,10 @@ iframe {
 		width: 100%;
 		margin: auto;
 		box-shadow: 0px 0px 4px 0px #3f3f3f;
+	}
+	
+	#scroll-to-top { 
+		padding: 2px 12px;
 	}
 	
 	.main-content { 
