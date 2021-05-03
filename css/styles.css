@@ -581,12 +581,6 @@ iframe { border: none }
 		padding: 20px;
 	}
 	
-	.main-content3 { 
-		width: 1-0%;
-		margin: auto;
-		max-width: 60em;
-	}
-	
 	#cvModal .modal-dialog {
 		margin-top: 40px !important;
 	}
