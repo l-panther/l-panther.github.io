@@ -14,7 +14,7 @@ $(document).ready(function() {
 			1,
 			"Cafes in London ",
 			"A Website",
-			"cafes",
+			"cafe",
             [ 
 				{"name":"Carousel"},
 				{"name":"Google Map"}
