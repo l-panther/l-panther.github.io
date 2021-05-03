@@ -14,7 +14,7 @@ $(document).ready(function() {
 			1,
 			"Cafes in London ",
 			"A Website",
-			"cafe",
+			"cafes",
             [ 
 				{"name":"Carousel"},
 				{"name":"Google Map"}
@@ -26,14 +26,6 @@ $(document).ready(function() {
 				{"name":"JavaScript"},
 				{"name":"JSON"},
 				{"name":"Krita"}
-			],
-            [ 
-				{"name":"cafe1"},
-				{"name":"cafe2"},
-				{"name":"cafe3"},
-				{"name":"cafe4"},
-				{"name":"cafe5"},
-				{"name":"cafe6"}
 			],
 			"A website guide for cafes.",
 			"cafe",
@@ -57,13 +49,6 @@ $(document).ready(function() {
 				{"name":"JSON"},
 				{"name":"Krita"}
 			],
-            [ 
-				{"name":"cafe1"},
-				{"name":"cafe2"},
-				{"name":"cafe3"},
-				{"name":"cafe4"},
-				{"name":"cafe5"}
-			],
             "A website for company services.",
 			"car-repair",
             "car-repair"
@@ -78,20 +63,13 @@ $(document).ready(function() {
 				{"name":"BMI Test"},
 				{"name":"Contact form"}
 			],
-			[ 
+            [ 
 				{"name":"PHP"},
 				{"name":"HTML5"},
 				{"name":"CSS3"},
 				{"name":"bootstrap"},
 				{"name":"JavaScript"},
 				{"name":"Krita"}
-			],
-           [ 
-				{"name":"cafe1"},
-				{"name":"cafe2"},
-				{"name":"cafe3"},
-				{"name":"cafe4"},
-				{"name":"cafe5"}
 			],
 			"A web application for diabetes.",
 			"diabetes",
@@ -116,13 +94,6 @@ $(document).ready(function() {
 				{"name":"Maya"},
 				{"name":"Krita"}
 			],
-            [ 
-				{"name":"cafe1"},
-				{"name":"cafe2"},
-				{"name":"cafe3"},
-				{"name":"cafe4"},
-				{"name":"cafe5"}
-			],
 			"A website for company services.",
 			"efexacademy",
 			"efexacademy"
@@ -144,13 +115,6 @@ $(document).ready(function() {
 				{"name":"w3"},
 				{"name":"JavaScript"},
 				{"name":"Krita"}
-			],
-            [ 
-				{"name":"cafe1"},
-				{"name":"cafe2"},
-				{"name":"cafe3"},
-				{"name":"cafe4"},
-				{"name":"cafe5"}
 			],
 			"A intranet for company services.",
             "intranet",
@@ -174,13 +138,6 @@ $(document).ready(function() {
 				{"name":"JavaScript"},
 				{"name":"Krita"}
 
-			],
-            [ 
-				{"name":"cafe1"},
-				{"name":"cafe2"},
-				{"name":"cafe3"},
-				{"name":"cafe4"},
-				{"name":"cafe5"}
 			],
 			"A website guide for London.",
 			"london/index.php",
@@ -228,13 +185,6 @@ $(document).ready(function() {
 				{"name":"JavaScript"},
 				{"name":"Krita"},
 
-			],
-            [ 
-				{"name":"cafe1"},
-				{"name":"cafe2"},
-				{"name":"cafe3"},
-				{"name":"cafe4"},
-				{"name":"cafe5"}
 			],
 			"A website for company services.",
 			"parees",
