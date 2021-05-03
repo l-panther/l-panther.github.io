@@ -1,12 +1,11 @@
 class Project {
-    constructor(id, title, type, image, features, technologies, report, description, git) {
+    constructor(id, title, type, image, features, technologies, description, git) {
         this.id = id;
         this.title = title;
         this.type = type;
         this.image = image;
         this.features = features;
         this.technologies = technologies;
-        this.report = report;
         this.description = description;
         this.git = git;
     }
@@ -78,7 +77,7 @@ class Project {
 		output += "<div class='w3-row w3-center buttons'> <!-- Row -->";
 		
 		output += "<div class='w3-col s6 m6 l6 button'> <!-- Column -->";
-		output += "<div class='w3-padding' title='View website in new tab'><i class='fa fa-globe'></i><a href='data/" + this.image + ".pdf' target='_blank'><span class='w3-hide-small'>VIEW</span> REPORT</a></div>";
+		output += "<div class='w3-padding' title='View report in new tab'><i class='fa fa-globe'></i><a href='data/reports/" + this.image + ".pdf' target='_blank'><span class='w3-hide-small'>VIEW</span> REPORT</a></div>";
 		output += "</div> <!-- End column -->";
 		
 		// Code button
