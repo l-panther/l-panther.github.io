@@ -81,8 +81,12 @@
 
         var i = 0;
         var txt = 'A Full Stack Web Developer'; /* The text */
-        var speed = 100; /* The speed/duration of the effect in milliseconds */
+        var speed = 150; /* The speed/duration of the effect in milliseconds */
 
+        // Insert output into html 
+        setTimeout(typeWriter(), 90000);
+        
+        // 
         function typeWriter() {
             if (i < txt.length) {
                 document.getElementById("typewriter").innerHTML += txt.charAt(i);
@@ -91,9 +95,7 @@
             }
         }
 
-        // Insert output into html 
-        typeWriter();
-
+        //
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 200) {
 				$('#scroll-to-top').fadeIn();
