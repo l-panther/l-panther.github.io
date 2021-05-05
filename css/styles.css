@@ -582,7 +582,7 @@ iframe { border: none }
 	}
     
     .main-content3 { 
-		width: 100%;
+		width: 100% !important;
 		margin: auto;
 		max-width: 60em;
 	}
@@ -601,7 +601,7 @@ iframe { border: none }
 	
 	#banner #animationImg { 
 		margin-top: 0px; 
-		width: 100% !important; }
+		width: 95% !important; }
 	
 	#banner #splash img { width: 50%; }
 	
