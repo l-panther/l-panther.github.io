@@ -1,7 +1,10 @@
 /*------------------------------------------------------------------ IMPORT FONTS -------------------------------------------------------------------*/
  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
  @import url('https://fonts.googleapis.com/css2?family=DM+Mono'); 
+
  @import url('https://fonts.googleapis.com/css2?family=Montserrat'); 
+
 
  @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister');
  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter');
@@ -11,7 +14,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans');
 
  @import url('https://fonts.googleapis.com/css2?family=Yusei Magic');
- @import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap:300,700,300italic,700italic|Source+Sans+Pro:900");
+
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 
@@ -26,7 +29,9 @@ html, body, h1, h2, h3, ul {
 	box-sizing: border-box;
 }
 
-li { list-style: none}
+li { list-style: none; }
+
+.modal-header { border: none; }
 
 /*------------------------------------------------------------------ DEFAULTS  -------------------------------------------------------------------*/
 html { 
@@ -45,10 +50,14 @@ body {
 	color: #3f3f3f; }
 
 .section { 
-	padding: 30px 10px; 
+	padding: 40px 10px; 
 }
 
-.theme-bg { background: #125f9c !important; }
+.theme-bg { 
+	background: #125f9c !important;
+	background: url("../images/main/bg.jpg") no-repeat !important;
+	background-size: cover !important;
+	color: #f2f2f2 !important; }
 
 .theme-text { color: #125f9c; }
 
@@ -70,6 +79,13 @@ h2 {
 	margin-bottom: -10px; 
 	width: 100%; }
 
+#header, #banner, #about, #typewriter {
+	background: #125f9c !important;
+	color: #fff !important;
+}
+
+button:hover { cursor: pointer; }
+
 /*------------------------------------------------------------------
     SCROLL
 -------------------------------------------------------------------*/
@@ -89,22 +105,26 @@ h2 {
 /*------------------------------------------------------------------
     NAVIGATION
 -------------------------------------------------------------------*/
+#header
 #primarynav { 
-	padding: 0px !important;
-	background: #125f9c !important; 
-	background: #eee !important; }
+	padding: 0px !important; }
 
 #primarynav a { 
-	color: #3f3f3f !important;
+	color: #f2f2f2 !important;
 	font-family: "Source Sans Pro";
+	font-family: "Love Ya Like A Sister";
+	font-family: "Architects Daughter";
+	font-family: "Yusei Magic";
+	font-weight: bolder;
 	padding-left: 20px; 
-	font-weight: 100; 
+	font-weight: 900; 
+	letter-spacing: 1px;
 }
 
 #primarynav i { 
 	font-size: 30px;
 	color: #07528d; 
-	color: #3f3f3f !important; }
+	color: #f2f2f2 !important; }
 
 #primarynav button:hover { 
 	border: none !important; 
@@ -115,7 +135,7 @@ h2 {
 	display: none; 
 }
 
-#primarynav .active, #primarynav a:hover { color: #125f9c !important; }
+#primarynav .active, #primarynav a:hover { color: #141414 !important; }
 
 /*------------------------------------------------------------------
     LOGO
@@ -126,9 +146,8 @@ h2 {
     BANNER
 -------------------------------------------------------------------*/
 #banner { 
-	background: #eee;
 	color: #3f3f3f;
-	padding: 40px 20px 40px 20px; }
+	padding: 40px 0px 40px 0px; }
 
 #banner h1 { 
 	font-family: "Source Sans Pro";
@@ -146,12 +165,12 @@ h2 {
 }
 
 #banner .slogan {
-	font-family: "Architects Daughter";
-	color: #125f9c;
+	font-weight: bolder;
+	color: #fff;
 }
 
 #banner .w3-btn {
-	background: #125f9c;
+	background: #141414;
 	padding: 5px 60px;
 	line-height: 36px;
 	text-align: center;
@@ -163,8 +182,7 @@ h2 {
 }
 
 #banner .w3-btn:hover {
-	background: #3f3f3f;
-	box-shadow: 0px 0px 2px 0px #3f3f3f;
+	box-shadow: 0px 0px 4px 0px #141414;
 }
 
 #banner a {
@@ -175,18 +193,27 @@ h2 {
 	width: 90%;
 	margin-top: 30px; }
 
-#banner2 img { 
-	width: 80%; }
+#banner img { 
+	width: 100%;
+	padding: 60px 0px 40px 0px; }
 
 #splash img { 
 	width: 40%;
 	margin: auto; 
-	padding: 20px 0px 0px; }
+	padding: 0px 0px 0px; }
 
 #splash2 img { 
 	width: 70%;
 	margin: 0px auto !important;
 	padding-right: 150px; }
+
+#typewriter {
+	font-family: "Love Ya Like A Sister";
+	font-family: "Love Ya Like A Sister";
+	font-family: "Love Ya Like A Sister";
+	font-family: "Yusei Magic";
+	font-weight: bold;
+}
 
 /*------------------------------------------------------------------
     VALUES
@@ -206,10 +233,8 @@ h2 {
     SERVICE
 -------------------------------------------------------------------*/
 #services, #about { 
-	background: #fff;
 	text-align: center;
-	color: #3f3f3f;
-	border-bottom: 1px solid lightgrey; }
+	color: #3f3f3f; }
 
 #services span { color: #125f9c; }
 
@@ -252,6 +277,42 @@ h2 {
 }
 
 /*------------------------------------------------------------------
+    DEVELOPMENT
+-------------------------------------------------------------------*/
+#development {
+	background: url("../images/main/develop-bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	background: #141414;
+	color: #f2f2f2;
+	overflow: hidden
+}
+
+#development img { 
+	width: 200px !important; 
+	padding: 30px;
+}
+
+#development h3 {
+	padding-bottom: 10px;
+	font-size: 1.6em;
+	font-family: "Love Ya Like A Sister";
+	font-family: "Yusei Magic";
+}
+
+#development dt {
+	display: none;
+}
+
+#development i { 
+	padding-right: 10px;
+	font-size: 26px;
+	text-align: center !important
+}
+
+.phase { margin-top: 20px;}
+
+/*------------------------------------------------------------------
     PORTFOLIO
 -------------------------------------------------------------------*/
 #portfolio h2, #portfolio p { text-align: center; }
@@ -285,20 +346,27 @@ h3 {
 
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next { 
-	opacity: 0.1 !important;
-	background: #000;
+	opacity: 0.2 !important;
+	background: none;
 	border-radius: 100%;
 	width: 50px;
 	height: 50px;
 	margin-top: 150px;
 }
 
+.carousel .carousel-control-prev span,
+.carousel .carousel-control-next span { 
+	color: #3f3f3f;
+	font-size: 30px;
+}
+
 .carousel a:hover  { 
 	opacity: 1 !important;
 }
 
-.carousel h3  { 
+#projectCarousel h3  { 
 	font-size: 1em;
+	padding: 0px;
 }
 
 .carousel-indicators { 
@@ -368,52 +436,6 @@ h3 {
 
 #slideCount .active { background: #1d5e99 !important; }
 
-
-/*------------------------------------------------------------------
-    MODAL
--------------------------------------------------------------------*/
-#cvModal {
-	padding: 0px !important;
-}
-
-.modal-content {
-	height: 80vh !important;
-	width: 100%;
-	padding: 0px;
-}
-
-.modal-content .modal-header {
-	padding-bottom: 0px;
-}
-
-.modal-content .close {
-	color: #fff;
-	padding: 10px 10px 20px 10px;
-	opacity: 1;
-}
-
-#cvModal .modal-body {
-	padding: 0px;
-	height: auto;
-}
-
-.modal-content h2 {
-	font-size: 1.1em;
-	color: #1d5e99;
-}
-
-#cvModal img { 
-	width: 100% !important; 
-}
-#cvModal iframe { 
-	width: 100% !important; 
-	height: 100% !important; 
-}
-
-iframe { border: none }
-
-#viewerContainer .page { margin: 0px !important; }
-
 /*------------------------------------------------------------------
     ABOUT
 -------------------------------------------------------------------*/
@@ -426,7 +448,56 @@ iframe { border: none }
 #about img { 
 	width: 260px;
 	margin: auto; }
-  
+
+#about img:hover { 
+	cursor: pointer !important; }
+
+#skillModal .modal-header .close {
+	opacity: 1;
+	font-weight: bold;
+	font-size: 36px !important;
+}
+
+#skillModal h2, #skillModal p {
+	color: #f2f2f2;
+	padding: 0px;
+	text-align: center;
+}
+
+#skillModal .modal-content {
+	border: 1px solid #141414;
+	background: #1d5e99;
+	box-shadow: 0px 0px 10px 0px #3f3f3f;
+	color: #141414;
+}
+
+#skillModal .modal-body {
+	padding: 0px;
+}
+
+#skillModal img {
+	width: 70%;
+}
+
+#skillModal #skill-list {
+	padding: 20px;
+}
+
+#skillModal button {
+	text-align: left;
+	width: 100%;
+	border: 1px solid lightgrey;
+	margin-top: 20px;
+	background: #f2f2f2;
+	border-radius: 5px;
+	padding: 10px;
+	color: #3f3f3f;
+}
+
+#skillModal {
+	text-align: left;
+}
+
 /*------------------------------------------------------------------
     FOOTER
 -------------------------------------------------------------------*/
@@ -477,7 +548,7 @@ iframe { border: none }
 /*------------------------------------------------------------------
     MEDIA QUERIES
 -------------------------------------------------------------------*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 575px) {
 	/* Body font */
 	body { font-size: 20px !important; }
 	
@@ -485,7 +556,7 @@ iframe { border: none }
 		padding: 2px 12px;
 	}
 	
-	#banner { padding: 40px 20px 40px 20px; }
+	#banner { padding: 40px 0px 40px 0px; }
 	
 	#banner .banner-text { 
 		margin-top: 50px;
@@ -496,17 +567,17 @@ iframe { border: none }
 
 	#banner #animationImg { 
 		width: 65%;
-		padding: 20px 0px; }
+		padding: 20px 0px; }	
+    
+    #banner img { 
+		width: 85%;
+		padding-top: 60px; }
 	
 	.main-content2 { 
 		width: 100%;
 		margin: auto;
 	}
-	
-	#cvModal .modal-dialog {
-		margin-top: 20px !important;
-	}
-	
+
 	#banner h2 { font-size: 1.5em; }
 	
 	.section { padding: 50px 10px; }
@@ -520,6 +591,15 @@ iframe { border: none }
 	#services .subtitle h2 { font-size: 2em; }
 	
 	#services li { padding: 0px; }
+	
+	#development img { 
+		width: 100% !important; 
+		padding: 30px 0px 0px 0px;
+	}
+	
+	#development h3 { 
+		text-align: left;
+	}
 	
 	h3 { 
 		font-size: 1.3em; 
@@ -553,6 +633,7 @@ iframe { border: none }
 	#about img { 
 		width: 400px;
 		margin: auto; }	
+
 }
 	
 @media only screen and (min-width: 991px) {
@@ -587,13 +668,9 @@ iframe { border: none }
 		max-width: 60em;
 	}
 	
-	#cvModal .modal-dialog {
-		margin-top: 40px !important;
-	}
-
 	.navbar-collapse { justify-content: flex-end; }
 	
-	#banner { padding: 60px 40px 40px 40px; }
+	#banner { padding: 60px 40px 60px 40px; }
 	
 	#banner h1 { font-size: 1.8em; }
 	
@@ -603,7 +680,10 @@ iframe { border: none }
 		margin-top: 0px; 
 		width: 95% !important; }
 	
-	#banner #splash img { width: 50%; }
+	#banner img { 
+		padding: 0px; 
+		width: 70% !important;
+		float: left}
 	
 	#banner .banner-text { text-align: left !important; }
 	
@@ -633,4 +713,5 @@ iframe { border: none }
 		width: 40px; 
 		margin-right: 10px;
 	}
+		
 }
