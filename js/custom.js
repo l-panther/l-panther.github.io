@@ -9,6 +9,23 @@
 		$('.preloader').fadeOut(); 
 		$('#preloader').delay(50).fadeOut('slow'); 
 		$('body').delay(450).css({'overflow':'visible'});
+		
+		$("#portrait img").focus(function() {
+			$(this).attr("src", "images/main/portrait-hover.png");
+		});
+		$("#portrait img").mouseenter(function() {
+			$(this).attr("src", "images/main/portrait-hover.png");
+		});
+		$("#portrait img").mouseleave(function() {
+			$(this).attr("src", "images/main/portrait.png");
+		});
+		
+		$("#portrait img").blur(function() {
+			$(this).attr("src", "images/main/portrait.png");
+		});
+
+    	$('[data-toggle="popover"]').popover(); 
+
 	});
     	
 	/* ..............................................
