@@ -194,7 +194,7 @@ button:hover { cursor: pointer; }
 	margin-top: 30px; }
 
 #banner img { 
-	width: 100%;
+	width: 70%;
 	padding: 60px 0px 40px 0px; }
 
 #splash img { 
@@ -570,7 +570,7 @@ h3 {
 		padding: 20px 0px; }	
     
     #banner img { 
-		width: 85%;
+		width: 65%;
 		padding-top: 60px; }
 	
 	.main-content2 { 
