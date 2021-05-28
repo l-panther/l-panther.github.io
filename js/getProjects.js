@@ -7,7 +7,6 @@ $(document).ready(function() {
     
 	let carouselContent = "",
 		slideCount = "",
-		report = "",
         
         // Project object
 		project1 = new Project(
@@ -20,12 +19,12 @@ $(document).ready(function() {
 				{"name":"Google Map"}
 			],
 			[ 
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"bootstrap"},
-				{"name":"JavaScript"},
-				{"name":"JSON"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"json"},
+				{"name":"krita"}
 			],
 			"A website guide for cafes.",
 			"cafes",
@@ -42,12 +41,12 @@ $(document).ready(function() {
 				{"name":"Slideshow"}
 			],
             [ 
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"bootstrap"},
-				{"name":"JavaScript"},
-				{"name":"JSON"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"json"},
+				{"name":"krita"}
 			],
             "A website for company services.",
 			"car-repair",
@@ -64,12 +63,12 @@ $(document).ready(function() {
 				{"name":"Contact form"}
 			],
             [ 
-				{"name":"PHP"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"php"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"bootstrap"},
-				{"name":"JavaScript"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"krita"}
 			],
 			"A web application for diabetes.",
 			"diabetes",
@@ -86,13 +85,13 @@ $(document).ready(function() {
 				{"name":"Google Map"}
 			],
 			[ 
-				{"name":"PHP"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"php"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"w3"},
-				{"name":"JavaScript"},
-				{"name":"Maya"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"maya"},
+				{"name":"krita"}
 			],
 			"A website for company services.",
 			"efexacademy",
@@ -109,13 +108,13 @@ $(document).ready(function() {
 				{"name":"Device Integration"}
 			],
 			[ 
-				{"name":"PHP"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"php"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"w3"},
-				{"name":"JavaScript"},
-				{"name":"Maya"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"maya"},
+				{"name":"krita"}
 			],
 			"A website for company services.",
 			"emblem",
@@ -132,13 +131,13 @@ $(document).ready(function() {
 				{"name":"Google Map"}
 			],
 			[ 
-				{"name":"PHP"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"php"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"w3"},
-				{"name":"JavaScript"},
-				{"name":"Maya"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"maya"},
+				{"name":"krita"}
 			],
 			"A website for company services.",
 			"handyman",
@@ -151,16 +150,16 @@ $(document).ready(function() {
 			"A web application",
 			"intranet",
 			[ 
-				{"name":"Login/Register"},
+				{"name":"Login & Register Form "},
 				{"name":"Sessions"}
 			],
 			[ 
-				{"name":"PHP"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"php"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"w3"},
-				{"name":"JavaScript"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"krita"}
 			],
 			"A intranet for company services.",
             "intranet",
@@ -177,12 +176,12 @@ $(document).ready(function() {
 				{"name":"Google Map"}
 			],
 			[ 
-				{"name":"PHP"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"php"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"w3"},
-				{"name":"JavaScript"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"krita"}
 
 			],
 			"A website guide for Jamaica.",
@@ -200,12 +199,12 @@ $(document).ready(function() {
 				{"name":"Google Map"}
 			],
 			[ 
-				{"name":"PHP"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"php"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"w3"},
-				{"name":"JavaScript"},
-				{"name":"Krita"}
+				{"name":"javascript"},
+				{"name":"krita"}
 
 			],
 			"A website guide for London.",
@@ -223,13 +222,13 @@ $(document).ready(function() {
 				{"name":"Google Map"}
 			],
 			[ 
-				{"name":"Laravel"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"laravel"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"bootstrap"},
-				{"name":"JavaScript"},
+				{"name":"javascript"},
 				{"name":"mysql"},
-				{"name":"Krita"},
+				{"name":"krita"},
 
 			],
 			"A website for child care.",
@@ -247,11 +246,11 @@ $(document).ready(function() {
 				{"name":"Device Integration"}
 			],
 			[ 
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"bootstrap"},
-				{"name":"JavaScript"},
-				{"name":"Krita"},
+				{"name":"javascript"},
+				{"name":"krita"},
 
 			],
 			"A website for company services.",
@@ -269,13 +268,13 @@ $(document).ready(function() {
 				{"name":"Local Storage"}
 			],
 			[ 
-				{"name":"Laravel"},
-				{"name":"jQuery Mobile"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
-				{"name":"JavaScript"},
-				{"name":"JSON"},
-				{"name":"Krita"}
+				{"name":"laravel"},
+				{"name":"jqm"},
+				{"name":"html5"},
+				{"name":"css3"},
+				{"name":"javascript"},
+				{"name":"json"},
+				{"name":"krita"}
 
 			],
 			"A mobile app for housing.",
@@ -293,12 +292,12 @@ $(document).ready(function() {
 				{"name":"Search Filter"}
 			],
 			[ 
-				{"name":"jQuery Mobile"},
-				{"name":"HTML5"},
-				{"name":"CSS3"},
-				{"name":"JavaScript"},
-				{"name":"JSON"},
-				{"name":"Krita"}
+				{"name":"jqm"},
+				{"name":"html5"},
+				{"name":"css3"},
+				{"name":"javascript"},
+				{"name":"json"},
+				{"name":"krita"}
 
 			],
 			"A mobile app for cooking.",
@@ -316,26 +315,47 @@ $(document).ready(function() {
 				{"name":"Device Integration"}
 			],
 			[ 
-				{"name":"HTML5"},
-				{"name":"CSS3"},
+				{"name":"html5"},
+				{"name":"css3"},
 				{"name":"bootstrap"},
-				{"name":"JavaScript"},
-				{"name":"Krita"},
+				{"name":"javascript"},
+				{"name":"krita"},
 
 			],
 			"A web application for photos.",
 			"parees",
 			"parees"
+		),
+	
+		project15 = new Project(
+			15,
+			"Portfolio",
+			"A website",
+			"portfolio",
+			[ 
+				{"name":"Carousel"},
+				{"name":"External Links"}
+			],
+			[ 
+				{"name":"html5"},
+				{"name":"css3"},
+				{"name":"bootstrap"},
+				{"name":"javascript"},
+				{"name":"krita"},
+
+			],
+			"A website for my projects.",
+			"portfolio",
+			"portfolio"
 		);
 		
         // Array of projects
-        projects = [project1, project2, project3, project4, project5, project7, project8, project9, project11, project12, project13];
-     let g = $("#typewriter").val();
+        projects = [project1, project2, project3, project4, project5, project7, project8, project9, project10, project11, project12, project13, project15];
 	
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
         carouselContent += projects[i].showCarousel(i);
-        
+        slideCount += projects[i].showCount(i);
 	}
 
     // Insert output into html 
