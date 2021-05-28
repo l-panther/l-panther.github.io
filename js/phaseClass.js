@@ -18,7 +18,7 @@ class Phase {
 		output += "<img src='images/main/" + this.image + ".png'> <!-- Column -->";
 		output += "</div> <!-- End column -->";
 		output += "<div class='col-sm-9'> <!-- Column -->";
-		output += "<h3>" + this.id + " " + this.title + "</h3>";
+		output += "<h3>" + this.title + "</h3>";
 		output += "<p>" + this.description + "</p>";
 		output += "<dl><dt id='" + this.title + "'>" ;
 		
