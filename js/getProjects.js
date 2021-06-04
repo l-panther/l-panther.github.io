@@ -21,8 +21,8 @@ $(document).ready(function() {
 			[ 
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"bootstrap"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"json"},
 				{"name":"krita"}
 			],
@@ -43,8 +43,8 @@ $(document).ready(function() {
             [ 
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"bootstrap"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"json"},
 				{"name":"krita"}
 			],
@@ -66,8 +66,8 @@ $(document).ready(function() {
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"bootstrap"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"krita"}
 			],
 			"A web application for diabetes.",
@@ -88,8 +88,8 @@ $(document).ready(function() {
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"w3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"maya"},
 				{"name":"krita"}
 			],
@@ -111,8 +111,8 @@ $(document).ready(function() {
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"w3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"maya"},
 				{"name":"krita"}
 			],
@@ -134,8 +134,8 @@ $(document).ready(function() {
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"w3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"maya"},
 				{"name":"krita"}
 			],
@@ -157,8 +157,8 @@ $(document).ready(function() {
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"w3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"krita"}
 			],
 			"A intranet for company services.",
@@ -179,8 +179,8 @@ $(document).ready(function() {
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"w3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"krita"}
 
 			],
@@ -202,8 +202,8 @@ $(document).ready(function() {
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"w3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"krita"}
 
 			],
@@ -225,8 +225,8 @@ $(document).ready(function() {
 				{"name":"laravel"},
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"bootstrap"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"mysql"},
 				{"name":"krita"},
 
@@ -248,8 +248,8 @@ $(document).ready(function() {
 			[ 
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"bootstrap"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"krita"},
 
 			],
@@ -273,6 +273,7 @@ $(document).ready(function() {
 				{"name":"html5"},
 				{"name":"css3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"json"},
 				{"name":"krita"}
 
@@ -296,6 +297,7 @@ $(document).ready(function() {
 				{"name":"html5"},
 				{"name":"css3"},
 				{"name":"javascript"},
+				{"name":"w3"},
 				{"name":"json"},
 				{"name":"krita"}
 
@@ -317,8 +319,8 @@ $(document).ready(function() {
 			[ 
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"bootstrap"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"krita"},
 
 			],
@@ -339,8 +341,8 @@ $(document).ready(function() {
 			[ 
 				{"name":"html5"},
 				{"name":"css3"},
-				{"name":"bootstrap"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"krita"},
 
 			],
