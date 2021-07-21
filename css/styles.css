@@ -10,10 +10,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter');
  @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market');
  @import url('https://fonts.googleapis.com/css2?family=Carter+One');
- @import url('https://fonts.googleapis.com/css2?family=Mansalva');
  @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans');
 
- @import url('https://fonts.googleapis.com/css2?family=Yusei Magic');
 
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
@@ -42,15 +40,15 @@ html {
 
 /* Body font */
 body { 
-	font-size: 16px !important; 
-	background: #eee;
+	font-size: 15px !important; 
+	background: #fff;
 	width: 100%;
 	font-family: "Poppins";
 	font-weight: 300;
 	color: #3f3f3f; }
 
 .section { 
-	padding: 60px 10px; 
+	padding: 40px 0px; 
 }
 
 .theme-bg { 
@@ -71,7 +69,8 @@ body {
 
 h2 { 
 	padding-bottom: 20px;
-	font-size: 1.6em;
+	font-size: 1.3em;
+	font-weight: 900;
 	font-family: "Source Sans Pro";
 }
 
@@ -79,17 +78,32 @@ h2 {
 	margin-bottom: -10px; 
 	width: 100%; }
 
-#header, #banner, #about, #typewriter {
+#header {
 	background: #125f9c !important;
 	color: #fff !important;
 }
 
+#header {
+	background: #125f9c !important;
+	color: #fff !important;
+}
+
+#develop, #development-process {
+	background: #f1f1f1;
+	color: #3f3f3f;
+}
+
+#banner .w3-btn, #development-process .w3-btn {
+	font-size: 15px;
+}
+
 button:hover { cursor: pointer; }
 
-#services i, #development i, #portfolio i {
+#develop i, #development-process i, #portfolio i {
 	margin-right: 6px !important;
 }
 
+.section-para { padding: 40px 0px 20px; }
 
 /*------------------------------------------------------------------
     SCROLL
@@ -112,15 +126,16 @@ button:hover { cursor: pointer; }
 -------------------------------------------------------------------*/
 #header
 #primarynav { 
-	padding: 0px !important; }
+	padding: 0px !important; 
+}
 
 #primarynav a { 
-	color: #f2f2f2 !important;
-	font-family: "Source Sans Pro";
-	font-weight: 600;
+	color: #fff !important;
+	font-family: "Poppins";
+	font-weight: 500;
 	padding-left: 20px; 
-	font-weight: 900; 
 	letter-spacing: 1px;
+	font-size: 0.75em
 }
 
 #primarynav i { 
@@ -137,7 +152,7 @@ button:hover { cursor: pointer; }
 	display: none; 
 }
 
-#primarynav .active, #primarynav a:hover { color: #141414 !important; }
+#primarynav .active, #primarynav a:hover { color: #adadad !important; }
 
 /*------------------------------------------------------------------
     LOGO
@@ -149,26 +164,31 @@ button:hover { cursor: pointer; }
 -------------------------------------------------------------------*/
 #banner { 
 	color: #3f3f3f;
-	padding: 40px 0px 40px 0px; }
+	padding: 40px 0px 0px 0px; 
+	background: #125f9c !important;
+	color: #fff !important;
+}
+
+#coder-container { padding: 0px !important; }
 
 #banner h1 { 
-	font-family: "Source Sans Pro";
+	font-family: "Love Ya Like A Sister";
 	font-size: 2em;
-	padding-bottom: 20px; }
-
-#banner h1 span { 
-	font-family: "Source Sans Pro";
-	color: #125f9c; }
+	padding-bottom: 20px;
+}
 
 #banner h2 { 
-	font-weight: 300 !important;  
-	font-family: "Poppins";
-    font-size: 1.3em
+	font-weight: 500 !important;  
+	font-family: "Source Sans Pro";
+    font-size: 1.6em;
+	
 }
 
 #banner .slogan {
+	font-family: "Chelsea Market";
 	font-weight: bolder;
-	color: #fff;
+	color: #adadad;
+	font-size: 0.5em;
 }
 
 #banner .w3-btn {
@@ -177,7 +197,6 @@ button:hover { cursor: pointer; }
 	padding: 5px 60px;
 	line-height: 36px;
 	text-align: center;
-	font-size: 15px;
 	font-weight: 300;
 	margin-top: 5px;
 	margin: auto !important;
@@ -186,20 +205,17 @@ button:hover { cursor: pointer; }
 }
 
 #banner .w3-btn:hover {
-	box-shadow: 0px 0px 4px 0px #141414;
+	box-shadow: 0px 0px 2px 0px #141414;
 }
 
 #banner a {
 	color: #fff;
 }
 
-#banner #animationImg { 
-	width: 90%;
-	margin-top: 30px; }
-
-#banner img { 
-	width: 70%;
-	padding: 60px 0px 40px 0px; }
+#banner #coder-sm { 
+	width: 100%;
+	margin-top: 30px;
+}
 
 #splash img { 
 	width: 40%;
@@ -212,19 +228,16 @@ button:hover { cursor: pointer; }
 	padding-right: 150px; }
 
 #typewriter {
-	font-family: "Love Ya Like A Sister";
-	font-weight: bold;
+	font-family: "Architects Daughter";
+	font-family: "Poppins";
+	font-weight: 200;
 	letter-spacing: 1.5px;
-}
+	background: none;
+	padding-bottom: 10px; }
 
 /*------------------------------------------------------------------
     VALUES
 -------------------------------------------------------------------*/
-#mission { 
-	background: #141414;
-	color: #f2f2f2;
-	padding: 60px 20px; }
-
 #mission .container div { padding: 40px 0px 0px 0px; }
 
 #mission .container div:first-child { padding-top: 10px; }
@@ -232,58 +245,67 @@ button:hover { cursor: pointer; }
 #mission h2 { 
 	font-size: 1.4em;
 	margin-top: 10px; 
-	font-weight: 600;
+	font-weight: 300;
+	font-family: "Source Sans Pro";
 }
 
 #mission p { 
 	padding: 0px; }
 
-#mission img { 
+#mission img, #supportContent img { 
 	width: 120px !important; 
 	padding-top: 0px;
 	margin-bottom: 10px;
 }
 
+#mission li { 
+	width: 50%; 
+	margin: auto; 
+	text-align: left; }
+
 /*------------------------------------------------------------------
-    SERVICE
+    develop
 -------------------------------------------------------------------*/
-#services, #about { 
+#develop, #support, .subtitle { 
+	color: #141414;}
+
+#develop, #about { 
 	text-align: center;
 	color: #3f3f3f; }
 
-#services span { color: #125f9c; }
+#develop span { color: #125f9c; }
 
-#about { 
-	background: #fff;
-	border-top: 1px solid lightgrey;
-	border-bottom: 1px solid #000; }
+#develop .subtitle { padding-bottom: 0px; }
 
-#services .subtitle { padding-bottom: 0px; }
-
-#services .subtitle h2 { 
-	font-size: 2em; }
-
-#services h2 { 
-	padding: 30px 0px 10px 0px;
+#develop .subtitle h2, #support .subtitle h2 { 
+	padding: 0px;
 	font-size: 1.8em; }
 
-#services h3 { 
+#develop h3, #support h3 { 
 	margin: 0px;
 	padding: 10px; 
 	font-weight: 700; }
 
-#services img { width: 70%; }
 
-#services { 
+#develop .website { 
+	padding: 0px 0px 30px; }
+
+
+#develop img { 
+	width: 70%;
+	margin: auto;
+	padding: 30px 0px; }
+
+#develop { 
 	text-align: left; }
 
-#services li { 
+#develop li { 
 	padding-left: 40px; }
 
 .website, .mobile {
 	width: 100%;
 	margin: auto;
-	margin-top: 30px;
+	margin: 30px 0px;
 }
 
 #mobile-preview {
@@ -291,34 +313,146 @@ button:hover { cursor: pointer; }
 }
 
 /*------------------------------------------------------------------
-    DEVELOPMENT
+    SUBTITLE
 -------------------------------------------------------------------*/
-#development {
-	background: #141414;
-	color: #f2f2f2;
-	overflow: hidden
+.subtitle { 
+	border-top: 1px solid lightgre;
 }
 
-#development img { 
-	width: 160px !important; 
+/*------------------------------------------------------------------
+    DEVELOPMENT
+-------------------------------------------------------------------*/
+#development-process {
+	color: #f2f2f2;
+	padding: 80px 20px 60px;
+	background: #141414;
+	
+}
+
+#development-process .w3-btn { 
+	background: #141414;
+	background: #125f9c;
+	color: #f2f2f2;
+	padding: 15px 30px;
+	border: 1px solid #125f9c;
+	border-radius: 4px !important;
+	font-weight: 400;
+}
+
+#development-process .w3-btn:hover { 
+	box-shadow: 0px 0px 2px 0px #0c4675;
+}
+
+#development-process .collapse { 
+	margin-top: 50px;
+}
+
+#development-process img:first-child { 
+	padding-top: 0px;
+}
+
+#development-process img { 
+	width: 120px !important; 
 	padding: 20px;
 }
 
-#development h3 {
+#development-process h3 {
 	padding-bottom: 10px;
 	font-size: 1.4em;
 	text-align: center;
 }
 
-#development dt {
+#development-process dt {
 	display: none;
+}
+
+#development-process button i {
+	margin-left: 30px;
+	padding: 5px;
+	border: 1px solid #0c4675;
+	background: #f2f2f2;
+	border-radius: 100%;
+	color: #0c4675;
 }
 
 .phase { margin-top: 20px; }
 
+
+/*------------------------------------------------------------------
+    SUPPORT
+-------------------------------------------------------------------*/
+/*
+When showCarousel method is called from @Support class use styling below comment
+
+#supportCarousel { 
+	border-radius: 5px; 
+	padding: 30px 0px 20px;
+	background: none;
+	color: #141414;
+	width: 100%; 
+}
+
+#supportCarousel img { 
+	width: 85%; 
+}
+*/
+
+/*
+When showCard method is called from  @Support class use styling below comment
+*/
+#supportCard .card { 
+	border-radius: 10px !important; 
+	border: 2px solid lightgrey;
+	padding: 30px 20px;
+	
+	color: #f2f2f2;
+}
+
+#supportCard .card:hover { 
+	box-shadow: 0px 0px 8px 1px lightgrey;
+}
+
+#support-opt img {
+	padding-bottom: 35px;
+	width: 70%; 
+	margin: auto;
+}
+
+#support span {
+	color: #0c4675;
+	color: #125f9c;
+}
+
+#support #supportCarousel img {
+	padding-bottom: 45px
+}
+
+#support h4 {
+	padding: 0px 0px 10px 0px;
+}
+
+#support .support-desc {
+	margin-top: 10px;
+}
+
+#support .support-desc img {
+	width: 60% !important; 
+	padding: 0px;
+}
+
+#support .col-sm-2, #support .col-xs-1 {
+	padding-right: 0px;
+}
+
+#support .col-sm-2, #support .col-xs-1 {
+	width: 15%;
+}
+
 /*------------------------------------------------------------------
     PORTFOLIO
 -------------------------------------------------------------------*/
+#portfolio { background: #eee; }
+
 #portfolio h2, #portfolio p { text-align: center; }
 
 #projectList { 
@@ -342,7 +476,7 @@ h3 {
 
 #projectCarousel { width: 100%; }
 
-#projectCarousel .img-carousel { 
+#projectCarousel .img-carousel, #technicianCarousel .img-carousel { 
 	width: 80% !important;
 	margin: auto !important;
 	padding: 20px;
@@ -427,7 +561,7 @@ h3 {
 	cursor: pointer;
 }
 
-#slideCount li:hover {
+#slideCount li:hover, #supportCount li:hover {
 	border: 1px solid #969696;
 	background: #ddd;
 	cursor: pointer;
@@ -438,12 +572,16 @@ h3 {
 	font-size: 18px;
 }
 
-#slideCount .active { background: #1d5e99 !important; }
+#slideCount .active, #supportCount .active { 
+	background: #1d5e99 !important; }
+
 
 /*------------------------------------------------------------------
     ABOUT
 -------------------------------------------------------------------*/
-#about { color: #f2f2f2 !important; }
+#about { 
+	background: linear-gradient(to right,#125f9c, #0c4675) !important;
+	color: #f2f2f2 !important; }
 
 #about a {
 	text-decoration: underline;
@@ -569,7 +707,7 @@ h3 {
 		padding: 2px 12px;
 	}
 	
-	#banner { padding: 40px 0px 40px 0px; }
+	#banner { padding: 80px 0px 0px 0px; }
 	
 	#banner .banner-text { 
 		margin-top: 50px;
@@ -582,9 +720,9 @@ h3 {
 		width: 65%;
 		padding: 20px 0px; }	
     
-    #banner img { 
-		width: 60%;
-		padding-top: 60px; }
+    #banner #coder-md { 
+		margin-top: 30px;
+		width: 100%; }
 	
 	.main-content2 { 
 		width: 100%;
@@ -593,7 +731,7 @@ h3 {
 
 	#banner h2 { font-size: 1.5em; }
 	
-	.section { padding: 50px 10px; }
+	.section { padding: 50px 0px; }
 	
 	h2 { font-size: 1.6em; }
 	
@@ -602,30 +740,24 @@ h3 {
 		padding: 20px 0px 0px 0px;
 	}
 	
+	#develop { text-align: left; }
 	
-	#services { text-align: left; }
-    
-    #services .subtitle { padding-bottom: 30px; }
+	#develop li { padding: 0px; }
 	
-	#services .subtitle h2 { font-size: 2em; }
-	
-	#services li { padding: 0px; }
-	
-	#development img { 
-		width: 100% !important; 
+	#development-process img { 
+		width: 80% !important; 
 		padding: 20px 0px 0px 0px;
 	}
 	
-	#development h3 { 
+	#development-process h3 { 
 		text-align: left;
 	}
 	
 	h3 { 
 		font-size: 1.3em; 
-		margin-top: 20px;
 	}
 	
-	#services img { 
+	#develop img { 
 		width: 60%;
 		margin: auto;
 	}
@@ -635,6 +767,8 @@ h3 {
 		margin: auto !important;
 		padding: 20px 0px;
 	}
+	
+	.website, .mobile { margin-bottom: 30px;}
 
 	#mobile { margin-top: 50px; }
 	
@@ -671,6 +805,11 @@ h3 {
 		padding: 2px 12px;
 	}
 	
+	#header {
+		background: linear-gradient(to right,#125f9c, #0c4675) !important;
+		color: #fff !important;
+	}
+	
 	.main-content { 
 		width: 1200px !important;
 		margin: auto !important;
@@ -692,37 +831,47 @@ h3 {
 	
 	.navbar-collapse { justify-content: flex-end; }
 	
-	#banner { padding: 60px 40px 60px 40px; }
+	#banner { 
+		background: #125f9c !important;
+		background: linear-gradient(to right,#125f9c, #0c4675) !important;
+		color: #fff !important;
+		padding: 30px 40px 80px 40px; }
 	
-	#banner h1 { font-size: 1.8em; }
+	#banner h1 { font-size: 1.6em; }
 	
-	#banner h2 { font-size: 1.3em; }
+	#banner h2 { font-size: 1.5em; }
 	
 	#banner #animationImg { 
 		margin-top: 0px; 
 		width: 95% !important; }
 	
-	#banner img { 
+	#banner #coder-lg { 
+		position: absolute;
 		padding: 0px; 
-		width: 70% !important;
-		float: left}
+		width: 380px !important;
+		margin-top: 50px;
+		margin-left: -310px;
+	}
 	
 	#banner .banner-text { text-align: left !important; }
 	
-	h2 { font-size: 1.8em; }
+	h2 { font-size: 1.6em; }
 	
 	.section { padding: 80px 20px; }
 	
-	#services .subtitle h2 { font-size: 2.5em; }
+	#develop .subtitle h2, #support .subtitle h2 { font-size: 2em; }
 	
 	#mission .container div { padding: 0px; }
 	
 	#mission .container div:first-child { padding-top: 0px; }
 	
 	#mission img { width: 20px; }
-	
-	#services img { 
-		width: 80%;
+	#mission img { 
+		width: 130px !important; 
+	}
+
+	#develop img { 
+		width: 70%;
 		margin: auto;
 	}
 	
@@ -738,8 +887,13 @@ h3 {
 	}
 
 	.tech-icon { 
-		width: 40px; 
+		width: 30px; 
 		margin-right: 10px;
 	}
-		
+
+	#mission li { 
+		width: 60%; 
+		margin: auto; 
+		text-align: left; }
+			
 }
