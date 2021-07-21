@@ -16,9 +16,9 @@ class Project {
    showCount(i) {
         let count = "";
         if(this.id == 1) { 
-			count += "<li data-target='#projectCarousel' data-slide-to='" + i + "' class='active' title='Project " + this.id + "'></li>"; 
+			count += "<li data-target='#projectCarousel' data-slide-to='" + i + "' class='active' title='Project " + this.id + " - " + this.title + "'></li>"; 
 		} else if (this.id != 1) {
-			count += "<li data-target='#projectCarousel' data-slide-to='" + i + "' title='Project " + this.id + "'></li>"; 
+			count += "<li data-target='#projectCarousel' data-slide-to='" + i + "' title='Project " + this.id + " - " + this.title + "'></li>"; 
 		}
        return count;
 
@@ -45,7 +45,7 @@ class Project {
 		output += "<div class='col-lg-7 col-md-7 col-sm-12'> <!-- Column -->";
 		
 		// Description
-		output += "<h3><b>Description</b></h3>";
+		output += "<h3 class='w3-margin-top'><b>Description</b></h3>";
 		output += "<div class='project-desc'>";
 		output += "<p>" + this.description + "</p>";
 		output += "</div>";

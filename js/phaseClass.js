@@ -14,10 +14,10 @@ class Phase {
 		output += "<div class='col-lg-6 phase'> <!-- Carousel item -->";
 		// Output
 		output += "<div class='row'>";
-		output += "<div class='col-sm-3 w3-center'> <!-- Column -->";
-		output += "<img src='images/main/" + this.image + ".png'> <!-- Column -->";
+		output += "<div class='col-sm-2 w3-center'> <!-- Column -->";
+		output += "<img src='images/develop/" + this.image + ".png'> <!-- Column -->";
 		output += "</div> <!-- End column -->";
-		output += "<div class='col-sm-9'> <!-- Column -->";
+		output += "<div class='col-sm-10'> <!-- Column -->";
 		output += "<h3>" + this.title + "</h3>";
 		output += "<p>" + this.description + "</p>";
 		output += "<dl><dt id='" + this.title + "'>" ;

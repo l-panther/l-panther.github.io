@@ -1,56 +1,39 @@
-(function($) {
-    "use strict";
-	
+(function ($) {
+	"use strict";
+
 	/* ..............................................
 	Loader 
-    ................................................. */
-	
-	$(window).on('load', function() { 
-		$('.preloader').fadeOut(); 
-		$('#preloader').delay(50).fadeOut('slow'); 
-		$('body').delay(450).css({'overflow':'visible'});
-		
-		$("#portrait img").focus(function() {
-			$(this).attr("src", "images/main/portrait-hover.png");
-		});
-		$("#portrait img").mouseenter(function() {
-			$(this).attr("src", "images/main/portrait-hover.png");
-		});
-		$("#portrait img").mouseleave(function() {
-			$(this).attr("src", "images/main/portrait.png");
-		});
-		
-		$("#portrait img").blur(function() {
-			$(this).attr("src", "images/main/portrait.png");
-		});
+	................................................. */
 
-    	$('[data-toggle="popover"]').popover(); 
-
+	$(window).on('load', function () {
+		$('.preloader').fadeOut();
+		$('#preloader').delay(50).fadeOut('slow');
+		$('body').delay(450).css({ 'overflow': 'visible' });
 	});
-    	
+
 	/* ..............................................
-    Navbar Bar
-    ................................................. */
-	
-	$('.navbar-nav .nav-link').on('click', function() {
+	Navbar Bar
+	................................................. */
+
+	$('.navbar-nav .nav-link').on('click', function () {
 		var toggle = $('.navbar-toggler').is(':visible');
 		if (toggle) {
 			$('.navbar-collapse').collapse('hide');
 		}
 	});
-	
-	$("#primarynav .open").click(function() {
+
+	$("#primarynav .open").click(function () {
 		$(this).hide();
-		$("#primarynav .close").show().click(function() {
+		$("#primarynav .close").show().click(function () {
 			$(this).hide();
 			$("#primarynav .open").show();
 		});
-		
+
 	});
-	
+
 	/* ..............................................
-    Fixed Menu
-    ................................................. */
+	Fixed Menu
+	................................................. */
 	$(window).on('scroll', function () {
 		if ($(window).scrollTop() > 50) {
 			$('.top-header').addClass('fixed-menu');
@@ -60,13 +43,13 @@
 	});
 
 	/* ..............................................
-    Scroll Element Animation 
-    ................................................. */
+	Scroll Element Animation 
+	................................................. */
 	//setTimeout(startAnimationRight, 200);
 	//setTimeout(startAnimationLeft, 200);
-	
+
 	// alert($("#website-preview").scrollTop());
-		
+
 	/*
 	function startAnimationLeft() {
 		animationLeft("#mobile-desc");
@@ -88,31 +71,32 @@
 		$(id).fadeIn();
 	}
 	*/
-	
-	
+
+
 	/* ..............................................
-    Scroll To Top
-    ................................................. */
-	
+	Scroll To Top and Typewritter
+	................................................. */
+
 	$(document).ready(function () {
 
-        var i = 0;
-        var txt = 'A Full Stack Web Developer'; /* The text */
-        var speed = 150; /* The speed/duration of the effect in milliseconds */
+		var i = 0;
+		var txt = 'Let\'s create something amazing'; /* The text */
+		var speed = 80; /* The speed/duration of the effect in milliseconds */
 
-        // Insert output into html 
-        setTimeout(typeWriter(), 90000);
-        
-        // 
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("typewriter").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
+		// Insert output into html 
+		setTimeout(typeWriter(), 90000);
+		changeArrow("fa fa-arrow-right", "fa fa-arrow-down");
 
-        //
+		// 
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("typewriter").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+
+		//
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 200) {
 				$('#scroll-to-top').fadeIn();
@@ -128,6 +112,28 @@
 			return false;
 		});
 
+		//
+		function changeArrow(right, down) {
+
+			let r = $("#development-process button i");
+
+			//
+			$("#development-process button").click(function () {
+
+				if (r.hasClass(right)) {
+
+					r.removeClass(right);
+					r.addClass(down);
+				} else if (r.hasClass(down)) {
+					r.removeClass(down);
+					r.addClass(right);
+				}
+
+			});
+		}
+
+
+
 	});
-	
+
 }(jQuery));

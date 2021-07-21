@@ -151,14 +151,16 @@ $(document).ready(function() {
 			"intranet",
 			[ 
 				{"name":"Login & Register Form "},
-				{"name":"Sessions"}
+				{"name":"Create, Read, Update & Delete"}
 			],
 			[ 
 				{"name":"php"},
 				{"name":"html5"},
 				{"name":"css3"},
 				{"name":"javascript"},
+				{"name":"bootstrap"},
 				{"name":"w3"},
+				{"name":"mysql"},
 				{"name":"krita"}
 			],
 			"A intranet for company services.",
@@ -311,9 +313,9 @@ $(document).ready(function() {
 			14,
 			"Photo Gallery",
 			"A web ppplication",
-			"parees",
+			"photogallery",
 			[ 
-				{"name":"Carousel"},
+				{"name":"File Upload"},
 				{"name":"Device Integration"}
 			],
 			[ 
@@ -325,8 +327,8 @@ $(document).ready(function() {
 
 			],
 			"A web application for photos.",
-			"parees",
-			"parees"
+			"photo",
+			"photo"
 		),
 	
 		project15 = new Project(
@@ -352,7 +354,7 @@ $(document).ready(function() {
 		);
 		
         // Array of projects
-        projects = [project1, project2, project3, project4, project5, project7, project8, project9, project10, project11, project12, project13, project15];
+        projects = [project1, project2, project3, project4, project5, project6, project7, project8, project9, project10, project11, project12, project13, project14, project15];
 	
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
