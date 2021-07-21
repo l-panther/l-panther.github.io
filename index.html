@@ -1,397 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<!-- Site Metas -->
-		<title>Leroy Russell | Front End Design &amp; Back End Developer</title>
-		<link rel="icon" href="images/logo/logo.ico" /> <!-- Icon -->
-		<meta name="description" content="Portfolio of my web development work"> <!-- Description -->
-		<meta name="keywords" content="HTML,CSS,W3.CSS,JavaScript,PHP,Laravel,Portfolio.Leroy's Portfolio, Web Developer, Full Stack Developer, Full Stack Web Developer, Web Desgner"> <!-- Keywords -->
-		<meta name="author" content="Leroy Russell"> <!-- Author -->
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 
-		<!-- Site Icons -->
-		<link rel="apple-touch-icon" href="#" />
+	<!-- Site Metas -->
+	<title>Leroy Russell | Front End Design &amp; Back End Developer</title>
+	<link rel="icon" href="images/logo/logo.ico" /> <!-- Icon -->
+	<meta name="description" content="Portfolio of my web development work"> <!-- Description -->
+	<meta name="keywords"
+		content="HTML,CSS,W3.CSS,JavaScript,PHP,Laravel,Portfolio.Leroy's Portfolio, Web Developer, Full Stack Developer, Full Stack Web Developer, Web Desgner">
+	<!-- Keywords -->
+	<meta name="author" content="Leroy Russell"> <!-- Author -->
 
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="css/w3.css">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/styles.css">
+	<!-- Site Icons -->
+	<link rel="apple-touch-icon" href="#" />
 
-		<script src="js/w3.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/w3.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
 
-		<!--[if lt IE 9]>
+	<script src="js/w3.js"></script>
+
+	<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 			<![endif]-->
 
-	</head>
-	<!-- End head -->
+</head>
+<!-- End head -->
 
 
-	<body id="home" >
+<body id="home">
 
-		<!-- Header -->
-		<header role="banner" id="header">
+	<!-- Header -->
+	<header role="banner" id="header">
+
+		<!-- Navigation -->
+		<nav id="primarynav" class="navbar navbar-expand-lg main-content3">
+
+			<a class="navbar-brand" href="#"><img src="images/logo/header-logo.png" alt="Company logo"
+					id="top-logo" /></a> <!-- Logo -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryToggler"
+				aria-controls="primaryToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars"></i>
+			</button> <!-- Menu Icon -->
+			<div class="collapse navbar-collapse" id="primaryToggler">
+				<!-- Navigation links -->
+
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#home">HOME<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#develop">DEVELOPMENT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#support">SUPPORT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">PORTFOLIO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#footer">CONTACT</a>
+					</li>
+				</ul>
+			</div> <!-- End navigation links -->
+		</nav> <!-- End navigation -->
+	</header>
+	<!-- End header -->
+
+
+	<!-- Banner -->
+	<div id="banner">
+		<div class="w3-row main-content3">
+			<div class="w3-col s12 m12 l6 w3-container w3-center w3-animate-left">
+				<h1>Hello, I'm Leroy</h1>
+				<h2>Full Stack Developer</h2>
+				<p id="typewriter"></p>
+				<div class="w3-btn w3-center">
+					<a href="#about">OUR SERVICES</a>
+				</div>
+			</div>
+			<div id="coder-container" class="w3-col s12 m12 l6 w3-container w3-center">
 			
-			<!-- Navigation -->
-			<nav id="primarynav" class="navbar navbar-expand-lg main-content3">
-				
-				<a class="navbar-brand" href="#"><img src="images/logo/header-logo.png" alt="Company logo"
-						id="top-logo" /></a> <!-- Logo -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primaryToggler"
-					aria-controls="primaryToggler" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fa fa-bars"></i>
-				</button> <!-- Menu Icon -->
-				<div class="collapse navbar-collapse" id="primaryToggler"> <!-- Navigation links -->
+				<img src="images/banner/banner-large.png" alt="Portrait" id="coder-lg" class="w3-hide-small w3-hide-medium">
+				<img src="images/banner/anim-mid.gif" alt="Portrait" id="coder-md" class="w3-hide-small w3-hide-large">
+				<img src="images/banner/anim-small.gif" alt="Portrait" id="coder-sm" class="w3-hide-medium w3-hide-large">
 
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" href="#home">HOME<span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#development">SERVICES</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#portfolio">PORTFOLIO</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#footer">CONTACT</a>
-						</li>
-					</ul>
-				</div> <!-- End navigation links -->
-			</nav> <!-- End navigation -->
-		</header>
-		<!-- End header -->
+				<!-- <img src="images/banner/animation.gif" alt="Portrait" id="animationImg" class=""> -->
+
+			</div>
+		</div>
+	</div> <!-- End banner -->
 
 
-		<!-- Banner -->
-		<div id="banner" class="w3-hide-middle w3-center">
-			<div class="w3-row main-content3">
-				<div class="w3-col s12 m12 l6 w3-container w3-center w3-animate-left">
-					<h1>Hello, I'm <span class="slogan">Leroy</span></h1>
-					<h2><span class="w3-text-black" id="typewriter"></span></h2>
-					<p>Let's create something amazing.</p>
-					<div class="w3-btn w3-center">
-						<a href="#about">ABOUT ME</a>
-					</div>
+	<!-- Main -->
+	<main role="main">
 
+		<!-- Values  -->
+		<div id="mission" class="w3-row w3-center section">
+			<div class="container">
+
+				<div class="w3-col s12 m12 l4">
+					<img src="images/mission/icon1.png" alt="" />
+					<h2>Quality</h2>
+					<p>We will always provide the highest quality</p>
 				</div>
-				<div class="w3-col s12 m12 l6 w3-animate-right">
-
-					<img src="images/banner/banner-mid.png" alt="Portrait" id="">
-					<!-- <img src="images/banner/animation.gif" alt="Portrait" id="animationImg" class=""> -->
-
+				<div class="w3-col s12 m12 l4">
+					<img src="images/mission/icon2.png" alt="" />
+					<h2>Professional</h2>
+					<p>We always aim to meet and exceed expectation</p>
+				</div>
+				<div class="w3-col s12 m12 l4">
+					<img src="images/mission/icon3.png" alt="" />
+					<h2>Integrity</h2>
+					<p>We will always be honest and upfront</p>
 				</div>
 			</div>
-		</div> <!-- End banner -->
+		</div>
 
 
-		<!-- Main -->
-		<main role="main">
+		<!-- Services -->
+		<div id="develop" class="section">
+			<div class="container">
 
-			<!-- Values  -->
-			<div id="mission" class="w3-row w3-center">
-				<div class="container">
-					
-					<div class="w3-col s12 m12 l4">
-						<img src="images/mission/icon1.png" alt="" />
-						<h2>Quality</h2>
-						<p>We will always provide the highest quality</p>
-					</div>
-					<div class="w3-col s12 m12 l4">
-						<img src="images/mission/icon2.png" alt="" />
-						<h2>Professional</h2>
-						<p>We always aim to meet and exceed expectation</p>
-					</div>
-					<div class="w3-col s12 m12 l4">
-						<img src="images/mission/icon3.png" alt="" />
-						<h2>Integrity</h2>
-						<p>We will always be honest and upfront</p>
-					</div>
+				<div class="w3-center subtitle">
+					<h2>GROW YOUR BUSINESS</h2>
+					<h3>WITH <span class="theme-text">CREATIVE</span> IDEAS</h3>
 				</div>
-			</div> 
 
+				<div class="section-para">
+					<p class="w3-center">Our development service ensures all functional and non-functional
+						requirements are met for your system.</p>
+				</div>
+				<!-- Website -->
+				<div class="w3-row" id="website">
+					<div class="w3-col s12 m12 l6">
+						<div class="w3-center">
 
-			<!-- Services -->
-			<div id="services" class="section">
-				<div class="container">
+							<!-- List of images to display -->
 
-					<div class="w3-center subtitle">
-						<h2>GROW YOUR BUSINESS</h2>
-						<h3>WITH <span class="theme-text">CREATIVE</span> IDEAS</h3>
+							<!-- Image 1 -->
+							<img class="img-responsive website" src="images/main/website1.png"
+								alt="Front view of desktop monitor displaying a website for diabetes" />
+
+							<!-- Image 2 -->
+							<img class="img-responsive website" src="images/main/website2.png"
+								alt="Front view of desktop monitor displaying a website for company banners" />
+
+							<!-- Image 3 -->
+							<img class="img-responsive website" src="images/main/website3.png"
+								alt="Front view of desktop monitor displaying a website for university" />
+
+							<!-- Image 4 -->
+							<img class="img-responsive website" src="images/main/website4.png"
+								alt="Front view of desktop monitor displaying a website for London guide" />
+
+							<!-- Image 5 -->
+							<img class="img-responsive website" src="images/main/website5.png"
+								alt="Front view of desktop monitor displaying a website for London guide" />
+
+							<!-- Image 6 -->
+							<img class="img-responsive website" src="images/main/website6.png"
+								alt="Front view of desktop monitor displaying a website for London guide" />
+
+						</div>
 					</div>
 
-					<!-- Website -->
-					<div class="w3-row" id="website">
-						<div class="w3-col s12 m12 l6 w3-animate-left" id="service-preview">
-							<div class="w3-center">
+					<div class="w3-col s12 m12 l6 service-desc">
+						<h2><span>Web</span> Development</h2>
+						<p>GROW YOUR BUSINESS MORE EFFECTIVELY</p>
 
-								<!-- List of images to display -->
+						<ul>
+							<li><i class="fa fa-check w3-margin-right"></i>100% Responsive</li>
+							<li><i class="fa fa-check w3-margin-right"></i>Secure Data</li>
+							<li><i class="fa fa-check w3-margin-right"></i>Rapid Development</li>
+						</ul>
+					</div>
+				</div> <!-- End website -->
 
-								<!-- Image 1 -->
-								<img class="img-responsive website" src="images/main/website1.png"
-									alt="Front view of desktop monitor displaying a website for diabetes" />
+				<!-- Mobile -->
+				<div class="w3-row" id="mobile">
+					<div class="w3-col s12 m12 l6" id="mobile-preview">
+						<div class="w3-center">
+							<img class="img-responsive mobile" src="images/projects/housing.png"
+								alt="Front view of tWo mobile phones shwing login and registration page" />
 
-								<!-- Image 2 -->
-								<img class="img-responsive website" src="images/main/website2.png"
-									alt="Front view of desktop monitor displaying a website for company banners" />
-
-								<!-- Image 3 -->
-								<img class="img-responsive website" src="images/main/website3.png"
-									alt="Front view of desktop monitor displaying a website for university" />
-
-								<!-- Image 4 -->
-								<img class="img-responsive website" src="images/main/website4.png"
-									alt="Front view of desktop monitor displaying a website for London guide" />
-
-								<!-- Image 5 -->
-								<img class="img-responsive website" src="images/main/website5.png"
-									alt="Front view of desktop monitor displaying a website for London guide" />
-
-								<!-- Image 6 -->
-								<img class="img-responsive website" src="images/main/website6.png"
-									alt="Front view of desktop monitor displaying a website for London guide" />
-
-							</div>
 						</div>
+					</div>
 
-						<div class="w3-col s12 m12 l6 service-desc">
-							<h2><span>Web</span> Development</h2>
-							<p>GROW YOUR BUSINESS MORE EFFECTIVELY</p>
+					<div class="w3-col s12 m12 l6">
+						<h2><span>Mobile</span> Development</h2>
+						<p>GET YOUR BUSINESS IN THE RIGHT HANDS</p>
+						<ul>
+							<li><i class="fa fa-check w3-margin-right"></i>Android &amp; IOS Compatible</li>
+							<li><i class="fa fa-check w3-margin-right"></i>Device Intergration</li>
+							<li><i class="fa fa-check w3-margin-right"></i>Geolocation </li>
+						</ul>
+					</div>
+				</div> <!-- End mobile -->
 
-							<ul>
-								<li><i class="fa fa-check w3-margin-right"></i>100% Responsive</li>
-								<li><i class="fa fa-check w3-margin-right"></i>Secure Data</li>
-								<li><i class="fa fa-check w3-margin-right"></i>Rapid Development</li>
-							</ul>
-						</div>
-					</div> <!-- End website -->
 
-					<!-- Mobile -->
-					<div class="w3-row" id="mobile">
-						<div class="w3-col s12 m12 l6" id="mobile-preview">
-							<div class="w3-center">
-								<img class="img-responsive mobile" src="images/projects/housing.png"
-									alt="Front view of tWo mobile phones shwing login and registration page" />
-
-							</div>
-						</div>
-
-						<!-- Mobile -->
-						<div class="w3-col s12 m12 l6">
-							<h2><span>Mobile</span> Development</h2>
-							<p>GET YOUR BUSINESS IN THE RIGHT HANDS</p>
-							<ul>
-								<li><i class="fa fa-check w3-margin-right"></i>Android &amp; IOS Compatible</li>
-								<li><i class="fa fa-check w3-margin-right"></i>Device Intergration</li>
-								<li><i class="fa fa-check w3-margin-right"></i>Geolocation </li>
-							</ul>
-						</div> <!-- End mobile -->
-					</div> <!-- End mobile -->
-				</div>
 			</div>
-			<!-- End services -->
+		</div>
+		<!-- End services -->
 
 
-			<!-- Services -->
-			<div id="development" class="section">
-				<div class="container">
+		<!-- Services -->
+		<div id="development-process">
+			<div class="container">
 
-					<h2 class="w3-center">DEVELOPMENT PROCESS</h2>
-
-					<p class="w3-center">Our development services ensures all requirements are met for your system</p>
+				<div id="developProcess">
 					<div class="row" id="phaseRow1"></div>
 					<div class="row" id="phaseRow2"></div>
 				</div>
-			</div> <!-- End development -->
-
-
-			<!-- Portfolio -->
-			<div id="portfolio" class="section">
-				<div class="container">
-
-					<div class="row">
-						<div class="col-md-12">
-							<div class="">
-								<div class="w3-center">
-									<h2>CHECK OUT <span class="theme-text">MY WORK</span></h2>
-									<p>A collection of my web development projects.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div id="projectCarousel" class="carousel slide" data-ride="carousel">
-
-						<!-- Indicators -->
-						<ol class="carousel-indicators" id="slideCount"></ol>
-
-						<!-- The slideshow -->
-						<div class="carousel-inner" id="projectList"></div>
-
-						<!-- Left and right controls -->
-						<a class="carousel-control-prev" href="#projectCarousel" data-slide="prev" title="Previous Project">
-							<span class="fa fa-chevron-left"></span>
-						</a>
-						<a class="carousel-control-next" href="#projectCarousel" data-slide="next" title="Next Project">
-							<span class="fa fa-chevron-right"></span>
-						</a>
-					</div>
-
-					<!-- Modal -->
-					<div id="projectModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
-						<div class="modal-dialog main-content2">
-
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header w3-black">
-									<h2 class="w3-large w3-text-white">Development plan</h2>
-									<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
-								</div>
-								<div class="modal-body" id="projectReport">
-								</div>
-							</div>
-						</div>
-					</div> <!-- End modal -->
-				</div>
-			</div>
-			<!-- End portfolio -->
-
-
-			<!-- About -->
-			<div id="about" class="section theme-bg">
-				<article class="container"> <!-- Container class -->
-					<div class="w3-row w3-center"> <!-- Row -->
-						<div class="w3-col s12 m12 l6">
-							<h2>ABOUT LEROY</h2>
-							<p class="w3-margin-bottom">
-								An enthusiastic, passionate and self-driven individual who enjoys problem sloving and being
-								creative.
-								Continuously seeking ways to extend and enhance skill set and knowledge in all things
-								relating to
-								information technology.
-							</p>
-
-							<p class="w3-margin-top w3-margin-bottom">
-								For more information, <a href="data/resume.pdf" target="_blank"
-									title="View my resume in a new tab">check out my resume</a>.</p>
-						</div>
-
-						<div id="portrait" class="w3-col s12 m12 l6">
-							<img src="images/main/portrait.png" alt="Portrait drawing of Leroy"/>
-						</div>
-					</div> <!-- End row -->
-				</article> <!-- End container class -->
-			</div> <!-- End about -->
-		</main>
-		<!-- End main -->
-
-
-		<!-- Footer -->
-		<footer id="footer" class="section">
-			<div class="main-content3">
-				<div class="w3-row w3-center w3-text-white">
-
-					<div class="w3-col s12">
-						<h2>STAY CONNECTED</h2>
-					</div>
-
-					<a href="#"><img src="images/logo/header-logo.png" alt="Company logo" id="footer-logo" /></a>
-
-					<div class="w3-col s12">
-						<div class="w3-row">
-
-							<!-- Phone -->
-							<div class="w3-col s12 m4">
-								<div class="icon">
-									<dl>
-										<dt id="phone"><img src="images/social/social3.png" alt="Phone icon"></dt>
-										<dd aria-labelledby="phone">07737 672 064</dd>
-									</dl>
-								</div>
-							</div> <!-- End phone -->
-
-							<!-- Email -->
-							<div class="w3-col s12 m4">
-								<div class="icon">
-									<dl>
-										<dt id="email"><img src="images/social/social2.png" alt="Email icon"></dt>
-										<dd aria-labelledby="email">leroy_rus@hotmail.com</dd>
-									</dl>
-								</div>
-							</div> <!-- End email -->
-
-							<!-- End location -->
-							<div class="w3-col s12 m4">
-								<div class="icon">
-									<dl>
-										<dt id="location"><img src="images/social/social1.png" alt="Location icon"></dt>
-										<dd aria-labelledby="location">London, UK</dd>
-									</dl>
-								</div>
-							</div> <!-- End location -->
-						</div>
-					</div>
-				</div>
-
-				<!-- End social links -->
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="w3-center">
-
-							<!-- Links -->
-							<ul class="social-icons">
-								<li><a href="https://github.com/l-panther/" target="_blank"><i class="fa fa-github"
-											title="Github"></i></a></li>
-								<li><a href="https://linkedin.com/in/leroy-russell-2a38591a3/" target="_blank"><i
-											class="fa fa-linkedin" title="Linkedin"></i></a></li>
-							</ul> <!-- End links -->
-						</div>
-					</div>
-				</div> <!-- End social links -->
-			</div>
-		</footer>
-		<!-- End Footer -->
-
-
-		<a href="#" id="scroll-to-top" title="Back to top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
-
-		<!-- Copyright -->
-		<div id="copyright">
-			<div class="w3-center">
-				<p>© <span id="footerDate"></span> Leroy Russell. All Rights Reserved.</p>
 			</div>
 		</div>
-		<!-- End footer -->
 
 
-		<!-- JS FILES -->
-		<script src="js/phaseClass.js"></script>
-		<script src="js/projectClass.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/getProjects.js"></script>
-		<script src="js/getPhase.js"></script>
-	
-		<!-- ALL PLUGINS -->
-		<script src="js/smoothscroll.js"></script>
-		<script src="js/custom.js"></script>
-		<script>
-			w3.slideshow(".website", 5000);
-			var d = new Date();
-			document.getElementById("footerDate").innerHTML = d.getFullYear();
-		</script>
-	
-	</body> <!-- End body -->
+		<!-- Support -->
+		<div id="support" class="section">
+			<div class="container">
+
+				<div class="w3-center subtitle">
+					<h2>SUPPORT YOUR BUSINESS</h2>
+					<h3>WITH <span class="theme-text">SIMPLE</span> SOLUTIONS</h3>
+				</div>
+
+				<div class="section-para">
+					<p class="w3-center">Our support service enables you to have the computer hardware, software and
+						networking specifications for your requirements
+						requirements.</p>
+				</div>
+
+				<!-- Hardware and Software -->
+				<div id="support-opt">
+					<div class="row">
+						<div class="col-lg-5 w3-center">
+							<div id="supportCarousel" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#supportCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#supportCarousel" data-slide-to="1"></li>
+									<li data-target="#supportCarousel" data-slide-to="2"></li>
+								</ol>
+
+								<!-- The slideshow -->
+								<div class="carousel-inner" id="supportImgList">
+
+								</div>
+							</div>
+						</div>
+						<div id="supportContent" class="col-lg-7"></div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- End development -->
+
+
+		<!-- Portfolio -->
+		<div id="portfolio" class="section">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="">
+							<div class="w3-center">
+								<h2>CHECK OUT <span class="theme-text">MY PROJECTS</span></h2>
+								<p>A collection of my web development projects.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="projectCarousel" class="carousel slide" data-ride="carousel">
+
+					<!-- Indicators -->
+					<ol class="carousel-indicators" id="slideCount"></ol>
+
+					<!-- The slideshow -->
+					<div class="carousel-inner" id="projectList"></div>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#projectCarousel" data-slide="prev" title="Previous Project">
+						<span class="fa fa-chevron-left"></span>
+					</a>
+					<a class="carousel-control-next" href="#projectCarousel" data-slide="next" title="Next Project">
+						<span class="fa fa-chevron-right"></span>
+					</a>
+				</div>
+
+				<!-- Modal -->
+				<div id="projectModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+					<div class="modal-dialog main-content2">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header w3-black">
+								<h2 class="w3-large w3-text-white">Development plan</h2>
+								<button type="button" class="close" data-dismiss="modal" title="Close">&times;</button>
+							</div>
+							<div class="modal-body" id="projectReport">
+							</div>
+						</div>
+					</div>
+				</div> <!-- End modal -->
+			</div>
+		</div>
+		<!-- End portfolio -->
+
+
+		<!-- About -->
+		<div id="about" class="section theme-bg">
+			<article class="container">
+				<!-- Container class -->
+				<div class="w3-row w3-center">
+					<!-- Row -->
+					<div class="w3-col s12 m12 l6">
+						<h2>ABOUT LEROY</h2>
+						<p class="w3-margin-bottom">
+							An enthusiastic, passionate and self-driven individual who enjoys problem sloving and being
+							creative.
+							Continuously seeking ways to extend and enhance skill set and knowledge in all things
+							relating to
+							information technology.
+						</p>
+
+						<p class="w3-margin-top w3-margin-bottom">
+							For more information, <a href="data/resume.pdf" target="_blank"
+								title="View my resume in a new tab">check out my resume</a>.</p>
+					</div>
+
+					<div id="portrait" class="w3-col s12 m12 l6">
+						<img src="images/main/portrait.png" alt="Portrait drawing of Leroy" />
+					</div>
+				</div> <!-- End row -->
+			</article> <!-- End container class -->
+		</div> <!-- End about -->
+
+	</main>
+	<!-- End main -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="section">
+		<div class="main-content3">
+			<div class="w3-row w3-center w3-text-white">
+
+				<div class="w3-col s12">
+					<h2>STAY CONNECTED</h2>
+				</div>
+
+				<a href="#"><img src="images/logo/header-logo.png" alt="Company logo" id="footer-logo" /></a>
+
+				<div class="w3-col s12">
+					<div class="w3-row">
+
+						<!-- Phone -->
+						<div class="w3-col s12 m4">
+							<div class="icon">
+								<dl>
+									<dt id="phone"><img src="images/social/social3.png" alt="Phone icon"></dt>
+									<dd aria-labelledby="phone">07737 672 064</dd>
+								</dl>
+							</div>
+						</div> <!-- End phone -->
+
+						<!-- Email -->
+						<div class="w3-col s12 m4">
+							<div class="icon">
+								<dl>
+									<dt id="email"><img src="images/social/social2.png" alt="Email icon"></dt>
+									<dd aria-labelledby="email">leroy_rus@hotmail.com</dd>
+								</dl>
+							</div>
+						</div> <!-- End email -->
+
+						<!-- End location -->
+						<div class="w3-col s12 m4">
+							<div class="icon">
+								<dl>
+									<dt id="location"><img src="images/social/social1.png" alt="Location icon"></dt>
+									<dd aria-labelledby="location">London, UK</dd>
+								</dl>
+							</div>
+						</div> <!-- End location -->
+					</div>
+				</div>
+			</div>
+
+			<!-- End social links -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="w3-center">
+
+						<!-- Links -->
+						<ul class="social-icons">
+							<li><a href="https://github.com/l-panther/" target="_blank"><i class="fa fa-github"
+										title="Github"></i></a></li>
+							<li><a href="https://linkedin.com/in/leroy-russell-2a38591a3/" target="_blank"><i
+										class="fa fa-linkedin" title="Linkedin"></i></a></li>
+						</ul> <!-- End links -->
+					</div>
+				</div>
+			</div> <!-- End social links -->
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+	<a href="#" id="scroll-to-top" title="Back to top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<div class="w3-center">
+			<p>© <span id="footerDate"></span> Leroy Russell. All Rights Reserved.</p>
+		</div>
+	</div>
+	<!-- End footer -->
+
+
+	<!-- JS FILES -->
+	<script src="js/supportClass.js"></script>
+	<script src="js/phaseClass.js"></script>
+	<script src="js/projectClass.js"></script>
+	<script src="js/technicianClass.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/getSupport.js"></script>
+	<script src="js/getProjects.js"></script>
+	<script src="js/getTechnician.js"></script>
+	<script src="js/getPhase.js"></script>
+
+	<!-- ALL PLUGINS -->
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		w3.slideshow(".website", 5000);
+		var d = new Date();
+		document.getElementById("footerDate").innerHTML = d.getFullYear();
+	</script>
+
+</body> <!-- End body -->
+
 </html> <!-- End html -->
