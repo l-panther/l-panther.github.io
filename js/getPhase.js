@@ -28,7 +28,7 @@ $(document).ready(function() {
 			"Develop",
 			"develop",
             [ 
-				{"name":"Build Systm"},
+				{"name":"Build System"},
 				{"name":"Test"},
 				{"name":"Client Approval"},
 			],
