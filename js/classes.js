@@ -21,9 +21,9 @@ class Developer {
 				description: "Optimisated to keep you ahead of the competetiion"
 			},
 			{
-				name: "Bugfixes &amp; Support",
+				name: "Testing &amp; Bugfixes",
 				image: "support",
-				description: "Making the web for everyone"
+				description: "Regular testing and bug fixes "
 			}
 		];
 	}
@@ -97,11 +97,11 @@ class Skillset {
 		let output = `		
 		
 			<div class="col-xs-12 col-md-6 col-lg-12 skill">
-				<div class="row">
-					<div class="col-sm-2 col-md-3 col-lg-2">
+				<div class="w3-row">
+					<div class="w3-col s3 m2 l2">
 						<img src='images/skills/` + this.image + `/` + this.image + `.png' alt=''>
 					</div>
-					<div class="col-sm-10 col-md-9 col-lg-10">
+					<div class="w3-col s9 m10 l10">
 						<dt>` + this.title + `</dt>
 						<dd>` + this.description_short + `</dd>
 						<button id="` + this.image + `-modal" class="btn" data-toggle="modal"
@@ -130,12 +130,12 @@ class Skillset {
 			
 			output += `
 					<div class='w3-col s12 w3-margin-bottom detail'>
-						<div class="row">
-							<div class="col-sm-2">
+						<div class="w3-row">
+							<div class="w3-col s2">
 								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt=''>
 						
 							</div>
-							<div class="col-sm-10">
+							<div class="w3-col s10">
 										<dl>
 									<dt>
 										` + this.skills[i].title + `
@@ -162,13 +162,11 @@ class Skillset {
 
 			output += `
 				<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>
-			
-			
 		`;
 		} else {
 			output += `
-			<h3 >Home Renovation</h3>
-			<p class="mb-4">A before and after of a property I revived from a desolute place and turned into a potential home.</p>
+			<h3>Home Renovation</h3>
+			<p class="mb-4">A before and after video of the property to showcase the transformation. Video taken after stripping more of the wallpaper. My first walk-through failed to save and time was of the essence... Let the work</p>
 			<div class="row mb-4">
 				<div class="col-sm-7">
 					<dl>
@@ -232,11 +230,11 @@ class Project {
 
 
 	// Show count position
-	showCount(i) {
+	countProject(i) {
 		let count = "";
 		if (this.id == 1) {
 			count += "<li data-target='#projectCarousel' data-slide-to='" + 0 + "' class='active' title='Project " + this.id + " - " + this.title + "'></li>";
-		} else if (this.id != 1) {
+		} else {
 			count += "<li data-target='#projectCarousel' data-slide-to='" + this.id + "' title='Project " + this.id + " - " + this.title + "'></li>";
 		}
 		return count;
@@ -250,10 +248,8 @@ class Project {
 			count = "";
 		if (this.id == 1) {
 			output += "<div class='carousel-item active'> <!-- Carousel item -->";
-			count += `<li data-target="#projectCarousel" data-slide-to="0" class="active"></li>`;
 		} else {
-			output += "<div class='carousel-item'> <!-- Carousel item -->";
-			count += `<li data-target="#projectCarousel" data-slide-to="` + this.id + `"></li>`;
+			output += "<div class='carousel-item'> <!-- Carousel item -->";	
 		}
 
 		// Output

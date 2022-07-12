@@ -1,10 +1,7 @@
 (function ($) {
 	"use strict";
 
-	let carouselContent = "",
-	listContent = "",
-	cardContent = "",
-	slideCount = "";
+	let carouselContent = "", slideCount = "";
 	
 
 	// Create Developer instance from class
@@ -61,15 +58,17 @@
 	 */
 
 	// Array of projects
-	const projects = [carrepair, diabetes, efexacademy, emblem, london];
+	const projects = [carrepair, diabetes, efexacademy, emblem, jamaica, london, parees];
 
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
 		carouselContent += projects[i].showCarousel(i);
+		slideCount += projects[i].countProject();
 	}
 
 	// Insert output into html 
 	$("#carouselList").html(carouselContent);
+	$("#slideCount").html(slideCount);
 
 
 	/* ..........................................
