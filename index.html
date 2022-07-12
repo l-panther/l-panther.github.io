@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- Site Metas -->
+	<title>Leroy Russell | Front End Design &amp; Back End Developer</title>
+	<link rel="icon" href="images/logo/logo.ico" /> <!-- Icon -->
+	<meta name="description" content="A website portfolio of my development projects"> <!-- Description -->
+	<meta name="keywords"
+		content="HTML,CSS,W3.CSS,JavaScript,PHP,Laravel,Portfolio.Leroy's Portfolio, Web Developer, Full Stack Developer, Full Stack Web Developer, Web Designer">
+	<!-- Keywords -->
+	<meta name="author" content="Leroy Russell"> <!-- Author -->
+
+	<!-- Site Icons -->
+	<link rel="apple-touch-icon" href="#" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/w3.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/styles.css">
+	<noscript>
+		<link rel="stylesheet" href="css/nojs-styles.css">
+	</noscript>
+
+	<script src="js/w3.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<!-- End head -->
+
+
+<body>
+	<noscript>This website is better with javascript enabled</noscript>
+	<div id="page">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<div class="main-container">
+				<!-- Brand -->
+				<a class="navbar-brand w3-left" href="#"><img src="images/logo/header-logo.png"
+						alt="A white circle with a blue wave stroke through the middle and the initials of Leroy Russell"
+						id="header-logo"></a>
+
+				<!-- Toggler/collapsibe Button -->
+				<button class="navbar-toggler w3-right" type="button" data-toggle="collapse"
+					data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+				
+						<li class="nav-item">
+							<a class="nav-link" href="#web-projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#footer">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav> <!-- End navigation -->
+
+		
+		<!-- Main -->
+		<main role="main">
+
+			<!-- Hero -->
+			<div id="hero">
+				<div class="main-container">
+					<div class="row">
+						
+						<div class="col-sm-12 col-md-6 col-lg-6">
+						
+							<h1>Frontend / UI Developer</h1>
+						
+							<p class="w3-margin-top w3-margin-bottom">Hi, my name is Leroy, welcome to my portfolio. A collection of some of my recentEnjoy my latest projects and a brief insight into some of my additional skills. </p>
+					
+							<div class="container w3-center">
+							</div>
+
+							<a href="#web-projects" class="w3-btn">VIEW MY WORK</a>
+
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-6 w3-center">
+							<img src="images/hero/desktop.png" alt="">
+						</div>
+					</div> <!-- End .w3-row -->
+				</div> <!-- End .main-container -->
+			</div> <!-- End #hero -->
+
+	
+			<!-- Web Mission -->
+			<div id="web-mission" class="section">
+				<div class="main-container">
+					<div class="row">
+						<div class='col-sm-12 col-md-12 col-lg-4 w3-center'>
+							<h2>Frontend / UX Developer</h2>
+						</div>
+						<div class='col-sm-12 col-md-12 col-lg-8'>
+							<div id="webMissionList" class="row">
+							</div>	
+						</div>	
+					</div>
+				</div> <!-- End .main-container -->
+			</div> <!-- End #web-mission .section -->
+
+
+			<!-- Web Portfolio -->
+			<div id="web-projects" class="section">
+				<div class="main-container">
+					<div class="row">
+						<div class="col-sm-12 w3-center">
+							<h2>Latest <span class="theme-txt">Web Projects</span></h2>
+						</div>
+						<div class="col-sm-12 col-lg-12">
+
+							<!-- Carousel -->
+							<div id="projectCarousel" class="carousel slide" data-ride="carousel">
+								<noscript><img src="images/projects/nojs.png" alt="" style="width:100%"></noscript>
+								
+								<!-- Index indicators -->
+								<ol class="carousel-indicators" id="slideCount"></ol>
+
+								<!-- The slideshow -->
+								<div class="carousel-inner">
+									<div id="carouselList"></div>
+								</div>
+
+								<!-- Left and right controls -->
+								<a class="carousel-control-prev" href="#projectCarousel" data-slide="prev"
+									title="Previous Project">
+									<span class="fa fa-chevron-left"></span>
+								</a>
+								<a class="carousel-control-next" href="#projectCarousel" data-slide="next"
+									title="Next Project">
+									<span class="fa fa-chevron-right"></span>
+								</a>
+							</div>
+
+							<!-- Modal -->
+							<div id="project-info" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+							
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+								
+										</div>
+										<div class="modal-body">
+											<div class="w3-margin">
+												<!-- Services -->
+												<div id="cafes-details"></div>
+												<div id="carrepair-details"></div>
+												<div id="diabetes-details"></div>
+												<div id="emblem-details"></div>
+												<div id="london-details"></div>
+												<div id="jamaica-details"></div>
+											</div>
+												
+										</div>
+										
+									</div>
+								</div>
+							</div>
+  
+
+							<!-- Modal -->
+							<div id="preview-alert" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+							
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+								
+										</div>
+										<div class="modal-body">
+											<div class="w3-margin">
+
+												<h2>Please come back later</h2>
+												<p><b>Link to Project Coming Soon!!</b></p>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+  
+						</div>
+					</div>
+				</div>
+			</div> <!-- End skills -->
+		
+
+			<!-- Skills -->
+			<div id="skills" class="section">
+				<div class="main-container">
+					<div class="row">
+						<div class="col-sm-12 w3-center">
+							<h2> <span class="theme-txt">Be Creative</span> with limitations</h2>
+						</div>
+
+						<div class="col-sm-12 w3-center">
+						</div>
+						
+						<div class="col-sm-12 col-md-12 col-lg-7">
+
+							<div id="skillList" class="row"></div>
+
+							<!-- Modal -->
+							<div id="detailModal" class="modal fade" role="dialog" data-backdrop="static"
+								data-keyboard="false">
+								<div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"
+												title="Close">&times;</button>
+										</div>
+										<div class="modal-body">
+
+											<!-- Skill items -->
+											<div id="web-details"></div>
+											<div id="technician-details"></div>
+											<div id="art-details"></div>
+											<div id="modelling-details"></div>
+											<div id="decorator-details"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-5 w3-center">
+							<img src="images/about/coder.png" alt="" id="coder">
+						</div>
+					</div>
+				</div> <!-- End about -->
+			</div> <!-- End about -->
+
+			<!-- To top -->
+			<div id="toTop" class="w3-center"><a href="#page">Back to top <i class="fa fa-arrow-up"></i></a></div>
+		
+		</main> <!-- End main -->
+
+		<!-- Footer -->
+		<footer role="contentinfo" id="footer" class="section">
+			<div class="main-container">
+
+				<div class="w3-row w3-text-white">
+
+					<!-- Social -->
+					<div class="w3-col s12 w3-center">
+
+						<div class="icon">
+							<a href="#"><img src="images/logo/header-logo.png" alt="Company logo"
+									id="footer-logo" /></a>
+						</div>
+
+						
+						<dl class="social-container">
+							<dt id="socialLinks" class="w3-hide">Social links</dt>
+						
+							<dd aria-labelledby="socialLinks">
+								<a href="https://github.com/l-panther/" target="_blank"><i class="fa fa-github"
+										title="View Github repositories"></i>
+								</a>
+							</dd>
+							<dd aria-labelledby="socialLinks">
+								<a href="https://linkedin.com/in/leroy-russell-2a38591a3/" target="_blank"><i
+										class="fa fa-linkedin" title="Connect on Linkedin"></i>
+								</a>
+							</dd>
+						</dl>
+					</div> <!-- End .col .social-container -->
+
+				</div>	<!-- End .row -->
+			</div>	<!-- End .row -->
+
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<div class="w3-center">
+					<p>&copy; <span id="footerDate"></span> Leroy Russell. All Rights Reserved.</p>
+				</div>
+			</div>
+
+		</footer> <!-- End Footer -->
+	</div> <!-- End page -->
+
+
+	<!-- <a href="#" id="scroll-to-top" title="Back to top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a> -->
+
+
+
+
+	<!-- JS FILES -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/classes.js"></script>
+	<script src="js/instances.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- ALL PLUGINS -->
+	<script src="js/smoothscroll.js"></script> <!-- Smooth scroll -->
+
+	<script>
+		var d = new Date();
+
+		// Set current date as year
+		document.getElementById("footerDate").innerHTML = d.getFullYear();
+
+		// w3 CSS open navigation
+		function w3_open() {
+			document.getElementById("mySidebar").style.display = "block";
+		}
+
+		// w3 CSS close navigation
+		function w3_close() {
+			document.getElementById("mySidebar").style.display = "none";
+		}
+	</script>
+
+
+</body> <!-- End body -->
+
+</html> <!-- End html -->
