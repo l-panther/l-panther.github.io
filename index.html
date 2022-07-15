@@ -45,40 +45,42 @@
 	<noscript>This website is better with javascript enabled</noscript>
 	<div id="page">
 
-		<!-- Navigation -->
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-			<div class="main-container">
-				<!-- Brand -->
-				<a class="navbar-brand w3-left" href="#"><img src="images/logo/header-logo.png"
-						alt="A white circle with a blue wave stroke through the middle and the initials of Leroy Russell"
-						id="header-logo"></a>
+		<header>
+			<!-- Navigation -->
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+				<div class="main-container">
+					<!-- Brand -->
+					<a class="navbar-brand w3-left" href="#"><img src="images/logo/header-logo.png"
+							alt="A white circle with a blue wave stroke through the middle and the initials of Leroy Russell"
+							id="header-logo"></a>
 
-				<!-- Toggler/collapsibe Button -->
-				<button class="navbar-toggler w3-right" type="button" data-toggle="collapse"
-					data-target="#collapsibleNavbar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler w3-right" type="button" data-toggle="collapse"
+						data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="#home">Home</a>
-						</li>
-				
-						<li class="nav-item">
-							<a class="nav-link" href="#web-projects">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#skills">Skills</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#footer">Contact</a>
-						</li>
-					</ul>
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">Home</a>
+							</li>
+					
+							<li class="nav-item">
+								<a class="nav-link" href="#web-projects">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#skills">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#footer">Contact</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</nav> <!-- End navigation -->
+			</nav> <!-- End navigation -->
+		</header> <!-- End header -->
 
 		
 		<!-- Main -->
@@ -91,9 +93,9 @@
 						
 						<div class="col-sm-12 col-md-6 col-lg-6">
 						
-							<h1>Front-end UX / UI Developer</h1>
+							<h1>Hi, Im Leroy</h1>
 						
-							<p class="w3-margin-top w3-margin-bottom">Hi, my name is Leroy, welcome to my portfolio. A collection of some of my recentEnjoy my latest projects and a brief insight into some of my additional skills. </p>
+							<p class="w3-margin-top w3-margin-bottom">Welcome to my portfolio. A collection of some of my recentEnjoy my latest projects and a brief insight into some of my additional skills. </p>
 					
 							<div class="container w3-center">
 							</div>
@@ -110,7 +112,7 @@
 			</div> <!-- End #hero -->
 
 	
-			<!-- Web Mission -->
+			<!-- Web Mission --
 			<div id="web-mission" class="section">
 				<div class="main-container">
 					<div class="row">
@@ -122,19 +124,69 @@
 							</div>	
 						</div>	
 					</div>
-				</div> <!-- End .main-container -->
-			</div> <!-- End #web-mission .section -->
+				</div> !-- End .main-container --
+			</div> !-- End #web-mission .section -->
+
+			
+			<div class="main-container">
+				
+				<!-- Skills -->
+				<div id="skills" class="section">
+					<div class="">
+						<div class="row">
+							<div class="col-sm-12 w3-center">
+								<h2><span class="theme-txt">Be Creative</span> Without Limitations</h2>
+							</div>
+
+							<div class="col-sm-12 w3-center">
+							</div>
+							
+							<div class="col-sm-12 col-md-12 col-lg-7">
+
+								<div id="skillList" class="row">
+									
+							</div>
+
+							<!-- Modal -->
+							<div id="detailModal" class="modal fade" role="dialog" data-backdrop="static"
+								data-keyboard="false">
+								<div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"
+												title="Close">&times;</button>
+										</div>
+										<div class="modal-body">
+
+											<!-- Skill items -->
+											<div id="web-details"></div>
+											<div id="technician-details"></div>
+											<div id="art-details"></div>
+											<div id="modelling-details"></div>
+											<div id="decorator-details"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-5 w3-center">
+							<img src="images/about/coder.png" alt="" id="coder">
+						</div>
+					</div>
+				</div> <!-- End about -->
+			</div> <!-- End about -->
+		
 
 
 			<!-- Web Portfolio -->
 			<div id="web-projects" class="section">
-				<div class="main-container">
+				<div class="">
 					<div class="row">
 						<div class="col-sm-12 w3-center">
-							<h2>Latest <span class="theme-txt">Web Projects</span></h2>
-						</div>
-						<div class="col-sm-12 col-lg-12">
-
+							<h2>Latest <span class="theme-txt">Projects</span></h2>
+							<p>A collection of som e the projects I have completed using web technologies, such as HTML5, JavaScript, PHP and Bootstrap.</p>
 							<!-- Carousel -->
 							<div id="projectCarousel" class="carousel slide" data-ride="carousel">
 								<noscript><img src="images/projects/nojs.png" alt="" style="width:100%"></noscript>
@@ -185,8 +237,10 @@
 										
 									</div>
 								</div>
-							</div>
-  
+								
+						
+						</div>
+						<div class="col-sm-12 col-lg-12">
 
 							<!-- Modal -->
 							<div id="preview-alert" class="modal fade" role="dialog">
@@ -209,99 +263,51 @@
 									</div>
 								</div>
 							</div>
-  
+
 						</div>
 					</div>
 				</div>
 			</div> <!-- End skills -->
-		
-
-			<!-- Skills -->
-			<div id="skills" class="section">
-				<div class="main-container">
-					<div class="row">
-						<div class="col-sm-12 w3-center">
-							<h2><span class="theme-txt">Be Creative</span> Without limitations, </h2>
-						</div>
-
-						<div class="col-sm-12 w3-center">
-						</div>
-						
-						<div class="col-sm-12 col-md-12 col-lg-7">
-
-							<div id="skillList" class="row">
-								
-							</div>
-
-							<!-- Modal -->
-							<div id="detailModal" class="modal fade" role="dialog" data-backdrop="static"
-								data-keyboard="false">
-								<div class="modal-dialog">
-
-									<!-- Modal content-->
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"
-												title="Close">&times;</button>
-										</div>
-										<div class="modal-body">
-
-											<!-- Skill items -->
-											<div id="web-details"></div>
-											<div id="technician-details"></div>
-											<div id="art-details"></div>
-											<div id="modelling-details"></div>
-											<div id="decorator-details"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-12 col-lg-5 w3-center">
-							<img src="images/about/coder.png" alt="" id="coder">
-						</div>
-					</div>
-				</div> <!-- End about -->
-			</div> <!-- End about -->
-
-			<!-- To top -->
-			<div id="toTop" class="w3-center"><a href="#page">Back to top <i class="fa fa-arrow-up"></i></a></div>
-		
+	
 		</main> <!-- End main -->
 
+		
+		<!-- To top -->
+		<div id="toTop" class="w3-center main-container"><a href="#page">Back to top <i class="fa fa-arrow-up"></i></a></div>
+	
+
 		<!-- Footer -->
-		<footer role="contentinfo" id="footer" class="section">
-			<div class="main-container">
+		<footer role="contentinfo" id="footer" class="section main-container">
+		
+			<div class="w3-row w3-text-white">
 
-				<div class="w3-row w3-text-white">
+				<!-- Social -->
+				<div class="w3-col s12 w3-center">
 
-					<!-- Social -->
-					<div class="w3-col s12 w3-center">
+					<div class="icon">
+						<a href="#"><img src="images/logo/header-logo.png" alt="Company logo"
+								id="footer-logo" /></a>
+					</div>
 
-						<div class="icon">
-							<a href="#"><img src="images/logo/header-logo.png" alt="Company logo"
-									id="footer-logo" /></a>
-						</div>
+					
+					<dl class="social-container">
+						<dt id="socialLinks" class="w3-hide">Social links</dt>
+					
+						<dd aria-labelledby="socialLinks">
+							<a href="https://github.com/l-panther/" target="_blank"><i class="fa fa-github"
+									title="View Github repositories"></i>
+							</a>
+						</dd>
+						<dd aria-labelledby="socialLinks">
+							<a href="https://linkedin.com/in/leroy-russell-2a38591a3/" target="_blank"><i
+									class="fa fa-linkedin" title="Connect on Linkedin"></i>
+							</a>
+						</dd>
+					</dl>
+				</div> <!-- End .col .social-container -->
 
-						
-						<dl class="social-container">
-							<dt id="socialLinks" class="w3-hide">Social links</dt>
-						
-							<dd aria-labelledby="socialLinks">
-								<a href="https://github.com/l-panther/" target="_blank"><i class="fa fa-github"
-										title="View Github repositories"></i>
-								</a>
-							</dd>
-							<dd aria-labelledby="socialLinks">
-								<a href="https://linkedin.com/in/leroy-russell-2a38591a3/" target="_blank"><i
-										class="fa fa-linkedin" title="Connect on Linkedin"></i>
-								</a>
-							</dd>
-						</dl>
-					</div> <!-- End .col .social-container -->
-
-				</div>	<!-- End .row -->
 			</div>	<!-- End .row -->
+
 
 
 			<!-- Copyright -->
@@ -310,8 +316,10 @@
 					<p>&copy; <span id="footerDate"></span> Leroy Russell. All Rights Reserved.</p>
 				</div>
 			</div>
+		
 
 		</footer> <!-- End Footer -->
+	</div>
 	</div> <!-- End page -->
 
 
