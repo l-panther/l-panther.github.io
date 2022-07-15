@@ -105,6 +105,12 @@ i { padding: 0px 4px; }
 	margin: auto;
 }
 
+main, footer {
+	width: 100%;
+	max-width: 80em;
+	margin: auto;
+}
+
 .section {
 	padding: 60px 30px;
 }
@@ -165,7 +171,7 @@ i { padding: 0px 4px; }
 
 /* Hero */
 #hero {
-	background: #095c96;
+	background: #1b4d89;
 	background: rgb(218, 218, 218);
 	background: url("../images/hero/bg.jpg") no-repeat;
 	background: #141414;
@@ -191,7 +197,7 @@ i { padding: 0px 4px; }
 }
 
 #hero .w3-btn {
-	background: #07528d;
+	background: #1b4d89;
 	margin-top: 20px;
 	padding: 10px 20px;
 	color: antiquewhite !important;
@@ -206,7 +212,7 @@ i { padding: 0px 4px; }
 #web-mission {
 	background: url("../images/services/bg.jpg");
 	background-size: cover;
-	background: #095c96;
+	background: #1b4d89;
 	color: #f2f2f2;
 	text-align: center;
 }
@@ -225,15 +231,18 @@ i { padding: 0px 4px; }
 
 /* Portfolio */
 #web-projects { 
-	background: #f2f2f2;
-	color: #3f3f3f; }
+	background: #eee;
+	color: #313131; }
 
 #projectCarousel { 
-	padding: 40px 20px;
+	padding: 40px 20px 0px;
 }
 
+#projectCarousel .carousel-inner { border-radius: 15px}
+.project-info-carousel, .project-preview-img { background: none;}
+
 #projectCarousel img { 
-	width: 80%;
+	width: 100%;
 	padding: 0px 20px;
 }
 
@@ -246,7 +255,7 @@ i { padding: 0px 4px; }
 }
 
 #projectCarousel .btn:hover { 
-	color: #095c96;
+	color: #1b4d89;
 }
 
 .project-item { margin: 20px 0px; }
@@ -265,7 +274,7 @@ i { padding: 0px 4px; }
 }
 
 .carousel-control-prev span, .carousel-control-next span { 
-	background: #095c96;
+	background: #1b4d89;
 	border-radius: 100%;
 	padding: 15px;
 	width: 45px;
@@ -274,7 +283,7 @@ i { padding: 0px 4px; }
 
 .carousel-indicators { position: relative; margin-top: 20px}
 .carousel-indicators li { background: #dadada; margin-top: 20px}
-.carousel-indicators .active { background: #095c96; margin-top: 20px}
+.carousel-indicators .active { background: #1b4d89; margin-top: 20px}
 
 #projectCarousel li { display: inline; }
 
@@ -339,16 +348,16 @@ i { padding: 0px 4px; }
 }
 
 #project-info .modal-header, #project-info .modal-body { background: none; }
-#project-info { color: #3f3f3f; }
+.project-info-carousel { color: #3f3f3f; padding-top: 0px !important;}
 
 .modal-header {
-	background: #095c96;
+	background: #1b4d89;
 	border: none;
 	padding: 10px 10px 0px;
 }
 
 .modal-body {
-	background-color: #095c96;
+	background-color: #1b4d89;
 	border: none;
 }
 
@@ -411,6 +420,7 @@ i { padding: 0px 4px; }
 
 /* To top */
 #toTop { 
+	background: #101010;
 	padding: 10px; 
 	color: #eee;
 }
@@ -479,19 +489,15 @@ i { padding: 0px 4px; }
 	#web-mission img { 
 		width: 80%;
 		margin: auto;
-	}
-
-	#projectCarousel { 
-		padding: 0px;
 	}	
 
 	#projectCarousel img { 
-		width: 80%;
+		width: 100%;
 		padding: 0px 10px;
 	}
 	
 	#projectCarousel { 
-		padding: 0px 60px;
+		padding: 40px 60px 0px;
 	}
 
 	#projectCarousel dl, #projectCarousel .tech-list { padding: 10px 0px 0px 0px; }
@@ -566,7 +572,6 @@ i { padding: 0px 4px; }
 		max-width: 60em;
 		margin: auto;
 	 }
-
 
 	#skills .text-container img  { 
 		width: 110px;
