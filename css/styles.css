@@ -191,7 +191,7 @@ main, footer {
 }
 
 #hero img {
-	width: 400px;
+	width: 85%;
 	margin: auto;
 	margin-top: 40px;
 }
@@ -242,14 +242,14 @@ main, footer {
 .project-info-carousel, .project-preview-img { background: none;}
 
 #projectCarousel img { 
-	width: 100%;
+	width: 80%;
 	padding: 0px 20px;
 }
 
 #projectCarousel .btn { 
 	border: none;
 	background: none;
-	width: 50px;
+	width: 30px;
 	padding: 0px;
 	color: #9e9e9e;
 }
@@ -552,7 +552,7 @@ main, footer {
 		padding: 30px 50px 60px;
 	}
 
-	h1 { padding-top: 80px;}
+	#hero h1 { padding-top: 80px; }
 
 	#hero img { width: 500px; }
 
