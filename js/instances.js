@@ -99,7 +99,7 @@ modelling = new Skillset(
 		{
 			"id": 4,
 			"title": "Lighting",
-			"image": "texture",
+			"image": "lighting",
 			"description": ["Add lighting to illuminate object and cast shadows"],
 		},
 		{
@@ -254,7 +254,7 @@ decorator = new Skillset(
 		4,
 		"Emblem Books",
 		"Website",
-		"efexacademy",
+		"emblem",
 		[
 			{ "name": "Carousel" },
 			{ "name": "Google Map" }
