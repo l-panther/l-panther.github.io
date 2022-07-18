@@ -146,26 +146,25 @@ class Skillset {
 								</dl>
 							</div>
 						</div>
-						</div>
+					</div>
 					`;
 		}
 
-		output += `	
-				</div>
-			</div>
-
-			<img src="images/skills/divide.png" alt="" id="divide">
-			
-			<div class='media-container'>`;
+		
 
 		if (this.id != 5) {  
 
-			output += `
+			output += `	
+				</div>
 				<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>
+			</div>
 		`;
 		} else {
 			output += `
-			<h3>Home Renovation</h3>
+			</div>
+			</div>
+			<div class='media-container'>
+			<h3>Home Renovation Job</h3>
 			<p class="mb-4">A before and after video of the property to showcase the transformation. Video taken after stripping more of the wallpaper. My first walk-through failed to save and time was of the essence... Let the work</p>
 			<div class="row mb-4">
 				<div class="col-sm-7">
@@ -255,10 +254,10 @@ class Project {
 		// Output
 		output += `
 					<div class="row">
-						<div class="col-sm-12 col-md-6 w3-center">
+						<div class="col-sm-12 col-md-7 w3-center project-preview-img">
 							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
 						</div>
-						<div class="col-sm-12 col-md-6">
+						<div class="col-sm-12 col-md-5 project-info-carousel">
 							<dl>
 								<dt class="project-title">` + this.title + `</dt>
 							
@@ -295,11 +294,15 @@ class Project {
 							</div> -->	
 
 							<li>
-								<button class='btn' title='View project in new tab'><i class='fa fa-eye' data-toggle="modal" data-target="#preview-alert"></i></button>
+								<button id="" class='btn' title='View information'><i class='fa fa-info' data-toggle="modal" data-target="#preview-alert"></i></button>
 							</li> <!-- End column -->	
 
 							<li>
-								<li class='btn' title='View source code in Github'><a href='https://github.com/l-panther/` + this.git + `' target='_blank'><i class='fa fa-list'></i></a></li>
+								<button class='btn' title='View project'><i class='fa fa-eye' data-toggle="modal" data-target="#preview-alert"></i></button>
+							</li> <!-- End column -->	
+
+							<li>
+								<div class="btn" title='View source code'><a href='https://github.com/l-panther/` + this.git + `' target='_blank'><i class='fa fa-list'></i></a></div>
 							</li> <!-- End column -->	
 						
 						</ul <!-- End .button-container -->
