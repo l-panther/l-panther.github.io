@@ -254,13 +254,13 @@ class Project {
 		// Output
 		output += `
 					<div class="row">
-						<div class="col-sm-12 col-md-7 w3-center project-preview-img">
+						<div class="col-sm-12 col-md-6 col-lg-7 w3-center project-preview-img">
 							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
 						</div>
-						<div class="col-sm-12 col-md-5 project-info-carousel">
+						<div class="col-sm-12 col-md-6 col-lg-5 project-info-carousel">
 							<dl>
 								<dt class="project-title">` + this.title + `</dt>
-							
+								<dd class="mb-2"><i class="w3-text-grey">` + this.type + `</i></dd>
 							</dl>
 												
 							<div class='project-description'>
@@ -294,17 +294,13 @@ class Project {
 							</div> -->	
 
 							<li>
-								<button id="" class='btn' title='View information'><i class='fa fa-info' data-toggle="modal" data-target="#preview-alert"></i></button>
-							</li> <!-- End column -->	
-
-							<li>
 								<button class='btn' title='View project'><i class='fa fa-eye' data-toggle="modal" data-target="#preview-alert"></i></button>
 							</li> <!-- End column -->	
 
 							<li>
 								<div class="btn" title='View source code'><a href='https://github.com/l-panther/` + this.git + `' target='_blank'><i class='fa fa-list'></i></a></div>
 							</li> <!-- End column -->	
-						
+
 						</ul <!-- End .button-container -->
 					</div <!-- End card -->
 				

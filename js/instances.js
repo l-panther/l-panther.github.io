@@ -20,32 +20,32 @@ const web = new Skillset(
 	1,
 	"Web Development",
 	"web",
-	"Plan, design and develop web system using the latest web technologie</p>",
-	"As a Web Developer, I plan, design and develop web system using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. The methodology used for development ensure web system is accessible and meets all system requirements.</p>",
+	"Plan, design, develop and test  web system using the latest web technologies</p>",
+	"As a Web Developer, I plan, design and develop web system using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Solving problems by way of technology is exciting and sometimes challenging experience but extremely rewarding when the problem has been solved and the system is ashetically presentable.</p>",
 	[
 		{
 			"id": 1,
 			"title": "Plan",
 			"image": "plan",
-			"description": ["Gather requirements for your system"],
+			"description": ["Gather information for sysem including functional and non-functional requirements"],
 		},
 		{
 			"id": 2,
 			"title": "Design",
 			"image": "design",
-			"description": ["Define structure and layout of your system"],
+			"description": ["Define entities and their relationships, as well as logic, structure and presentation of system"],
 		},
 		{
 			"id": 3,
 			"title": "Develop",
 			"image": "develop",
-			"description": ["Build your system using latest web technologies"],
+			"description": ["Build system using latest web technologies and frameworks"],
 		},
 		{
 			"id": 4,
 			"title": "Test",
 			"image": "test",
-			"description": ["Test and bug fix your system before delivery"],
+			"description": ["Test for bugs and errors pre and post delivery"],
 		},
 	]
 ),
@@ -54,19 +54,25 @@ technician = new Skillset(
 	2,
 	"PC Technician",
 	"technician",
-	"Hardware and software installation and upgrade for computer systems",
-	"As a PC Technician, I build, repair and upgrade hardware for computer systems for Microsoft and Linux. Software installation and network setup..", 
+	"Hardware / software installation, configuration and upgrade for computer systems",
+	"As a PC Technician, I build, repair and upgrade hardware for computer systems running Microsoft and Linux. Operating system and software installation and configuration, including network setup.", 
 	[	{
 			"id": 1,
 			"title": "Hardware",
 			"image": "hardware",
-			"description": ["Build, repair and maintain of desktop and laptop computers for Microsoft and Linux"],
+			"description": ["Build, repair and maintain computer systems for Microsoft and Linux"],
 		},
 		{
 			"id": 2,
 			"title": "Software",
 			"image": "software",
 			"description": ["Installation and configuration of operating system, such as Microsoft Windows 10, Server 2016, Ubuntu 18.5 and Mint 20"],
+		},
+		{
+			"id": 3,
+			"title": "Networking",
+			"image": "network",
+			"description": ["Installation and configuration of router, printer and other perpherials"],
 		},
 	]
 ),
@@ -76,37 +82,37 @@ modelling = new Skillset(
 	"Artist / 3D Modeling",
 	"modelling",
 	"Sketch, detail, model, texture, lighting and rendering",
-	"As an Artist, I sketch, detail and colour various objects mainly for leisure (it's  been as while) and other design purposes, but I get to take things to whole new level as a 3D Modeller.</p><p class='w3-margin-bottom'>Manuplating verticle, edges and faces in three-dimensional space, adding some light and the right material, to creative possible are virtually endless.",    
+	"As an Artist, I sketch, detail and colour various objects mainly for leisure (it's  been as while) and other design purposes, but as a 3D Modeller I get to take things to whole new level. Manuplating verticle, edges and faces in three-dimensional space, adding some light and the right material, to create endless possiblilities.",    
 	[
 		{
 			"id": 1,
 			"title": "Illustration",
 			"image": "sketch",
-			"description": ["Layout of object prepective and portion before adding detail"],
+			"description": ["Quick layout of object or scene prepective and proportions before adding detail"],
 		},
 		{
 			"id": 2,
 			"title": "Colouring",
 			"image": "colour",
-			"description": ["Blocking out sections for colouring, shading and highlights"],
+			"description": ["Clour blocking for shading and highlights of respective section"],
 		},
 		{
 			"id": 3,
 			"title": "Modeling / Scupting",
 			"image": "3d",
-			"description": ["Combine and manipulate primitive objecs, such as a cube, sphere and torus to create complex geometry "],
+			"description": ["Create complex geometry using primitive objecs, such as a cube and sphere"],
 		},
 		{
 			"id": 4,
 			"title": "Lighting",
 			"image": "lighting",
-			"description": ["Add lighting to illuminate object and cast shadows"],
+			"description": ["Add lighting to illuminate scene and cast shadows"],
 		},
 		{
 			"id": 5,
 			"title": "Materials",
 			"image": "texture",
-			"description": ["Add diffuse colour, normal map, bump maps and obient-occulsion to object to improve realism"],
+			"description": ["Apply diffuse colour, normal map, bump maps and other map types to improve realism"],
 		},
 
 	]
@@ -168,6 +174,7 @@ decorator = new Skillset(
 		"Website",
 		"cafes",
 		[
+			{ "name": "Template" },
 			{ "name": "Carousel" },
 			{ "name": "Google Map" }
 		],
@@ -190,6 +197,7 @@ decorator = new Skillset(
 		"Website",
 		"carrepair",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Modal" },
 			{ "name": "Slideshow" }
 		],
@@ -212,6 +220,7 @@ decorator = new Skillset(
 		"Web application",
 		"diabetes",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "BMI Test" },
 			{ "name": "Contact form" }
 		],
@@ -233,6 +242,7 @@ decorator = new Skillset(
 		"Website",
 		"efexacademy",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Carousel" },
 			{ "name": "Google Map" }
 		],
@@ -256,6 +266,7 @@ decorator = new Skillset(
 		"Website",
 		"emblem",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Carousel" },
 			{ "name": "Google Map" }
 		],
@@ -279,6 +290,7 @@ decorator = new Skillset(
 		"Website",
 		"handyman",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Carousel" },
 			{ "name": "Google Map" }
 		],
@@ -302,6 +314,7 @@ decorator = new Skillset(
 		"Web application",
 		"intranet",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Login & Register" },
 			{ "name": "C.R.U.D" }
 		],
@@ -326,6 +339,7 @@ decorator = new Skillset(
 		"Website",
 		"jamaica",
 		[
+			{ "name": "Template" },
 			{ "name": "Modal" },
 			{ "name": "Google Map" }
 		],
@@ -349,6 +363,7 @@ decorator = new Skillset(
 		"Website",
 		"london",
 		[
+			{ "name": "Template" },
 			{ "name": "Modal" },
 			{ "name": "Google Map" }
 		],
@@ -372,6 +387,7 @@ decorator = new Skillset(
 		"Website",
 		"pacca",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Login/Register form" },
 			{ "name": "Google Map" }
 		],
@@ -396,6 +412,7 @@ decorator = new Skillset(
 		"Website",
 		"parees",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Carousel" },
 			{ "name": "Device Integration" }
 		],
@@ -418,6 +435,7 @@ decorator = new Skillset(
 		"Mobile application",
 		"housing",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Login / Register form" },
 			{ "name": "Local Storage" }
 		],
@@ -443,6 +461,7 @@ decorator = new Skillset(
 		"Mobile application",
 		"cookbook",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Local Storage" },
 			{ "name": "Search Filter" }
 		],
@@ -467,6 +486,7 @@ decorator = new Skillset(
 		"Web ppplication",
 		"photogallery",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "File Upload" },
 			{ "name": "Device Integration" }
 		],
@@ -489,6 +509,7 @@ decorator = new Skillset(
 		"Website",
 		"portfolio",
 		[
+			{ "name": "Custom Design" },
 			{ "name": "Carousel" },
 			{ "name": "External Links" }
 		],
