@@ -8,7 +8,7 @@ class Developer {
 			{
 				name: "Responsive Design",
 				image: "responsive",
-				description: "Mobile first, fully responsive design and deveopment"
+				description: "Mobile first, fully responsive design and development"
 			},
 			{
 				name: "Interactive UI/UX",
@@ -18,12 +18,12 @@ class Developer {
 			{
 				name: "SEO Friendly",
 				image: "seo",
-				description: "Optimisated to keep you ahead of the competetiion"
+				description: "Optimised to keep you ahead of the competetion"
 			},
 			{
 				name: "Testing &amp; Bugfixes",
 				image: "support",
-				description: "Regular testing and bug fixes "
+				description: "Regular testing, bug fixes and updates"
 			}
 		];
 	}
@@ -171,8 +171,8 @@ class Skillset {
 					<dl>
 						<dt>Before</dt>
 						<dd><i class="fa fa-check"></i>Wallpaper on all walls</dd>
-						<dd><i class="fa fa-check"></i>Shelfs and TV mounts on walls</dd>
-						<dd><i class="fa fa-check"></i>Holes and dameage to walls</dd>
+						<dd><i class="fa fa-check"></i>Shelves and TV mounts on walls</dd>
+						<dd><i class="fa fa-check"></i>Holes and damage to walls</dd>
 						<dd><i class="fa fa-check"></i>Mould and stains on walls</dd>
 						<dd><i class="fa fa-check"></i>Old Carpet and flooring</dd>
 						<dd><i class="fa fa-check"></i>Old kitchen</dd>
@@ -289,13 +289,13 @@ class Project {
 						
 						<ul class='project-options-container'> 
 						
-							<!-- <div class='w3-col s6 m5 l3'> 
-								<div class='btn' title='View project in new tab'><i class='fa fa-eye'></i><a href='http://localhost:80/server/` + this.git + `' target='_blank' data-toggle="modal" data-target="#preview-alert">PREVIEW</a></div>
-							</div> -->	
+							<li> 
+								<div class='btn' title='View project in new tab'><a href='http://localhost:80/server/` + this.git + `' target='_blank' data-toggle="modal" data-target="#preview-alert"><i class='fa fa-eye'></i></a></div>
+							</li>	
 
-							<li>
+							<!-- <li>
 								<button class='btn' title='View project'><i class='fa fa-eye' data-toggle="modal" data-target="#preview-alert"></i></button>
-							</li> <!-- End column -->	
+							</li> --> <!-- End column -->	
 
 							<li>
 								<div class="btn" title='View source code'><a href='https://github.com/l-panther/` + this.git + `' target='_blank'><i class='fa fa-list'></i></a></div>

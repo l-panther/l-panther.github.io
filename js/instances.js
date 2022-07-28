@@ -20,8 +20,8 @@ const web = new Skillset(
 	1,
 	"Web Development",
 	"web",
-	"Plan, design, develop and test  web system using the latest web technologies</p>",
-	"As a Web Developer, I plan, design and develop web system using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Solving problems by way of technology is exciting and sometimes challenging experience but extremely rewarding when the problem has been solved and the system is ashetically presentable.</p>",
+	"Plan, design, develop and test web systems using the latest web technologies</p>",
+	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Both front-end development and back-end allow me to be creative and solve problems using algorithm and logic.</p>",
 	[
 		{
 			"id": 1,
@@ -66,13 +66,13 @@ technician = new Skillset(
 			"id": 2,
 			"title": "Software",
 			"image": "software",
-			"description": ["Installation and configuration of operating system, such as Microsoft Windows 10, Server 2016, Ubuntu 18.5 and Mint 20"],
+			"description": ["Installation and configuration of operating system for Microsoft, Windows 10, Server 2016 and for Linux, Ubuntu 18.5 and Mint 20"],
 		},
 		{
 			"id": 3,
 			"title": "Networking",
 			"image": "network",
-			"description": ["Installation and configuration of router, printer and other perpherials"],
+			"description": ["Installation and configuration of routers, printers and other perpherials"],
 		},
 	]
 ),
@@ -82,25 +82,25 @@ modelling = new Skillset(
 	"Artist / 3D Modeling",
 	"modelling",
 	"Sketch, detail, model, texture, lighting and rendering",
-	"As an Artist, I sketch, detail and colour various objects mainly for leisure (it's  been as while) and other design purposes, but as a 3D Modeller I get to take things to whole new level. Manuplating verticle, edges and faces in three-dimensional space, adding some light and the right material, to create endless possiblilities.",    
+	"As an Artist, I sketch, detail and colour various objects, mainly for leisure (it's  been as while) and other design purposes, but as a 3D Modeller I get to take things to whole new level. Manuplating verticle, edges and faces in three-dimensional space, adding some light and the right material, to create endless possiblilities.",    
 	[
 		{
 			"id": 1,
 			"title": "Illustration",
 			"image": "sketch",
-			"description": ["Quick layout of object or scene prepective and proportions before adding detail"],
+			"description": ["Quick layout of object/scene prepective and proportions before adding detail"],
 		},
 		{
 			"id": 2,
 			"title": "Colouring",
 			"image": "colour",
-			"description": ["Clour blocking for shading and highlights of respective section"],
+			"description": ["Colour blocking for shading and highlights of respective sections of object"],
 		},
 		{
 			"id": 3,
 			"title": "Modeling / Scupting",
 			"image": "3d",
-			"description": ["Create complex geometry using primitive objecs, such as a cube and sphere"],
+			"description": ["Create complex geometry using primitive objects, such as a cube and sphere"],
 		},
 		{
 			"id": 4,
@@ -112,7 +112,7 @@ modelling = new Skillset(
 			"id": 5,
 			"title": "Materials",
 			"image": "texture",
-			"description": ["Apply diffuse colour, normal map, bump maps and other map types to improve realism"],
+			"description": ["Apply diffuse colour, normal map, bump map and other map types to improve realism"],
 		},
 
 	]
@@ -123,19 +123,19 @@ decorator = new Skillset(
 	"Paint &amp; Decorator",
 	"decorator",
 	"Preparation of surfaces to paint for restoration or renovation.",
-	"As a Painter and Decorator, things get literally hands-on. Repairing holes, mould and stain removal, followed by a professional paint job, turns voids to a place your want to call home",
+	"As a Painter and Decorator, things get a little more hands-on, with things like repairing holes, treating mould and stains, and of course a professional paint job.",
 	[
 		{
 			"id": 1,
 			"title": "Preperation",
 			"image": "scrapper",
-			"description": ["Repair surface damage and imperfections for painting"],
+			"description": ["Repair surface damage and imperfections before painting"],
 		},
 		{
 			"id": 2,
 			"title": "Painting",
 			"image": "roller",
-			"description": ["Mould treatment, primer and painting of internal and external surface "],
+			"description": ["Mould treatment, stain removal and painting of internal and external surfaces"],
 		},
 	]
 );
