@@ -165,7 +165,7 @@ class Skillset {
 			</div>
 			<div class='media-container'>
 			<h3>Home Renovation Job</h3>
-			<p class="mb-4">A before and after video of the property to showcase the transformation. Video taken after stripping more of the wallpaper. My first walk-through failed to save and time was of the essence... Let the work</p>
+			<p class="mb-4">A before and after of a 90% completed restoration job. Despite the challenge of removing a stair lift and a lot of wallpaper, my assigned tasks were completed to professional standard. <br><br><span class="w3-small">Note: The footage captured of the completed job was taken by my colleague.</span></p>
 			<div class="row mb-4">
 				<div class="col-sm-7">
 					<dl>
@@ -181,6 +181,7 @@ class Skillset {
 				<div class="col-sm-5">
 					<div class="vid-demo">
 						<video controls>
+							<source src="/media/before.mp4" type="video/mp4">
 							<source src="media/before.mp4" type="video/mp4">
 						</video>
 					</div>
@@ -190,17 +191,18 @@ class Skillset {
 				<div class="col-sm-7">
 					<dl>
 						<dt>After</dt>
-						<dd><i class="fa fa-check"></i>Removal wallpaper</dd>
+						<dd><i class="fa fa-check"></i>Remove all wallpaper</dd>
 						<dd><i class="fa fa-check"></i>Repair holes and damage</dd>
 						<dd><i class="fa fa-check"></i>Treatment of mould/stains</dd>
-						<dd><i class="fa fa-check"></i>Removal of all flooring</dd>
-						<dd><i class="fa fa-check"></i>Removal of old kitchen</dd>
+						<dd><i class="fa fa-check"></i>Remove all flooring</dd>
+						<dd><i class="fa fa-check"></i>Remove old kitchen</dd>
 						<dd><i class="fa fa-check"></i>Paint walls, ceiling and skirting</dd>
 					</dl>
 				</div>
 				<div class="col-sm-5">
 					<div class="vid-demo">
 						<video controls>
+							<source src="/media/complete.mp4" type="video/mp4">
 							<source src="media/complete.mp4" type="video/mp4">
 						</video>
 					</div>

@@ -21,7 +21,7 @@ const web = new Skillset(
 	"Web Development",
 	"web",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Both front-end development and back-end allow me to be creative and solve problems using algorithm and logic.</p>",
+	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Front-end development allows me to be ashetically creative and back-end developemnt lets me solve problems using algorithm and logic.</p>",
 	[
 		{
 			"id": 1,
@@ -45,7 +45,7 @@ const web = new Skillset(
 			"id": 4,
 			"title": "Test",
 			"image": "test",
-			"description": ["Test for bugs and errors pre and post delivery"],
+			"description": ["Test for bugs and errors in functionality and presentation"],
 		},
 	]
 ),
@@ -54,25 +54,25 @@ technician = new Skillset(
 	2,
 	"PC Technician",
 	"technician",
-	"Hardware / software installation, configuration and upgrade for computer systems",
-	"As a PC Technician, I build, repair and upgrade hardware for computer systems running Microsoft and Linux. Operating system and software installation and configuration, including network setup.", 
+	"Installation, configuration and maintainence of hardware and software for computer systems",
+	"Ensuring a computer system meets the minimum requirements to run an operating system, as well as all the neccessary software is critical to future proofing and maximising system capabilities.", 
 	[	{
 			"id": 1,
 			"title": "Hardware",
 			"image": "hardware",
-			"description": ["Build, repair and maintain computer systems for Microsoft and Linux"],
+			"description": ["Motherboard, memory, harddrive and CPU installatiion, change boot priority through BIOS configration"],
 		},
 		{
 			"id": 2,
 			"title": "Software",
 			"image": "software",
-			"description": ["Installation and configuration of operating system for Microsoft, Windows 10, Server 2016 and for Linux, Ubuntu 18.5 and Mint 20"],
+			"description": ["Installation and configuration of operating system for Microsoft Windows 7, Windows 10, Server 2016 and for Linux Ubuntu and Mint"],
 		},
 		{
 			"id": 3,
 			"title": "Networking",
 			"image": "network",
-			"description": ["Installation and configuration of routers, printers and other perpherials"],
+			"description": ["Setup and configure routers for networking with printers and other perpherials"],
 		},
 	]
 ),
@@ -81,26 +81,26 @@ modelling = new Skillset(
 	4,
 	"Artist / 3D Modeling",
 	"modelling",
-	"Sketch, detail, model, texture, lighting and rendering",
-	"As an Artist, I sketch, detail and colour various objects, mainly for leisure (it's  been as while) and other design purposes, but as a 3D Modeller I get to take things to whole new level. Manuplating verticle, edges and faces in three-dimensional space, adding some light and the right material, to create endless possiblilities.",    
+	"Sketch, detail, model, texture and lighting  of various ojbects",
+	"A few sheets of A4 paper, a sharp pencil, a pencil sharpener, a rubber and a pack of colouring pencils and I was good as a child. Nowadays, despite missing my old past-time, I use computer software for drawing and creating three-dimensdional objects.",    
 	[
 		{
 			"id": 1,
 			"title": "Illustration",
 			"image": "sketch",
-			"description": ["Quick layout of object/scene prepective and proportions before adding detail"],
+			"description": ["Prespective and proportion guide for object or scene before adding detail"],
 		},
 		{
 			"id": 2,
 			"title": "Colouring",
 			"image": "colour",
-			"description": ["Colour blocking for shading and highlights of respective sections of object"],
+			"description": ["Blocking areas with base colour for shading and highlights"],
 		},
 		{
 			"id": 3,
 			"title": "Modeling / Scupting",
 			"image": "3d",
-			"description": ["Create complex geometry using primitive objects, such as a cube and sphere"],
+			"description": ["Create complex geometry using primitive objects by manipulating verticles, edges and faces"],
 		},
 		{
 			"id": 4,
@@ -112,7 +112,7 @@ modelling = new Skillset(
 			"id": 5,
 			"title": "Materials",
 			"image": "texture",
-			"description": ["Apply diffuse colour, normal map, bump map and other map types to improve realism"],
+			"description": ["Apply diffuse colour, normal map, bump map and other map types for desired level of realism"],
 		},
 
 	]
@@ -120,22 +120,22 @@ modelling = new Skillset(
 
 decorator = new Skillset(
 	5,
-	"Paint &amp; Decorator",
+	"Painter &amp; Decorator",
 	"decorator",
-	"Preparation of surfaces to paint for restoration or renovation.",
-	"As a Painter and Decorator, things get a little more hands-on, with things like repairing holes, treating mould and stains, and of course a professional paint job.",
+	"Remove stains, fill holes, sand and paint internal and external surfaces",
+	"Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS.",
 	[
 		{
 			"id": 1,
 			"title": "Preperation",
 			"image": "scrapper",
-			"description": ["Repair surface damage and imperfections before painting"],
+			"description": ["Repair surface with appropriate compound before sanding and painting"],
 		},
 		{
 			"id": 2,
 			"title": "Painting",
 			"image": "roller",
-			"description": ["Mould treatment, stain removal and painting of internal and external surfaces"],
+			"description": ["Mould treatment, stain removal and painting of ceilings, walls and doors"],
 		},
 	]
 );
@@ -149,7 +149,7 @@ decorator = new Skillset(
 
 	/* 
 	Project List
-		1. Cafe
+		1. cafes
 		2. Car-repair
 		3. Diabetes
 		4. Efexacademy
@@ -170,7 +170,7 @@ decorator = new Skillset(
 	// Project object
 	const cafes = new Project(
 		1,
-		"Cafes in London ",
+		"Cafes in London",
 		"Website",
 		"cafes",
 		[
@@ -188,7 +188,6 @@ decorator = new Skillset(
 		],
 		"A website guide for cafes in London.",
 		"cafes",
-		"cafes"
 	),
 
 	carrepair = new Project(
@@ -211,7 +210,6 @@ decorator = new Skillset(
 		],
 		"A website to advertise mobile car repair services",
 		"car-repair",
-		"car-repair"
 	),
 
 	diabetes = new Project(
@@ -233,7 +231,7 @@ decorator = new Skillset(
 			{ "name": "krita" }
 		],
 		"A web application to test diabetes risks level.",
-		"diabetes"
+		"diabetes",
 	),
 
 	efexacademy = new Project(
@@ -257,11 +255,10 @@ decorator = new Skillset(
 		],
 		"A website to promote company services",
 		"efexacademy",
-		"efexacademy"
 	),
 
 	emblem = new Project(
-		4,
+		5,
 		"Emblem Books",
 		"Website",
 		"emblem",
@@ -281,7 +278,6 @@ decorator = new Skillset(
 		],
 		"A website to promote company services",
 		"emblem",
-		"emblem"
 	),
 
 	handyman = new Project(
@@ -305,7 +301,6 @@ decorator = new Skillset(
 		],
 		"A website to promote company services.",
 		"handyman",
-		"handyman"
 	),
 
 	intranet = new Project(
@@ -330,7 +325,6 @@ decorator = new Skillset(
 		],
 		"A intranet to facilitate univerty services.",
 		"intranet",
-		"intranet"
 	),
 
 	jamaica = new Project(
@@ -353,8 +347,7 @@ decorator = new Skillset(
 
 		],
 		"A website to provide information about parishes in Jamaica.",
-		"jamaica/index.php",
-		"jamaica-travel"
+		"jamaica-travel",
 	),
 
 	london = new Project(
@@ -377,8 +370,7 @@ decorator = new Skillset(
 
 		],
 		"A website guide for London.",
-		"london/index.php",
-		"london-guide"
+		"london-guide",
 	),
 
 	pacca = new Project(
@@ -402,8 +394,7 @@ decorator = new Skillset(
 
 		],
 		"A website for child care.",
-		"london/index.php",
-		"pacca"
+		"pacca",
 	),
 
 	parees = new Project(
@@ -426,7 +417,6 @@ decorator = new Skillset(
 		],
 		"A website for company services.",
 		"parees",
-		"parees"
 	),
 
 	housing = new Project(
@@ -452,7 +442,6 @@ decorator = new Skillset(
 		],
 		"A mobile app for housing.",
 		"housing",
-		"housing"
 	),
 
 	cookbook = new Project(
@@ -477,7 +466,6 @@ decorator = new Skillset(
 		],
 		"A mobile app for cooking.",
 		"cookbook",
-		"cookbook"
 	),
 
 	photogallery = new Project(
@@ -500,7 +488,6 @@ decorator = new Skillset(
 		],
 		"A web application for photos.",
 		"photo",
-		"photo"
 	),
 
 	portfolio = new Project(
@@ -523,5 +510,4 @@ decorator = new Skillset(
 		],
 		"A website for my projects.",
 		"portfolio",
-		"portfolio"
 	);
