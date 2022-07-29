@@ -202,7 +202,7 @@ class Skillset {
 				<div class="col-sm-5">
 					<div class="vid-demo">
 						<video controls>
-							<source src="/media/complete.mp4" type="video/mp4">
+							<source src="../media/complete.mp4" type="video/mp4">
 							<source src="media/complete.mp4" type="video/mp4">
 						</video>
 					</div>
