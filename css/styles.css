@@ -57,7 +57,7 @@ li {
 	list-style: none;
 }
 
-.carousel-item .active {
+fieldset, .carousel-item .active {
 	background: none !important;
 	border: none;
 }
@@ -205,7 +205,7 @@ main, footer {
 	border-radius: 20px;
 }
 
-#hero .col-sm-12 { padding: 0px; }
+#hero .col-sm-12, #skills .col-sm-12 { padding: 0px; }
 
 .large-img { display: none; }
 .small-img { display: block; }
@@ -257,16 +257,18 @@ main, footer {
 
 #projectCarousel .btn:hover { color: #355f92; }
 
+#projectCarousel .btn:hover, #skills .web-link { text-decoration: underline; }
+
 .project-item { margin: 20px 0px; }
 
 #projectCarousel, .project-item { text-align: left; }
 
-#projectCarousel dl, #projectCarousel .tech-list { padding: 10px 0px 0px 70px; }
+#projectCarousel dl, #projectCarousel .tech-list { padding: 10px 0px 0px 60px; }
 .project-options-container { padding: 0px 0px 0px 70px; }
 
 .tech-list .tech-icon { 
 	width: 20px !important; 
-	padding: 10px 8px 0px 0px !important; }
+	margin-right: 4px !important; }
 
 .carousel-control-prev, .carousel-control-next { 
 	opacity: 0.2;
@@ -306,8 +308,8 @@ main, footer {
 }
 
 #skills img { 
-	width: 70%;
-	margin-right: 15px;
+	width: 90%;
+	margin-right: 10px;
 }
 	
 #webMissionList dt, .project-title { 
