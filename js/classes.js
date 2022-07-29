@@ -183,6 +183,7 @@ class Skillset {
 						<video controls>
 							<source src="/media/before.mp4" type="video/mp4">
 							<source src="media/before.mp4" type="video/mp4">
+							<source src="media/before.webm" type="video/webm">
 						</video>
 					</div>
 				</div>
