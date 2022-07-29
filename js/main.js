@@ -64,6 +64,7 @@
 	for (var i = 0; i < projects.length; i++) {
 		carouselContent += projects[i].showCarousel(i);
 		slideCount += projects[i].countProject();
+		
 	}
 
 	// Insert output into html 
@@ -121,6 +122,15 @@
 	clearModalContent("#efexacademy-details");
 	clearModalContent("#emblem-details");
 	clearModalContent("#london-details");
-		
+
+	// Preview Website
+	getModalContent("#carrepair-preview", "#project-details", carrepair.getDetails());
+	getModalContent("#diabetes-preview", "#project-details", diabetes.getDetails());
+	getModalContent("#efexacademy-preview", "#project-details", efexacademy.getDetails());
+	getModalContent("#emblem-preview", "#project-details", emblem.getDetails());
+	getModalContent("#jamaica-preview", "#project-details", jamaica.getDetails());
+	getModalContent("#london-preview", "#project-details", london.getDetails());
+	getModalContent("#parees-preview", "#project-details", parees.getDetails());
+
 
 }(jQuery));

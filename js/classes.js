@@ -152,66 +152,12 @@ class Skillset {
 
 		
 
-		if (this.id != 5) {  
-
+	
 			output += `	
 				</div>
 				<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>
 			</div>
-		`;
-		} else {
-			output += `
-			</div>
-			</div>
-			<div class='media-container'>
-			<h3>Home Renovation Job</h3>
-			<p class="mb-4">A before and after of a 90% completed restoration job. Despite the challenge of removing a stair lift and a lot of wallpaper, my assigned tasks were completed to professional standard. <br><br><span class="w3-small">Note: The footage captured of the completed job was taken by my colleague.</span></p>
-			<div class="row mb-4">
-				<div class="col-sm-7">
-					<dl>
-						<dt>Before</dt>
-						<dd><i class="fa fa-check"></i>Wallpaper on all walls</dd>
-						<dd><i class="fa fa-check"></i>Shelves and TV mounts on walls</dd>
-						<dd><i class="fa fa-check"></i>Holes and damage to walls</dd>
-						<dd><i class="fa fa-check"></i>Mould and stains on walls</dd>
-						<dd><i class="fa fa-check"></i>Old Carpet and flooring</dd>
-						<dd><i class="fa fa-check"></i>Old kitchen</dd>
-					</dl>
-				</div>
-				<div class="col-sm-5">
-					<div class="vid-demo">
-						<video controls>
-							<source src="/media/before.mp4" type="video/mp4">
-							<source src="media/before.mp4" type="video/mp4">
-							<source src="media/before.webm" type="video/webm">
-						</video>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-7">
-					<dl>
-						<dt>After</dt>
-						<dd><i class="fa fa-check"></i>Remove all wallpaper</dd>
-						<dd><i class="fa fa-check"></i>Repair holes and damage</dd>
-						<dd><i class="fa fa-check"></i>Treatment of mould/stains</dd>
-						<dd><i class="fa fa-check"></i>Remove all flooring</dd>
-						<dd><i class="fa fa-check"></i>Remove old kitchen</dd>
-						<dd><i class="fa fa-check"></i>Paint walls, ceiling and skirting</dd>
-					</dl>
-				</div>
-				<div class="col-sm-5">
-					<div class="vid-demo">
-						<video controls>
-							<source src="../media/complete.mp4" type="video/mp4">
-							<source src="media/complete.mp4" type="video/mp4">
-						</video>
-					</div>
-				</div>
-			</div>
-			`;
-		}
-		output += `</div>`;
+		</div>`;
 		return output;
 	}	
 }
@@ -293,11 +239,11 @@ class Project {
 						<ul class='project-options-container'> 
 						
 							<li> 
-								<div class='btn' title='View project in new tab'><a href='http://localhost:80/server/` + this.git + `' target='_blank' data-toggle="modal" data-target="#preview-alert"><i class='fa fa-eye'></i></a></div>
+								<div id="` + this.image + `-preview" class='btn' title='View project in new tab' data-toggle="modal" data-target="#preview-alert"><i class='fa fa-eye'></i></div>
 							</li>	
 
 							<!-- <li>
-								<button class='btn' title='View project'><i class='fa fa-eye' data-toggle="modal" data-target="#preview-alert"></i></button>
+								<button id="` + this.image + `-preview" class='btn' title='View project'><i class='fa fa-eye' data-toggle="modal" data-target="#preview-alert"></i></button>
 							</li> --> <!-- End column -->	
 
 							<li>
@@ -315,20 +261,8 @@ class Project {
 
 	getDetails() {
 		let output = `
-			<div class="row">
-				<div class="col-sm-12 w3-center">
-					<img src="images/projects/diabetes2.png" alt="">
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-4">
-				
-					<h2>` + this.title + `</h2>
-					<p>` + this.description + `</p>
-				</div>
-			</div> <!-- End .w3-row -->
-				
-			<h2>Please come back later</h2>
-			<p class=""><b>Information Coming Soon!!</b></p>
-			`;
+		<iframe src="http://192.168.0.25:80/server/` + this.git + `" frameborder="0"></iframe>`;
+	
 		return output;
 	}
 
