@@ -261,7 +261,7 @@ class Project {
 
 	getDetails() {
 		let output = `
-		<iframe src="http://192.168.0.25:80/server/` + this.git + `" frameborder="0"></iframe>`;
+		<iframe src="data/` + this.git + `" frameborder="0"></iframe>`;
 	
 		return output;
 	}
