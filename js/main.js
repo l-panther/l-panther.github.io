@@ -74,7 +74,7 @@
 	/* ..........................................
 	Skills
 	................................................. */ 
-	const skills = [web, technician, modelling, decorator];
+	const skills = [web, technician, modelling];
 	let output = "";
 	for (let i = 0; i < skills.length; i++) {
 		output += skills[i].getSkill();
