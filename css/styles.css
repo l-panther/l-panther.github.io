@@ -191,9 +191,9 @@ main, footer {
 }
 
 #hero img {
-	width: 90%;
+	width: 100%;
 	margin: auto;
-	margin-top: 40px;
+	margin: 10px 0px;
 }
 
 #hero .w3-btn {
@@ -205,8 +205,10 @@ main, footer {
 	border-radius: 20px;
 }
 
-.fa-quote-left { font-size: 12px; }
+#hero .col-sm-12 { padding: 0px; }
 
+.large-img { display: none; }
+.small-img { display: block; }
 
 /* Mission */
 #web-mission {
@@ -381,7 +383,7 @@ iframe { width: 100%; height: 600px}
 }
 
 .text-container img {
-	width: 80% !important; 
+	width: 100% !important; 
 	padding: 10px 0px 20px;
 	float: right;
 }
@@ -492,6 +494,9 @@ iframe { width: 100%; height: 600px}
 		width: 100%;
 		margin-top: 0px;
 	}
+
+	.large-img { display: block; }
+	.small-img { display: none; }
 
 
 	/* Web mission  */
