@@ -1,0 +1,9 @@
+						<h2 class="w3-margin-bottom">Large Format Print</h2>
+						<p class="w3-margin-bottom">We offer the best in digital printing, taking pride in our FAST &amp; Efficient service.</p>
+						<p class="w3-margin-bottom">A wide range of products: large format digital printing, re-skinning modular displays, internal or outdoor banners, mesh, vinyls, flags, placards...</p>
+						<p class="w3-margin-bottom">SPEAK TO US ABOUT YOUR GRAPHIC REQUIREMENTS... </p>
+						<p class="w3-margin-bottom">If you already own a display we can supply new graphic panels to fit - whether or not originally supplied by us. Shell scheme walling - we can print directly onto foamex, correx or dibond.</p>
+						<p class="w3-margin-bottom">RECEPTION, INTERNAL DECOR &amp; SIGNAGE - vinyl on to glass, vinyl or ink jet onto acrylic - stand-off fixings.</p>
+						<p class="w3-margin-bottom">IF IT'S NOT IN STOCK - WE'LL SOURCE IT FOR YOU... </p>
+						<p class="w3-margin-bottom">Call Now - ask for Trevor <br>
+						Email now - <a href="mailto:trevor@efexacademy.com">trevor@efexacademy.com</a></p>
