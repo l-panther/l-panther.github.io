@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jamaica Travel</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="img/logo/logo.ico">
+	<link rel="icon" href="img/logo/logo.ico">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fontAwesome.css">
+	<link rel="stylesheet" href="css/hero-slider.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/owl-carousel.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Marck+Script:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gurajada:300,400,600,700,800" rel="stylesheet">
+
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+	<div class="fixed-side-navbar">
+		<ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#regions"><span>Regions</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#map"><span>Map</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="#contact"><span>Contact</span></a></li>
+		</ul>
+	</div>
+
+	<div class="parallax-content baner-content" id="home">
+		<div class="container">
+			<div class="first-content">
+				<h1>Jamaica </h1>
+				<span><em>Travel</em></span>
+				<div class="primary-button">
+					<a href="#map">View in map</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Regions -->
+	<div id="regions" class="service-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="left-text">
+						<h2><span>Regions</span> of Jamaica</h2>
+						<div class="line-dec"></div>
+
+						<p>The original inhabitants of Jamaica are believed to be the Arawaks, also called Tainos. They
+							came from South America 2,500 years ago and named the island Xaymaca, which meant ““land of
+							wood and water”. The Arawaks were a mild and simple people by nature. Physically, they were
+							light brown in colour, short and well-shaped with coarse, black hair. Their faces were broad
+							and their noses flat.</p>
+
+						<p>They grew cassava, sweet potatoes, maize (corn), fruits, vegetables, cotton and tobacco.
+							Tobacco was grown on a large scale as smoking was their most popular pastime. They built
+							their villages all over the island but most of them settled on the coasts and near rivers as
+							they fished to get food. Fish was also a major part of their diet.</p>
+
+						<p>The island came under Spanish rule following the arrival of Christopher Columbus in 1494.
+							Many of the indigenous people died of disease, and the Spanish imported African slaves as
+							labourers.</p>
+
+						<p>Named Santiago, the island remained a possession of Spain until 1655, when England (later
+							Great Britain) conquered it and renamed it Jamaica. Under British colonial rule Jamaica
+							became a leading sugar exporter, with its plantation economy highly dependent on slaves
+							imported from Africa. </p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="w3-row regions">
+						<div id="regionList"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End regions -->
+
+
+	<!-- Map -->
+	<div id="map">
+
+		<div class="container">
+			<h2 class="text-center pb-4"><span>View</span> in map</h2>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="map-container">
+						<!-- How to change your own map point
+							   1. Go to Google Maps
+							   2. Click on your location point
+							   3. Click "Share" and choose "Embed map" tab
+							   4. Copy only URL and paste it within the src="" field below
+						-->
+						<div id="map-canvas"></div>
+						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.2373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End map -->
+
+
+	<!-- Footer -->
+	<footer id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="primary-button">
+						<a href="#home">Back To Top</a>
+					</div>
+					<ul class="sociallinks">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-google"></i></a></li>
+					</ul>
+					<p><em>&copy; <span id="currentDate"></span> Jamaica Travel</em> - Created by Leroy Russell</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer -->
+
+
+	<!-- All Javascript Files-->
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script> <!-- Google maps -->
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/getRegions.js"></script>
+	<script src="js/showMap.js"></script>
+	<script>
+		let year = new Date();
+		document.getElementById("currentDate").innerHTML = year.getFullYear();
+
+		$(document).ready(function () {
+			// Add smooth scrolling to all links
+			$(".fixed-side-navbar a, .primary-button a").on('click', function (event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function () {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+	</script>
+
+</body>
+
+</html>
