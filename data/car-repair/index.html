@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+	<title>Mobile Car Body Repair</title> <!-- Title -->
+	<meta name="description" content="Advertising mobile car body repair services"> <!-- Description -->
+	<meta name="keywords" content="Mobile,Car body repair,Respray"> <!-- Keywords -->
+	<meta name="author" content="Leroy Russell"> <!-- Author -->
+	<link rel="icon" href="./images/logo/logo.ico"> <!-- Tab icon -->
+
+	<!-- ALL CSS FILES -->
+	<link rel="stylesheet" href="styles/w3.css"> <!-- W3 CSS -->
+	<link rel="stylesheet" href="styles/styles.css"> <!-- My CSS -->
+</head>
+
+<body>
+
+	<!--Skiplink -->
+	<a href="#banner" title="Skip to banner" class="skiplink skiplink-nav">Skip to banner</a>
+
+	<!-- Page -->
+	<div id="page">
+
+		<!-- Header -->
+		<header role="banner" id="header">
+
+			<!-- Primary navigation -->
+			<nav role="navigation" class="w3-navbar w3-text-white" id="primarynav">
+
+				<!-- Container -->
+				<div id="nav-links">
+
+					<img src="images/logo/logo.png" alt="Company logo" id="logo" />
+
+					<!-- Link 1 -->
+					<a href="#introduction"
+						class="w3-navbar-item w3-btn w3-hide-small w3-hide-medium w3-hover-none home-link"
+						onclick="w3.show('#introduction'), w3.show('#introduction-work'), w3.show('#introduction-about'), w3.hide('#services'), w3.hide('#work'), w3.hide('#contact')">HOME</a>
+
+					<!-- Link 2 -->
+					<a href="#services"
+						class="w3-navbar-item w3-btn w3-hide-small w3-hide-medium w3-hover-none services-link"
+						onclick="w3.show('#services'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#work'), w3.hide('#about'), w3.hide('#contact')">OUR
+						SERVICES</a>
+
+					<!-- Link 3 -->
+					<a href="#work" class="w3-bar-item w3-btn w3-hide-small w3-hide-medium w3-hover-none work-link"
+						onclick="w3.show('#work'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#services'),w3.hide('#about'), w3.hide('#stroke-bottom'), w3.hide('#contact')">OUR
+						WORK</a>
+
+					<!-- Link 4 -->
+					<a href="#about" class="w3-bar-item w3-btn  w3-hide-small w3-hide-medium w3-hover-none about-link"
+						onclick="w3.show('#about'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#services'), w3.hide('#work'), w3.hide('#contact')">ABOUT</a>
+
+					<!-- Link 5 -->
+					<a href="#contact"
+						class="w3-bar-item w3-btn w3-hide-small w3-hide-medium w3-hover-none contact-link"
+						onclick="w3.show('#stroke-top'), w3.show('#contact'), w3.hide('#stroke-bottom'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#services'), w3.hide('#work'), w3.hide('#about')">CONTACT
+						US</a>
+
+				</div> <!-- End container -->
+
+				<!-- Small navigation icons -->
+				<div class="w3-hide-large" id="small-nav">
+
+					<!-- Menu icon -->
+					<a href="javascript:void(0)" title="Menu" id="mini-nav"
+						class="w3-bar-item w3-right w3-hide-large"><i class="fa fa-bars open"></i></a>
+
+					<!-- Mini navigation -->
+
+				</div> <!-- End small navigation icons -->
+
+				<div id="navbar" class="w3-navbar w3-block w3-hide w3-hide-large w3-medium w3-animate-top">
+
+					<!-- Link 1 -->
+					<a href="#introduction" class="w3-bar w3-btn w3-padding w3-hover-none home-link"
+						onclick="w3.show('#introduction'), w3.show('#introduction-work'), w3.show('#introduction-about'), w3.hide('#services'), w3.hide('#contact')">HOME</a>
+
+					<!-- Link 2 -->
+					<a href="#services" class="w3-bar w3-btn w3-padding w3-hover-none services-link"
+						onclick="w3.show('#services'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#work'), w3.hide('#contact')">OUR
+						SERVICES</a>
+
+					<!-- Link 3 -->
+					<a href="#work" class="w3-bar w3-btn w3-padding w3-hover-none work-link"
+						onclick="w3.show('#work'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#services'),w3.hide('#about'), w3.hide('#stroke-bottom'), w3.hide('#contact')">OUR
+						WORK</a>
+
+					<!-- Link 4 -->
+					<a href="#about" class="w3-bar w3-btn w3-padding w3-hover-none about-link"
+						onclick="w3.show('#about'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#services'), w3.hide('#work'), w3.hide('#contact')">ABOUT</a>
+					<!-- Link 5 -->
+					<a href="#contact" class="w3-bar w3-btn w3-padding w3-margin-bottom w3-hover-none contact-link"
+						onclick="w3.show('#stroke-top'), w3.show('#contact'), w3.hide('#stroke-bottom'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#services'), w3.hide('#work'), w3.hide('#about')">CONTACT
+						US</a>
+				</div> <!-- End mini navigation -->
+
+			</nav> <!-- End primary navigation -->
+		</header> <!-- End header -->
+
+		<!--Skiplink -->
+		<a href="#introduction" title="Skip to main content" class="skiplink">Skip to main content</a>
+
+		<main role="main" class="w3-animate-bottom main-content" id="main">
+
+			<!-- Banner-->
+			<div class="w3-row  w3-black w3-text-white" id="banner">
+				<div class="w3-col s12 m12 l6 w3-large w3-center w3-animate-bottom">
+
+					<h1>THE CAR<br>BODY REPAIR SPECIALIST</h1>
+					<p>Specialising in dents, scratches and resprays</p>
+					<a href="#services"
+						onclick="w3.show('#stroke-top'), w3.show('#services'), w3.hide('#stroke-bottom'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#work'), w3.hide('#about')"
+						class="services-link">OUR SERVICES</a>
+				</div>
+
+				<div class="w3-col s12 m12 l6 w3-center" id="car">
+					<img src="images/banner/car.png" alt="Portrait" class="w3-hide-medium w3-hide-large car-sm">
+					<img src="images/banner/car2.png" alt="Portrait" class="w3-hide-small">
+				</div>
+			</div> <!-- End banner-->
+
+			<!-- <div class="w3-display-container">
+					<img src="images/banner/banner.png" alt="Portrait">
+
+					<div class="w3-display-middle w3-large">
+						<h1>THE CAR BODY SPECIALIST</h1>
+						<a href="tel:+07737123456"><div class="w3-badge"><i class="fa fa-phone"></i></div>CALL ME</a></div>
+				</div> -->
+
+
+			<!-- Introduction -->
+			<div id="introduction">
+
+				<div class="w3-row-padding w3-center" id="service-preview">
+					<!-- Preview 1 -->
+					<div class="w3-col s12 m4 l4" id="wheel">
+						<img src="images/index/scuffs.png" alt="" />
+						<h3>Scuff Removal</h3>
+						<p>Removal of blemishes, minor scratches and general imperfections</p>
+					</div>
+
+					<!-- Preview 2 -->
+					<div class="w3-col s12 m4 l4" id="scuff">
+						<img src="images/index/respray.png" alt="" />
+						<h3>Body Respray</h3>
+						<p>Touch ups, full body or custom respray</p>
+					</div>
+
+					<!-- Preview 3 -->
+					<div class="w3-col s12 m4 l4" id="smart">
+
+						<img src="images/index/custom.png" alt="" />
+						<h3>Custom Work</h3>
+						<p>Part replacement or upgrade and all things custom</p>
+					</div>
+				</div> <!-- End service preview -->
+
+				<article class="spacing-t">
+					<h2>What We Do</h2>
+					<div class="container w3-center">
+						<p class="w3-margin-bottom">We specialise in car bodywork repair, providing mobile repair
+							service to
+							any vehicle bodywork damaged at your convenience. We will bring our mobile bodyshop to you,
+							at
+							home or work, at a time to suit you.We offer a range of car bodywork repair services to help
+							get your
+							vehicle looking great again. View all our services to find the type of service you need for
+							your
+							vehicle.</p>
+
+						<p class="w3-margin-bottom">If you want to find out more about our services and what do, why not
+							get in
+							<span class="contact-link info-link"
+								onclick="w3.show('#contact'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#introduction-about'), w3.hide('#about'), w3.hide('#work')">contact
+								with us</span>
+						</p>
+
+					</div>
+
+					<div class="w3-center">
+						<a href="#services"
+							onclick="w3.show('#services'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#introduction-about'), w3.hide('#about'), w3.hide('#work')"
+							class="w3-hover-text-white services-link">VIEW SERVICES</a>
+					</div>
+				</article>
+			</div> <!-- End introduction -->
+
+			<!-- Introduction extra -->
+			<div class="w3-row-padding spacing" id="introduction-work">
+
+				<article class="w3-container w3-col s12 m6 l6 w3-center">
+					<h2>Our Latest Work</h2>
+					<p class="w3-margin-bottom">Check out some of our work.</p>
+
+					<img src="images/index/work.jpg" alt="Completed work of car bumper" />
+
+					<a href="#work"
+						onclick="w3.show('#work'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#services'),w3.hide('#about'), w3.hide('#stroke-bottom'), w3.hide('#contact')"
+						class=" w3-hover-text-white work-link">VIEW WORK</a>
+				</article>
+
+				<article class="w3-container w3-col s12 m6 l6 w3-center" id="more-about">
+					<h2>More About Us</h2>
+					<p class="w3-margin-bottom">Find out more about us.</p>
+
+					<img src="images/index/about.jpg" alt="Company van with side door open" />
+
+					<a href="#about"
+						onclick="w3.show('#about'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#contact')"
+						class="w3-hover-text-white about-link">ABOUT US</a>
+				</article>
+			</div> <!-- End introduction extra -->
+
+			<!-- Services -->
+			<div id="services">
+				<article id="services-list">
+					<!-- Service 1 -->
+					<div class="page-banner">
+						<h2>Services</h2>
+						<img src="images/banner/services.png" alt="Alloy rim">
+					</div>
+					<div id="servicesList" class="spacing"></div>
+				</article> <!-- End article service list -->
+			</div> <!-- End services -->
+
+			<!-- Work -->
+			<div class="services-bg" id="work">
+				<article class="w3-center">
+					<div class="page-banner">
+						<h2>Our Work</h2>
+						<img src="images/banner/work.png" alt="Alloy rim">
+					</div>
+					<div class="spacing">
+
+						<p class="w3-margin-bottom">Check out some of the completed work we have provided to customers.
+						</p>
+						<!-- Animation -->
+						<div class="w3-row-padding w3-animate-bottom our-work">
+
+							<!-- Work 1 -->
+							<div class="w3-col s12 m6 l6" id="hyundai-door">
+								<div class="w3-card">
+									<h3>Hyundai Door Repair</h3>
+									<img src="images/work/work-one/1before.jpg" alt="Before" />
+									<p>This vehicle owner contacted us about some damages done to their vehicle.</p>
+
+									<!-- Trigger/Open the Modal -->
+									<button onclick="w3.show('#work-modal1')" class="w3-btn">View work</button>
+								</div>
+
+								<!-- Modal 1 -->
+								<div id="work-modal1" class="w3-modal">
+									<div class="w3-modal-content">
+										<header class="w3-container">
+											<span onclick="w3.hide('#work-modal1')" class="w3-closebtn w3-right"
+												title="Close"><i class="fa fa-remove" title="Close"></i></span>
+											<h2>Hyundai Rear Door Repair</h2>
+										</header>
+										<div class="w3-container">
+
+											<img src="images/work/work-one/1before.jpg"
+												alt="Hyundai rear door repair before" class="workSlide1">
+
+											<img src="images/work/work-one/2during.jpg"
+												alt="Hyundai rear door repair during" class="workSlide1">
+
+											<img src="images/work/work-one/3after.jpg"
+												alt="Hyundai rear door repair after" class="workSlide1">
+
+											<!-- Next and previous buttons -->
+											<div class="w3-hover-text-white prev">❮</div>
+											<div class="w3-hover-text-white next">❯</div>
+											<!-- End next and previous buttons -->
+											<p>The vehicle owner had some scuffs and scratches on one of the rear doors,
+												which needed repairing. We advised them on what kind of service they
+												would
+												require and began working on the vehicle once we got the go ahead.</p>
+
+											<!-- Dots for each slide -->
+											<div class="w3-center w3-text-black dots">
+
+												<span class="slideDemo1">1</span>
+												<span class="slideDemo1">2</span>
+												<span class="slideDemo1">3</span>
+
+											</div> <!-- End dots -->
+										</div>
+									</div> <!-- End modal content -->
+								</div> <!-- End modal -->
+							</div> <!-- End col -->
+
+							<!-- Work 2 -->
+							<div class="w3-col s12 m6 l6" id="hyundai-bumper">
+								<div class="w3-card">
+									<h3>Hyundai Bumper Repair</h3>
+									<img src="images/work/work-two/1before.jpg" alt="Before" />
+									<p>This vehicle owner contacted us about some damages done to his vehicle.</p>
+
+									<!-- Trigger/Open the Modal -->
+									<button onclick="w3.show('#work-modal2')" class="w3-btn">View work</button>
+								</div> <!-- End card -->
+
+								<!-- Modal 2 -->
+								<div id="work-modal2" class="w3-modal">
+									<div class="w3-modal-content">
+										<header class="w3-container">
+											<span onclick="w3.hide('#work-modal2')" class="w3-closebtn w3-right"><i
+													class="fa fa-remove" title="Close"></i></span>
+											<h2>Hyundai Bumper Repair</h2>
+										</header>
+										<div class="w3-container">
+
+											<img src="images/work/work-two/1before.jpg"
+												alt="Hyundai rear door repair before" class="workSlide2">
+
+											<img src="images/work/work-two/2during.jpg"
+												alt="Hyundai rear door repair during" class="workSlide2">
+
+											<img src="images/work/work-two/3after.jpg"
+												alt="Hyundai rear door repair after" class="workSlide2">
+
+											<!-- Next and previous buttons -->
+											<div class="w3-left w3-hover-text-white prev">❮</div>
+											<div class="w3-right w3-hover-text-white next">❯</div>
+											<!-- End next and previous buttons -->
+											<p>The vehicle owner had some damages done to the back bumper and wanted it
+												repaired, which he came to us. We advised the owner on what kind of
+												service
+												they would require and began working on the vehicle once we got the go
+												ahead.</p>
+
+											<!-- Dots for each slide -->
+											<div class="w3-center w3-text-black dots">
+
+												<span class="slideDemo2">1</span>
+												<span class="slideDemo2">2</span>
+												<span class="slideDemo2">3</span>
+
+											</div> <!-- End dots -->
+										</div>
+									</div> <!-- End modal content -->
+								</div> <!-- End modal -->
+							</div> <!-- End col -->
+						</div> <!-- End spacing -->
+					</div> <!-- End row -->
+
+					<!-- Animation -->
+					<div class="w3-row-padding w3-animate-bottom our-work">
+						<!-- Work 3 -->
+						<div class="w3-col s12 m6 l6" id="iveco-cabin">
+							<div class="w3-card">
+								<h3>Iveco Cabin Repair</h3>
+								<img src="images/work/work-three/1before.jpg" alt="Before" />
+								<p>We provided Iveco Truck with our SMART Repair service.</p>
+
+								<!-- Trigger/Open the Modal -->
+								<button onclick="w3.show('#work-modal3')" class="w3-btn">View work</button>
+							</div>
+
+							<!-- Modal 3 -->
+							<div id="work-modal3" class="w3-modal">
+								<div class="w3-modal-content">
+									<header class="w3-container">
+										<span onclick="w3.hide('#work-modal3')" class="w3-closebtn w3-right"><i
+												class="fa fa-remove" title="Close"></i></span>
+										<h2>Hyundai Bumper Repair</h2>
+									</header>
+									<div class="w3-container">
+
+										<img src="images/work/work-three/1before.jpg"
+											alt="Hyundai rear door repair before" class="workSlide3">
+
+										<img src="images/work/work-three/2during.jpg"
+											alt="Hyundai rear door repair during" class="workSlide3">
+
+										<img src="images/work/work-three/3after.jpg"
+											alt="Hyundai rear door repair after" class="workSlide3">
+
+										<!-- Next and previous buttons -->
+										<div class="w3-left w3-hover-text-white prev">❮</div>
+										<div class="w3-right w3-hover-text-white next">❯</div>
+										<!-- End next and previous buttons -->
+										<p>Iveco Trucks contacted us about some damage done to their truck cabin and
+											some extra repair work done needed. We provided Iveco Trucks with our SMART
+											Repair service, ensuring high quality repair.</p>
+
+										<!-- Dots for each slide -->
+										<div class="w3-center w3-text-black dots">
+
+											<span class="slideDemo3">1</span>
+											<span class="slideDemo3">2</span>
+											<span class="slideDemo3">3</span>
+
+										</div> <!-- End dots -->
+									</div>
+								</div> <!-- End modal content -->
+							</div> <!-- End modal -->
+						</div> <!-- End col -->
+
+						<!-- Work 4 -->
+						<div class="w3-col s12 m6 l6" id="iveco-bumper">
+							<div class="w3-card">
+								<h3>Iveco Bumper Repair</h3>
+								<img src="images/work/work-four/1before.jpg" alt="" />
+								<p>We provided Iveco Truck with our Bumper Repair service.</p>
+
+								<!-- Trigger/Open the Modal -->
+								<button onclick="w3.show('#work-modal4')" class="w3-btn">View work</button>
+							</div> <!-- End card -->
+
+							<!-- Modal 4 -->
+							<div id="work-modal4" class="w3-modal">
+								<div class="w3-modal-content">
+									<header class="w3-container">
+										<span onclick="w3.hide('#work-modal4')" class="w3-closebtn w3-right"><i
+												class="fa fa-remove" title="Close"></i></span>
+										<h2>Iveco Bumper Repair</h2>
+									</header>
+									<div class="w3-container">
+
+										<img src="images/work/work-four/1before.jpg" alt="Iveco rear door repair before"
+											class="workSlide4">
+
+										<img src="images/work/work-four/2during.jpg" alt="Iveco rear door repair during"
+											class="workSlide4">
+
+										<img src="images/work/work-four/3after.jpg" alt="Iveco rear door repair after"
+											class="workSlide4">
+
+										<!-- Next and previous buttons -->
+										<div class="w3-left w3-hover-text-white prev">❮</div>
+										<div class="w3-right w3-hover-text-white next">❯</div>
+										<!-- End next and previous buttons -->
+
+										<p>Iveco Trucks contacted us about some damage done to their truck bumper and
+											needed some repair work done to it. We provided Iveco Trucks with our Bumper
+											Repair service, ensuring high quality repair work.</p>
+
+										<!-- Dots for each slide -->
+										<div class="w3-center w3-text-black dots">
+
+											<span class="slideDemo4">1</span>
+											<span class="slideDemo4">2</span>
+											<span class="slideDemo4">3</span>
+
+										</div> <!-- End dots -->
+									</div>
+								</div> <!-- End modal content -->
+							</div> <!-- End modal -->
+						</div> <!-- End col -->
+					</div> <!-- End row -->
+
+					<!-- Animation -->
+					<div class="w3-row-padding w3-animate-bottom our-work">
+						<!-- Work 5 -->
+						<div class="w3-col s12 m6 l6" id="golf-bumper">
+							<div class="w3-card">
+								<h3>Golf Bumper Repair</h3>
+								<img src="images/work/work-five/1before.jpg" alt="Before" />
+								<p>This vehicle owner contacted us about some damages done to his vehicle bumper.</p>
+
+								<!-- Trigger/Open the Modal -->
+								<button onclick="w3.show('#work-modal5')" class="w3-btn">View work</button>
+
+							</div> <!-- End card -->
+
+							<!-- Modal 5 -->
+							<div id="work-modal5" class="w3-modal">
+								<div class="w3-modal-content">
+									<header class="w3-container">
+										<span onclick="w3.hide('#work-modal5')" class="w3-closebtn w3-right"
+											title="Close"><i class="fa fa-remove"></i></span>
+										<h2>Golf Bumper Repair</h2>
+									</header>
+									<div class="w3-container">
+
+										<img src="images/work/work-five/1before.jpg" alt="Golf bumper repair before"
+											class="workSlide5">
+
+										<img src="images/work/work-five/2after.jpg" alt="Golf bumper repair after"
+											class="workSlide5">
+
+										<!-- Next and previous buttons -->
+										<div class="w3-left w3-hover-text-white prev">❮</div>
+										<div class="w3-right w3-hover-text-white next">❯</div>
+										<!-- End next and previous buttons -->
+
+										<p>The vehicle owner had some scuffs and scratches on the front and back bumper,
+											which needed repairing and so they contacted us about it. We advised them on
+											what kind of service they would require and began working on the vehicle
+											once we got the go ahead.</p>
+
+										<!-- Dots for each slide -->
+										<div class="w3-center w3-text-black dots">
+											<span class="slideDemo5">1</span>
+											<span class="slideDemo5">2</span>
+										</div> <!-- End dots -->
+									</div>
+								</div> <!-- End modal content -->
+							</div> <!-- End modal -->
+						</div> <!-- End col -->
+					</div> <!-- End row -->
+				</article> <!-- End article work -->
+			</div> <!-- End work -->
+
+			<!-- About -->
+			<div class="about-bg" id="about">
+				<article>
+					<div class="page-banner">
+						<h2>About Us</h2>
+						<img src="images/banner/about.png" alt="Alloy rim">
+					</div>
+					<div class="spacing">
+						<p class="w3-margin-bottom">Mobile Car Body Repair is a small business set up by Michael Dang
+							who
+							IMI accredited and has worked in the car industry for over 8 years, specialising in car
+							bodywork.</p>
+
+						<p class="w3-margin-bottom">Everyone loves the appearance of their vehicle and knows that any
+							damage
+							whether big or small can affect it's resale value.</p>
+
+						<p class="w3-margin-bottom">Mobile Car Body Repair will restore any damage to excellent
+							condition at
+							a reasonable cost; much cheaper than your insurance company and offers quick and convenient
+							service. For more information, see <span>my services</span></p>
+
+						<p class="w3-margin-bottom">We work <b>5 days a week</b> either coming to your home or your work
+							place. We cover East
+							London,
+							South London and the whole of Kent. We also works with car dealership such as Hyundai,
+							Honda,
+							Peugeot and Prestige Motors Company.</p>
+						<p> For more information, check out <span class="services-link info-link"
+								onclick="w3.show('#services'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#work'), w3.hide('#about'), w3.hide('#contact')">our
+								services</span>, view <span class="services-link info-link"
+								onclick="w3.show('#work'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#about'), w3.hide('#contact')">our
+								work</span> or
+							<span class="contact-link info-link"
+								onclick="w3.show('#contact'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#work'), w3.hide('#about')">get
+								in contact with
+								us</span>
+						</p>
+
+
+					</div>
+
+				</article>
+			</div> <!-- End about -->
+
+			<!-- Contact -->
+			<div class="contact-bg" id="contact">
+				<article>
+					<div class="page-banner">
+						<h2>Contact Us</h2>
+						<img src="images/banner/contact.png" alt="Alloy rim">
+					</div>
+					<div class="spacing">
+						<p class="w3-margin-bottom">We work <b>5 days a week</b> either coming to your home or your work
+							place. We cover East London, South London and the whole of Kent. For more information,
+							see<span class="services-link info-link"
+								onclick="w3.show('#services'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#work'), w3.hide('#about'), w3.hide('#contact')">
+								our services</span>, view <span class="services-link info-link"
+								onclick="w3.show('#work'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#about'), w3.hide('#contact')">our
+								work</span> or read
+							<span class="about-link info-link"
+								onclick="w3.show('#about'), w3.hide('#introduction'), w3.hide('#introduction-work'), w3.hide('#work'), w3.hide('#contact')">
+								about
+								us.</span>
+						</p>
+
+						<p>Speak to us for a free no obligation quote or you can also send a text message with a picture
+							of
+							what you want repaired and we will respond with an estimate. Please call, text or email us
+							on:
+						</p>
+
+						<div class="w3-col s12 m6 l6 w3-center" id="phone">
+
+							<div class="w3-badge theme-grad"><a href="tel:+07429149274" title="Give me a ding dong"><i
+										class="fa fa-phone"></i></a></div>
+							<dl>
+								<dt id="phone-contact">Phone</dt>
+								<dd aria-labelledby="phone-contact">07429149274</dd>
+							</dl>
+
+							<div class="w3-badge theme-grad"><a href="mailto:mobilecarbodyrepair@outlook.com"
+									title="Email me"><i class="fa fa-envelope"></i></a></div>
+							<dl>
+								<dt id="email-contact">Email</dt>
+								<dd aria-labelledby="email-contact">mobilecarbodyrepair@outlook.com</dd>
+							</dl>
+						</div>
+
+						<div class="w3-col s12 m6 l6 w3-center" id="email">
+
+							<div class="w3-badge theme-grad"><i class="fa fa-calendar"></i></div>
+							<dl>
+								<dt id="opening-days">Monday to Friday</dt>
+								<dd aria-labelledby="opening-days">9am - 6pm</dd>
+								<dt id="closed-days" class="w3-margin-top">Saturday to Sunday</dt>
+								<dd aria-labelledby="closed-days">Closed</dd>
+							</dl>
+						</div>
+
+					</div>
+
+				</article>
+			</div> <!-- End contact -->
+
+			<!-- Skiplinks -->
+			<div id="toTop">
+				<a href="#page">Back to top</a>
+			</div> <!-- End skiplinks -->
+		</main> <!-- End main -->
+
+		<!-- Footer -->
+		<footer role="contentinfo" class="main-content" id="footer">
+			<h3>Get Connected</h3>
+			<a href="#"><img src="images/social/facebook.png" alt="Facebook link"></a>
+			<a href="#"><img src="images/social/instagram.png" alt="Instagram link"></a>
+			<a href="#"><img src="images/social/twitter.png" alt="Twitter link"></a>
+			<p id="copyright">&copy; 2019 - <span class="currentDate"></span> Mobile Car Body Repair. <span
+					class="w3-hide-small">All rights reserved.</span></p>
+
+			<!-- End social media -->
+			<p class="w3-center w3-margin-top w3-small" id="copyright2">
+				Created by Leroy Russell &copy; <span class="currentDate"></span>
+			</p>
+		</footer> <!-- End footer  -->
+
+	</div> <!-- End page -->
+
+
+	<!-- ALL JS FILES -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery -->
+	<script src="scripts/w3.js"></script> <!-- W3.js -->
+	<script src="scripts/hideNav.js"></script> <!-- Hide navigation -->
+	<script src="scripts/getServices.js"></script> <!-- Get services -->
+	<script src="scripts/workSlideShow.js"></script> <!-- Slideshow -->
+	<script src="scripts/getDate.js"></script> <!-- Get current date -->
+</body> <!-- End body -->
+
+</html> <!-- End html -->

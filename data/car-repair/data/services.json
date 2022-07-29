@@ -1,0 +1,50 @@
+[
+	{
+		"id":1, 
+		"name":"Alloy Wheels Refurbishment", 
+		"price":"£50", 
+		"image":"alloy",
+		"description": "This is when your alloy wheels have been scratched against the kerb and are showing signs of damage. Alloy wheels refurbishment is a cost effective way to improve their appearance, compared to buying a replacement alloy wheel."
+	},
+	
+	{
+		"id":2, 
+		"name":"Scuffs & Scratches Repair", 
+		"price":"£40", 
+		"image":"scuffs",
+		"description": "This is a service that specialised in scuffs and scratches removal from your vehicle from vandals such as key scratches, another car or object marks .etc and there are many ways for Mobile Car Body Repair to remove these scratches depending on the damaged area. These include flat and machine polishing using a compound formula to remove the damages, individual panels and at other times, we may need to mix the correct paint and spray the damaged area."
+	},
+	
+	{
+		"id":3, 
+		"name":"SMART Repair", 
+		"price":"£80", 
+		"image":"scratches",
+		"description": "SMART stands Small to Medium Area Repair Technology. It’s a technique for repairing small areas of car bodywork damage. SMART repair uses specialist tools, materials and paints to blend the repair with the surrounding panel. It’s much quicker and cheaper than traditional car repair. car respray, bumper repair and custom work."
+	},
+	
+	{
+		"id":4, 
+		"name":"Car Respray", 
+		"price":"£100", 
+		"image":"respray",
+		"description": "This is changing the colour of the vehicle and the cost of respray work on your car will vary depending on the size of the job and whether other work needs to be carried out first, such as repairing dents and other damage. It’s a highly skilled job that should leave your car looking as good as new."
+	},
+	
+	{
+		"id":5, 
+		"name":"Bumper Repair", 
+		"price":"£80", 
+		"image":"bumper2",
+		"description": "Any damages to your vehicle bumper such as cracks, scuffs, scratches and dents, Mobile Car Body Repair can repair and remove any minor cosmetic damages to your bumper. This can be done on plastic bumper, textured and painted bumper."
+	},
+	
+	{
+		"id":6, 
+		"name":"Custom Work", 
+		"price":"£100", 
+		"image":"custom",
+		"description": "This is transforming your car into something very different and special! From bonnet conversions and body kits, Mobile Car Body Repair can do anything you ever dream of for your dream car."
+	}
+
+]
