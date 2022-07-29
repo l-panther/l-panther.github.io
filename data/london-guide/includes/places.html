@@ -1,0 +1,367 @@
+			<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+						<div class="w3-container w3-white spacing">
+							<div class="w3-row main-content">
+
+								<div class="w3-col s12 m12 l6">
+									<h2>Places in London</h2>
+									<p>You can gaurantee to always find something to do in London, whether it's visiting the wild life, sight seeing or learning the history.
+									</p>
+									<p class="w3-margin-top">Whatever you decide to do, you can be sure to enjoy your day.</p>
+									<!-- image obtained from: https://en.wikipedia.org/wiki/Southbank_Centre -->
+								</div>
+								<div class="w3-col s12 m12 l6 w3-center">
+									<img src="images/main/places.png" alt="Tower bridge at night" class="places_image">
+								</div>
+								 <!-- End introduction -->
+							</div>
+						</div>
+
+						<!-- Animate -->
+						<div class="w3-black" id="activities">
+
+							<div class="main-content spacing">
+								<h2>Things to do</h2>
+								<p>There are great thinhs to do London, from visiting the zoo, touring the city and taking in the culture. Check out just a few of the available activities for children, adults or the whole family. </p>
+
+								<div class="w3-row-padding main activity w3-center">
+
+									<!-- Activity 1 -->
+									<div class="w3-col s12 m6 l4">
+										<div class="w3-card" id="zoo-card">
+											<img src="images/main/zoo.jpg" alt="Lion in water" class="activity-image">
+
+											<header>
+											  <h2 id="zoo-title">London Zoo</h2>
+											</header>
+
+											<dl class="w3-center">
+												<dt class="sr-only">Entry Fee</dt>
+												<dd>from <br><span>£18.50</span></dd>
+											</dl>
+
+											<footer class="w3-container">
+											  <button onclick="document.getElementById('zoo').style.display='block'" class="w3-btn">More info</button>
+											</footer>
+
+										</div>
+									</div>
+
+									<!-- Activity 2 -->
+									<div class="w3-col s12 m6 l4">
+										<div class="w3-card" id="bus-card">
+
+											<img src="images/main/tour.jpg" alt="Tour bus in the road" class="activity-image">
+											<header>
+											  <h2 id="bus-title">Bus Tour</h2>
+											</header>
+											<dl class="w3-center">
+												<dt class="sr-only">Entry Fee</dt>
+												<dd>from <br><span>£15.00</span></dd>
+											</dl>
+
+											<footer class="w3-container">
+											  <button onclick="document.getElementById('tour').style.display='block'" class="w3-btn">More info</button>
+											</footer>
+										</div>
+									</div>
+
+									<!-- Activity 3 -->
+									<div class="w3-col s12 m6 l4">
+										<div class="w3-card" id="eye-card">
+
+											<img src="images/main/londoneye.jpg" alt="Tiger" class="activity-image">
+
+											<header>
+											  <h2 id="eye-title">London Eye</h2>
+											</header>
+											<dl class="w3-center">
+												<dt class="sr-only">Entry Fee</dt>
+												<dd>from <br><span>£16.00</span></dd>
+											</dl>
+
+											<footer class="w3-container">
+											  <button onclick="document.getElementById('eye').style.display='block'" class="w3-btn">More info</button>
+											</footer>
+										</div>
+									</div>
+
+									<!-- Activity 4 -->
+									<div class="w3-col s12 m6 l4">
+										<div class="w3-card" id="aquarium-card">
+											<img src="images/main/aquarium.jpg" alt="Fish in an aquarium" class="activity-image">
+
+											<header>
+											  <h2 id="aquarium-title">Aquarium</h2>
+											</header>
+											<dl class="w3-center">
+												<dt class="sr-only">Entry Fee</dt>
+												<dd>from <br><span>£15.00</span></dd>
+											</dl>
+											<footer class="w3-container">
+											  <button onclick="document.getElementById('aquarium').style.display='block'" class="w3-btn">More info</button>
+											</footer>
+
+										</div>
+									</div>
+
+									<!-- Activity 5 -->
+									<div class="w3-col s12 m6 l4">
+										<div class="w3-card" id="museum-card">
+
+											<img src="images/main/museum.jpg" alt="Front of the National Maritime Museum" class="activity-image">
+											<header>
+											  <h2 id="museum-title">Museum</h2>
+											</header>
+											<dl class="w3-center">
+												<dt class="sr-only">Entry Fee</dt>
+												<dd>from <br><span>Free</span></dd>
+											</dl>
+
+											<footer class="w3-container">
+											  <button onclick="document.getElementById('museum').style.display='block'" class="w3-btn">More info</button>
+											</footer>
+										</div>
+									</div>
+								</div>
+
+								<!-- Zoo Modal -->
+								<div id="zoo" class="w3-modal">
+								  <div class="w3-modal-content w3-animate-top">
+									<header class="w3-container"> 
+									  <span onclick="document.getElementById('zoo').style.display='none'" 
+									  class="w3-closebtn">&times;</span>
+									  <h2>ZSL London Zoo</h2>
+									</header>
+									<div class="w3-container w3-row-padding">
+											<!-- https://www.londonpass.com/london-attractions/london-zoo.html -->
+											<p>Opening to the public in 1847. With over 750 incredible species, exciting and innovative exhibits it’s a great day out in the capital for all ages.</p>
+
+											<div class="w3-col s12 m6 l6">
+
+												<!-- Image obtained from: http://www.publicdomainpictures.net/hledej.php?hleda=tiger-->
+												<img src="images/main/zoo.png" alt="Tiger" class="activity-image">
+
+											</div>
+
+											<div class="w3-col s12 m6 l6">
+												<dl>
+													<dt id="zoo-opening-time" class="w3-lightgrey opening-times"><span class="bold_text">Opening Times / Fees</span></dt>
+
+													<dt id="zoo-opening-day">Monday to Friday</dt>
+														<dd aria-labelledby="zoo-opening-day">10.00 to 18.00</dd>
+
+														<dd aria-labelledby="zoo-opening-day">Last Admission: 17.00</dd>
+
+
+													<dt id="zoo-entry-fee"><span class="bold_text">Entry Fee:</span></dt>
+													<dd aria-labelledby="zoo-entry-fee">Adult: £25.50</dd>
+													<dd aria-labelledby="zoo-entry-fee">Child: £18.50</dd>
+												</dl>
+											</div>
+
+										</div>
+										<footer class="w3-center">
+											<p class="w3-medium w3-margin-top">For more information, <a  href="#">visit ZSL London Zoo</a>.</p>
+										</footer>
+								  </div>
+								</div>
+
+								<!-- Tour Modal -->
+								<div id="tour" class="w3-modal">
+								  <div class="w3-modal-content w3-animate-top">
+									<header class="w3-container"> 
+									  <span onclick="document.getElementById('tour').style.display='none'" 
+									  class="w3-closebtn">&times;</span>
+									  <h2>Bus Tour</h2>
+									</header>
+									<div class="w3-container w3-row-padding">
+											 <!-- https://www.theoriginaltour.com/p/tickets/the-original-tour/ -->
+											<p>Sit back, relax and discover London’s historic sites and attractions with The Original Tour. Includes 3 walking tours and a hop-on, hop-off Thames river cruise.</p>
+
+											<div class="w3-col s12 m6 l6">
+
+											   <!-- Image obtained from: http://www.publicdomainpictures.net/hledej.php?hleda=tiger-->
+												  <!-- Image obtained from: https://www.flickr.com/photos/kenjonbro/4736140858-->
+												<img src="images/main/tour.png" alt="Bus tour" class="activity-image">
+												<!-- https://www.theoriginaltour.com/p/tickets/the-original-tour/ -->
+
+											</div>
+
+											<div class="w3-col s12 m6 l6">
+												<dl>
+													<dt id="tour-opening-time" class="w3-lightgrey opening-times"><span class="bold_text">Opening Times / Fees</span></dt>
+
+													<dt id="tour-opening-day">Monday to Friday</dt>
+														<dd aria-labelledby="tour-opening-day">10.00 to 18.00</dd>
+
+														<dd aria-labelledby="tour-opening-day">Last Admission: 17.00</dd>
+
+
+													<dt id="tour-entry-fee"><span class="bold_text">Entry Fee:</span></dt>
+													<dd aria-labelledby="tour-entry-fee">Adult (16+): £32.00</dd>
+													<dd aria-labelledby="tour-entry-fee">Child (5 - 15): £15.00</dd>
+													<dd aria-labelledby="tour-entry-fee">Family: From £79.00</dd>
+												</dl>
+											</div>
+
+										</div>
+
+										<footer class="w3-center">
+											<p class="w3-medium w3-margin-top">For more information, <a href="#">visit Bus Tour</a>.</p>
+										</footer>
+								  </div>
+								</div>
+
+								<!-- London Eye Modal -->
+								<div id="eye" class="w3-modal">
+								  <div class="w3-modal-content w3-animate-top">
+									<header class="w3-container"> 
+									  <span title="Close" onclick="document.getElementById('eye').style.display='none'" 
+									  class="w3-closebtn">&times;
+									</span>
+									  <h2>London Eye</h2>
+									</header>
+									<div class="w3-container w3-row-padding">
+											 <p>The London Eye gives you overhead view of the city and brings London to you. You will be left amazed by the scenery.</p>
+
+											<div class="w3-col s12 m6 l6">
+											  <!-- Image obtained from: http://www.publicdomainpictures.net/view-image.php?image=115007&picture=london-eye-->
+												<img src="images/main/londoneye.png" alt="London eye" class="activity-image">
+												<!-- http://tickets.london/gt/event/coca-cola-london-eye-standard-ticket/-/91-20170419 -->
+												<!-- https://www.theoriginaltour.com/p/tickets/the-original-tour/ -->
+
+											</div>
+
+											<div class="w3-col s12 m6 l6">
+												<dl>
+													<dt id="eye-opening-time" class="w3-lightgrey opening-times"><span class="bold_text">Opening Times / Fees</span></dt>
+
+													<dt id="eye-opening-day">Monday to Friday</dt>
+														<dd aria-labelledby="eye-opening-day">10.00 to 18.00</dd>
+
+														<dd aria-labelledby="eye-opening-day">Last Admission: 17.00</dd>
+
+
+													<dt id="eye-entry-fee"><span class="bold_text">Entry Fee:</span></dt>
+													<dd aria-labelledby="eye-entry-fee">Adult (16+): £23.00</dd>
+													<dd aria-labelledby="eye-entry-fee">Child (3-15): £16.50 </dd>
+													<dd aria-labelledby="eye-entry-fee">Infants (under 3): FREE</dd>
+												</dl>
+											</div>
+
+										</div>
+										<footer class="w3-center">
+											<p class="w3-medium w3-margin-top">For more information, <a href="#">visit London Eye</a>.</p>
+										</footer>
+								  </div>
+								</div>
+
+								<!-- London Aquarium Modal -->
+								<div id="aquarium" class="w3-modal">
+								  <div class="w3-modal-content w3-animate-top">
+									<header class="w3-container"> 
+									  <span onclick="document.getElementById('aquarium').style.display='none'" 
+									  class="w3-closebtn">&times;</span>
+									  <h2>London Aquarium</h2>
+									</header>
+									<div class="w3-container w3-row-padding">
+										<!-- Information obtained from: http://www.visitlondon.com/things-to-do/place/117322-sea-life-london-aquarium#xw2f7WdWQRLH7Ru8.97 -->
+											<p>Discover a magical underwater world filled with a dazzling array of amazing creatures.</p>
+
+											<div class="w3-col s12 m6 l6">
+												<!-- Image obtained from: https://www.flickr.com/photos/lo_ise/5023091465 -->
+												<img src="images/main/aquarium.png" alt="London aquarium" class="activity-image">
+												<!-- Information obtained from: http://www.visitlondon.com/things-to-do/place/117322-sea-life-london-aquarium#xw2f7WdWQRLH7Ru8.97 -->
+
+											</div>
+
+
+											<div class="w3-col s12 m6 l6">
+												<dl>
+													<dt id="aquarium-opening-time" class="w3-lightgrey opening-times"><span class="bold_text">Opening Times / Fees</span></dt>
+
+													<dt id="aquarium-opening-day">Monday to Friday</dt>
+														<dd aria-labelledby="aquarium-opening-day">Daily: 10.00 - 19.00</dd>
+
+														<dd aria-labelledby="aquarium-opening-day">Last Admission: 18.00</dd>
+
+
+													<dt id="aquarium-entry-fee"><span class="bold_text">Entry Fee:</span></dt>
+													<dd aria-labelledby="aquarium-entry-fee">Adult: From £20.00</dd>
+													<dd aria-labelledby="aquarium-entry-fee">Child: From £15.00</dd>
+													<dd aria-labelledby="aquarium-entry-fee">Concession: From £17.00</dd>
+												</dl>
+											</div>
+
+										</div>
+
+										<footer class="w3-center">
+											 <p class="w3-medium w3-margin-top">For more information, <a  href="#">visit London Aquarium</a>.</p>
+										</footer>
+								  </div>
+								</div>
+
+								<!-- Museum Modal -->
+								<div id="museum" class="w3-modal">
+								  <div class="w3-modal-content w3-animate-top">
+									<header class="w3-container"> 
+									  <span onclick="document.getElementById('museum').style.display='none'" 
+									  class="w3-closebtn">&times;</span>
+									  <h2>National Maritme Museum</h2>
+									</header>
+									<div class="w3-container w3-row-padding">
+										<!-- Information obtained from: http://www.visitlondon.com/things-to-do/place/117322-sea-life-london-aquarium#xw2f7WdWQRLH7Ru8.97 -->
+										<p>Explore the home of Bristish history and visit the heroes of the past.</p>
+
+
+										<div class="w3-col s12 m6 l6">
+											<!-- Image obtained from: https://www.flickr.com/photos/lo_ise/5023091465 -->
+											<img src="images/main/museum.png" alt="Nation museum" class="activity-image">
+											<!-- Information obtained from: http://www.visitlondon.com/things-to-do/place/117322-sea-life-london-aquarium#xw2f7WdWQRLH7Ru8.97 -->
+										</div>
+
+
+										<div class="w3-col s12 m6 l6">
+											<dl>
+												<dt id="museum-opening-time" class="w3-lightgrey opening-times"><span class="bold_text">Opening Times / Fees</span></dt>
+
+												<dt id="museum-opening-day">Monday to Friday</dt>
+													<dd aria-labelledby="museum-opening-day">Daily: 10.00 - 19.00</dd>
+
+													<dd aria-labelledby="museum-opening-day">Last Admission: 18.00</dd>
+
+
+												<dt id="museum-entry-fee"><span class="bold_text">Entry Fee:</span></dt>
+												<dd aria-labelledby="museum-entry-fee">Adult: Free</dd>
+												<dd aria-labelledby="museum-entry-fee">Child: Free</dd>
+												<dd aria-labelledby="museum-entry-fee">Family: Free</dd>
+												<dd aria-labelledby="museum-entry-fee">Senior: Free</dd>
+											</dl>
+										</div>
+
+									</div>
+									<footer class="w3-center">
+										 <p class="w3-medium w3-margin-top">For more information, <a href="#">visit the National Maritime Museum</a>.</p>
+									</footer>
+								  </div>
+								</div>
+							</div> <!-- Animate -->
+						</div>
+
+						<!-- Map section -->
+						<div id="map" class="w3-white spacing">
+
+							<!-- Map container -->
+							<div class="w3-animate-fade main-content" id="map-container">
+								<h2>Explore London</h2>
+
+								<!-- Map -->
+								<div class="w3-margin-bottom" id="map-canvas"></div>
+								<p id="nogeolocation"></p>
+
+							</div> <!-- End map container -->
+						</div> <!-- End map section -->
+					</div>
