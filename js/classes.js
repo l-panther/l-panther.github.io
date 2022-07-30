@@ -239,7 +239,7 @@ class Project {
 						<ul class='project-options-container'> 
 						
 							<li> 
-								<div class='btn' title='View project in new tab'><a href='http://192.168.0.25:80/` + this.git + `' target='_blank'><i class='fa fa-eye'></i></a></div>
+								<div class='btn' title='View project in new tab'><a href='http://192.168.0.25:80/server` + this.git + `' target='_blank'><i class='fa fa-eye'></i></a></div>
 							</li>	
 
 							<!-- <li>
