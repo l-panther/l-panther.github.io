@@ -261,7 +261,7 @@ class Project {
 
 	getDetails() {
 		let output = `
-		<iframe src="data/` + this.git + `" frameborder="0"></iframe>`;
+		<iframe src="data/diabetes/" frameborder="0"></iframe>`;
 	
 		return output;
 	}
