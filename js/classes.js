@@ -261,8 +261,7 @@ class Project {
 
 	getDetails() {
 		let output = `
-		<iframe src="data/diabetes/" frameborder="0"></iframe>`;
-	
+		
 		return output;
 	}
 
