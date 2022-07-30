@@ -243,7 +243,7 @@ class Project {
 							</li>	
 
 							<!-- <li>
-								<button id="` + this.image + `-preview" class='btn' title='View project'><i class='fa fa-eye' data-toggle="modal" data-target="#preview-alert"></i></button>
+								<button id="` + this.image + `-preview" class='btn' title='View project'><a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank'><i class='fa fa-eye'></i></a></button>
 							</li> --> <!-- End column -->	
 
 							<li>
