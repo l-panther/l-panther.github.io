@@ -239,7 +239,7 @@ class Project {
 						<ul class='project-options-container'> 
 						
 							<li> 
-								<div class='btn' title='View project in new tab'><a href='http://192.168.0.25:80/server` + this.git + `' target='_blank'><i class='fa fa-eye'></i></a></div>
+								<div id="` + this.image + `-preview" class='btn' title='View project in new tab' data-toggle="modal" data-target="#preview-alert"><i class='fa fa-eye'></i></div>
 							</li>	
 
 							<!-- <li>
@@ -260,8 +260,9 @@ class Project {
 	}
 
 	getDetails() {
-		let output = ``;
-		
+		let output = `
+		<iframe src="http://192.168.0.25/server/` + this.git + `/" frameborder="0"></iframe>`;
+	
 		return output;
 	}
 
