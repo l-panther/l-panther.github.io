@@ -45,7 +45,7 @@
 	<noscript>This website is better with javascript enabled</noscript>
 	<div id="page">
 
-		<header class="main-container">
+		<header>
 			<!-- Navigation -->
 			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
 				<div class="main-container">
@@ -113,136 +113,89 @@
 			</div> <!-- End #hero -->
 
 	
-			<!-- Web Mission --
+			<!-- Web Mission -->
 			<div id="web-mission" class="section">
 				<div class="main-container">
 					<div class="row">
-						<div class='col-sm-12 col-md-12 col-lg-4 w3-center'>
-							<h2>Development Mission</h2>
+						<div class='col-sm-12 col-md-12 col-lg-5 w3-center'>
+							<h2>Front-end Development</h2>
 						</div>
-						<div class='col-sm-12 col-md-12 col-lg-8'>
+						<div class='col-sm-12 col-md-12 col-lg-7'>
 							<div id="webMissionList" class="row">
 							</div>	
 						</div>	
 					</div>
-				</div> !-- End .main-container --
-			</div> !-- End #web-mission .section -->
-
-			
-			<div class="main-container">
-
-				
-				<!-- Web Mission -->
-				<div id="web-mission" class="section">
-					<div class="main-container">
-						<div class="row">
-							<div class='col-sm-12 col-md-12 col-lg-5 w3-center'>
-								<h2>Front-end Development</h2>
-							</div>
-							<div class='col-sm-12 col-md-12 col-lg-7'>
-								<div id="webMissionList" class="row">
-								</div>	
-							</div>	
-						</div>
-					</div> <!-- End .main-container -->
-				</div> <!-- End #web-mission .section -->
-
-
+				</div> <!-- End .main-container -->
+			</div> <!-- End #web-mission .section -->
 
 
 			<!-- Web Portfolio -->
 			<div id="web-projects" class="section">
-				<div class="row">
-					<div class="col-sm-12 w3-center">
-						<h2>Latest <span class="theme-txt">Projects</span></h2>
-						<p>A collection of projects I have completed using web and server technologies, such as HTML5, JavaScript, PHP and Bootstrap.</p>
-						
-						<!-- Carousel -->
-						<div id="projectCarousel" class="carousel slide" data-ride="carousel">
-							<noscript><img src="images/projects/nojs.png" alt="" style="width:100%"></noscript>
+				<div class="main-container">
+					<div class="row">
+						<div class="col-sm-12 w3-center">
+							<h2>Latest <span class="theme-txt">Projects</span></h2>
+							<p>A collection of projects I have completed using custom design and template techniques. Some projects were developed using object-orientation design to example class and instanciation development. Web and server technologies used for imoplmentation include HTML5, JavaScript, PHP and Bootstrap.</p>
 							
-					
-							<!-- The slideshow -->
-							<div class="carousel-inner">
-								<div id="carouselList"></div>
+							<!-- Carousel -->
+							<div id="projectCarousel" class="carousel slide" data-ride="carousel">
+								<noscript><img src="images/projects/nojs.png" alt="" style="width:100%"></noscript>
+								
+						
+								<!-- The slideshow -->
+								<div class="carousel-inner">
+									<div id="carouselList"></div>
+								</div>
+
+								<!-- Left and right controls -->
+								<a class="carousel-control-prev" href="#projectCarousel" data-slide="prev"
+									title="Previous Project">
+									<span class="fa fa-chevron-left"></span>
+								</a>
+								<a class="carousel-control-next" href="#projectCarousel" data-slide="next"
+									title="Next Project">
+									<span class="fa fa-chevron-right"></span>
+								</a>
+
+								<!-- Index indicators -->
+								<ol class="carousel-indicators" id="slideCount"></ol>
+
 							</div>
-
-							<!-- Left and right controls -->
-							<a class="carousel-control-prev" href="#projectCarousel" data-slide="prev"
-								title="Previous Project">
-								<span class="fa fa-chevron-left"></span>
-							</a>
-							<a class="carousel-control-next" href="#projectCarousel" data-slide="next"
-								title="Next Project">
-								<span class="fa fa-chevron-right"></span>
-							</a>
-
-							<!-- Index indicators -->
-							<ol class="carousel-indicators" id="slideCount"></ol>
-
 						</div>
 
-						<!-- Modal -->
-						<div id="project-info" class="modal fade" role="dialog">
-							<div class="modal-dialog">
-						
-								<!-- Modal content-->
-								<div class="modal-content">
-									<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="col-sm-12 col-lg-12">
+
+							<!-- Modal -->
+							<div id="preview-alert" class="modal fade" role="dialog">
+								<div class="modal-dialog w3-black">
 							
-									</div>
-									<div class="modal-body">
-										<div class="w3-margin">
-											<!-- Services -->
-											<div id="cafes-details"></div>
-											<div id="carrepair-details"></div>
-											<div id="diabetes-details"></div>
-											<div id="emblem-details"></div>
-											<div id="london-details"></div>
-											<div id="jamaica-details"></div>
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<h2><i class="fa fa-eye"></i>Website Preview</h2>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+								
 										</div>
-											
+										<div class="modal-body">
+											<div id="project-details"></div>
+										</div>
+										
 									</div>
-									
 								</div>
 							</div>
-						</div>
+						</div> <!-- End -->
 					</div>
-
-					<div class="col-sm-12 col-lg-12">
-
-						<!-- Modal -->
-						<div id="preview-alert" class="modal fade" role="dialog">
-							<div class="modal-dialog w3-black">
-						
-								<!-- Modal content-->
-								<div class="modal-content">
-									<div class="modal-header">
-										<h2><i class="fa fa-eye"></i>Website Preview</h2>
-										<button type="button" class="close" data-dismiss="modal">&times;</button>
-							
-									</div>
-									<div class="modal-body">
-										<div id="project-details"></div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div> <!-- End -->
 				</div>
 			</div> <!-- End skills -->
 	
-
 			
 			<!-- Skills -->
 			<div id="skills" class="section">
-				<div class="">
+				<div class="main-container">
 					<div class="row">
 						<div class="col-sm-12 mb-5 w3-center mb-4">
 							<h2><span class="theme-txt">Be Creative</span> Without Limitations</h2>
-						
+							
 						</div>
 
 						<div class="col-sm-12 w3-center">
@@ -283,7 +236,7 @@
 					</div>
 				</div>
 
-				<p class="w3-center w3-small w3-margin-top">For more information about me and my skills, please <a href="data/cv-developer.pdf" target="_blank" class="web-link">check out my CV</a>.</p>
+				<p class="w3-center w3-small w3-margin-top">For more information, please <a href="data/cv-developer.pdf" target="_blank" class="web-link">check out my CV</a>.</p>
 			</div> <!-- End about -->
 
 		</main> <!-- End main -->
@@ -294,48 +247,47 @@
 	
 
 		<!-- Footer -->
-		<footer role="contentinfo" id="footer" class="section main-container">
-		
-			<div class="w3-row w3-text-white">
+		<footer role="contentinfo" id="footer" class="section">
+			<div class="main-container">
+				<div class="w3-row w3-text-white">
 
-				<!-- Social -->
-				<div class="w3-col s12 w3-center">
+					<!-- Social -->
+					<div class="w3-col s12 w3-center">
 
-					<div class="icon">
-						<a href="#"><img src="images/logo/header-logo.png" alt="Company logo"
-								id="footer-logo" /></a>
-					</div>
-					
-					<dl class="social-container">
-						<dt id="socialLinks" class="w3-hide">Social links</dt>
-					
-						<dd aria-labelledby="socialLinks">
-							<a href="https://github.com/l-panther/" target="_blank"><i class="fa fa-github"
-									title="View Github repositories"></i>
-							</a>
-						</dd>
-						<dd aria-labelledby="socialLinks">
-							<a href="https://linkedin.com/in/leroy-russell-2a38591a3/" target="_blank"><i
-									class="fa fa-linkedin" title="Connect on Linkedin"></i>
-							</a>
-						</dd>
-					</dl>
-				</div> <!-- End .col .social-container -->
+						<div class="icon">
+							<a href="#"><img src="images/logo/header-logo.png" alt="Company logo"
+									id="footer-logo" /></a>
+						</div>
+						
+						<dl class="social-container">
+							<dt id="socialLinks" class="w3-hide">Social links</dt>
+						
+							<dd aria-labelledby="socialLinks">
+								<a href="https://github.com/l-panther/" target="_blank"><i class="fa fa-github"
+										title="View Github repositories"></i>
+								</a>
+							</dd>
+							<dd aria-labelledby="socialLinks">
+								<a href="https://linkedin.com/in/leroy-russell-2a38591a3/" target="_blank"><i
+										class="fa fa-linkedin" title="Connect on Linkedin"></i>
+								</a>
+							</dd>
+						</dl>
+					</div> <!-- End .col .social-container -->
 
-			</div>	<!-- End .row -->
-
+				</div>	<!-- End .row -->
+			</div>
 
 
 			<!-- Copyright -->
 			<div id="copyright">
-				<div class="w3-center">
-					<p>&copy; <span id="footerDate"></span> Leroy Russell.</p>
+				<div class="main-container w3-center">
+					<p>&copy; <span id="footerDate"></span> Leroy Russell. All Rights Reserved.</p>
 				</div>
 			</div>
 		
 
 		</footer> <!-- End Footer -->
-	</div>
 	</div> <!-- End page -->
 
 
