@@ -98,10 +98,10 @@ class Skillset {
 		
 			<div class="col-xs-12 col-md-12 col-lg-12 skill">
 				<div class="w3-row">
-					<div class="w3-col s3 m2 l2">
+					<div class="w3-col s2 m2 l2">
 						<img src='images/skills/` + this.image + `/` + this.image + `.png' alt=''>
 					</div>
-					<div class="w3-col s9 m10 l10">
+					<div class="w3-col s10 m10 l10">
 						<dt>` + this.title + `</dt>
 						<dd>` + this.description_short + `</dd>
 						<button id="` + this.image + `-modal" class="btn" data-toggle="modal"
