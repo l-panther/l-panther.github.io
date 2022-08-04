@@ -21,13 +21,13 @@ const web = new Skillset(
 	"Web Development",
 	"web",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Front-end development allows me to be ashetically creative and back-end developemnt lets me solve problems using algorithm and logic.</p>",
+	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Front-end development allows me to be ashetically creative and back-end developemnt allows me to combine logic and algorithmic thinking to solve computing problems.</p>",
 	[
 		{
 			"id": 1,
 			"title": "Plan",
 			"image": "plan",
-			"description": ["Gather information for sysem including functional and non-functional requirements"],
+			"description": ["Gather information for system functionality and non-functional requirements"],
 		},
 		{
 			"id": 2,
@@ -45,7 +45,7 @@ const web = new Skillset(
 			"id": 4,
 			"title": "Test",
 			"image": "test",
-			"description": ["Test for bugs and errors in functionality and presentation"],
+			"description": ["Test system for bugs and errors in functionality and presentation"],
 		},
 	]
 ),
@@ -55,24 +55,25 @@ technician = new Skillset(
 	"PC Technician",
 	"technician",
 	"Installation, configuration and maintainence of hardware and software for computer systems",
-	"Ensuring a computer system meets the minimum requirements to run an operating system, as well as all the neccessary software is critical to future proofing and maximising system capabilities.", 
+	"As a PC Technician. I build and replair computer systems, ensuring hardware and software requrements are met. .",
 	[	{
 			"id": 1,
 			"title": "Hardware",
 			"image": "hardware",
-			"description": ["Motherboard, memory, harddrive and CPU installatiion, change boot priority through BIOS configration"],
+			"description": ["Installation and configuration of internal components, such as, motherboard, CPU, memory modules and hard drive"],
 		},
 		{
 			"id": 2,
 			"title": "Software",
 			"image": "software",
-			"description": ["Installation and configuration of operating system for Microsoft Windows 7, Windows 10, Server 2016 and for Linux Ubuntu and Mint"],
+			"description": ["Installation and configuration of  operating systems and applicaiotns for Microsoft and Linux"]
+			,
 		},
 		{
 			"id": 3,
 			"title": "Networking",
 			"image": "network",
-			"description": ["Setup and configure routers for networking with printers and other perpherials"],
+			"description": ["Setup of routers, printers and other perphirials for business or home networks"],
 		},
 	]
 ),
@@ -82,31 +83,31 @@ modelling = new Skillset(
 	"Artist / 3D Modeling",
 	"modelling",
 	"Sketch, detail, model, texture and lighting  of various ojbects",
-	"A few sheets of A4 paper, a sharp pencil, a pencil sharpener, a rubber and a pack of colouring pencils and I was good as a child. Nowadays, despite missing my old past-time, I use computer software for drawing and creating three-dimensdional objects.",    
+	"As an Artist, a few sheets of A4 paper, a sharp pencil, a sharpener, a rubber and a pack of colouring pencils was all I needed to create or replicate imagery. Nowadays, I use computer software for digital illustrations, image manipulation, and creation three-dimensional objects",    
 	[
 		{
 			"id": 1,
 			"title": "Illustration",
 			"image": "sketch",
-			"description": ["Prespective and proportion guide for object or scene before adding detail"],
+			"description": ["Establish prespective and proportion guide for object or scene before adding detail"],
 		},
 		{
 			"id": 2,
 			"title": "Colouring",
 			"image": "colour",
-			"description": ["Blocking areas with base colour for shading and highlights"],
+			"description": ["Block out areas with base colour for shading and highlights"],
 		},
 		{
 			"id": 3,
 			"title": "Modeling / Scupting",
 			"image": "3d",
-			"description": ["Create complex geometry using primitive objects by manipulating verticles, edges and faces"],
+			"description": ["Create complex geometry by combining primitive objects and manipulating verticles, edges and faces"],
 		},
 		{
 			"id": 4,
 			"title": "Lighting",
 			"image": "lighting",
-			"description": ["Add lighting to illuminate scene and cast shadows"],
+			"description": ["Add lighting to illuminate scene and cast shadows to replicate real-world"],
 		},
 		{
 			"id": 5,
