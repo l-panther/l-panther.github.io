@@ -203,10 +203,10 @@ class Project {
 		// Output
 		output += `
 					<div class="row">
-						<div class="col-sm-12 col-md-6 col-lg-7 w3-center project-preview-img">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-7 w3-center project-preview-img">
 							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
 						</div>
-						<div class="col-sm-12 col-md-6 col-lg-5 project-info-carousel">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 project-info-carousel">
 							<dl>
 								<dt class="project-title">` + this.title + `</dt>
 								<dd class="mb-2"><i class="w3-text-grey">` + this.type + `</i></dd>
