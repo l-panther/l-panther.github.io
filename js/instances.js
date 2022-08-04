@@ -82,7 +82,7 @@ modelling = new Skillset(
 	4,
 	"Artist / 3D Modeling",
 	"modelling",
-	"Sketch, detail, model, texture and lighting  of various ojbects",
+	"Sketch, detail, model, texture and lighting  of various 2D and 3D ojbects",
 	"As an Artist, a few sheets of A4 paper, a sharp pencil, a sharpener, a rubber and a pack of colouring pencils was all I needed to create or replicate imagery. Nowadays, I use computer software for digital illustrations, image manipulation, and creation three-dimensional objects",    
 	[
 		{

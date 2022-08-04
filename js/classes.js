@@ -96,7 +96,7 @@ class Skillset {
 	getSkill() {
 		let output = `		
 		
-			<div class="col-xs-12 col-md-6 col-lg-12 skill">
+			<div class="col-xs-12 col-md-12 col-lg-12 skill">
 				<div class="w3-row">
 					<div class="w3-col s3 m2 l2">
 						<img src='images/skills/` + this.image + `/` + this.image + `.png' alt=''>
