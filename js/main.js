@@ -28,27 +28,50 @@
 	});
 
 
+/* ..........................................
+	Hero
+	................................................. */
+	setTimeout(moveRight, 50);
+
+    function moveRight() {
+        $(".large-img").animate({position: 'relative', left: '50px'});
+    }
+
+
 	/* ..........................................
 	Mission
 	................................................. */
 	$("#webMissionList").html(developer.getWebMission());
 
 	
+	
+	/* ..........................................
+	Skills
+	................................................. */ 
+	const skills = [web];
+	let output = "";
+	for (let i = 0; i < skills.length; i++) {
+		output += skills[i].getSkill();
+	}
+	$("#skillList").html(output);
+
+
+
 	/* ..........................................
 	Portfolio
 	................................................. */
 	
 	/* 
 	Project List
-		1. Cafe
-		2. Car-repair
-		3. Diabetes
-		4. Efexacademy
-		5. Emblem
-		6. Handyman
-		7. Intranet
-		8. Jamaica
-		9. London
+		1. cafes
+		2. car-repair
+		3. diabetes
+		4. efexacademy
+		5. emblem
+		6. handyman
+		7. intranet
+		8. jamaica
+		9. london
 		10. Childcare
 		11. Hair Stylist
 		12. Housing 
@@ -58,29 +81,18 @@
 	 */
 
 	// Array of projects
-	const projects = [carrepair, diabetes, efexacademy, emblem, jamaica, london, parees];
+	const projects = [carrepair, diabetes, efexacademy, parees];
 
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
-		carouselContent += projects[i].showCarousel(i);
-		slideCount += projects[i].countProject();
-		
+		carouselContent += projects[i].showCarousel(i);			
+		slideCount += projects[i].countProject(i);			
 	}
 
 	// Insert output into html 
 	$("#carouselList").html(carouselContent);
 	$("#slideCount").html(slideCount);
 
-
-	/* ..........................................
-	Skills
-	................................................. */ 
-	const skills = [web, technician, modelling];
-	let output = "";
-	for (let i = 0; i < skills.length; i++) {
-		output += skills[i].getSkill();
-	}
-	$("#skillList").html(output);
 
 	// Insert output into html 
 	function getModalContent(elemId1, elemId2, method) {

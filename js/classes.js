@@ -98,14 +98,45 @@ class Skillset {
 		
 			<div class="col-xs-12 col-md-12 col-lg-12 skill">
 				<div class="w3-row">
-					<div class="w3-col s2 m2 l2">
-						<img src='images/skills/` + this.image + `/` + this.image + `.png' alt=''>
+					
+					<div class="w3-col s12 l6">
+						<h2>` + this.title + `</h2>
+						<p class="w3-margin-top w3-margin-bottom">` + this.description_long + `</p>
+			
+				<div class='w3-row'>
+		`;
+		for (let i = 0; i < this.skills.length; i++) {
+			
+			output += `
+					<div class='w3-col s12 w3-margin-bottom detail'>
+						<div class="w3-row">
+							<div class="w3-col s3">
+								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt=''>
+						
+							</div>
+							<div class="w3-col s9">
+										<dl>
+									<dt>
+										` + this.skills[i].title + `
+									</dt>
+									<dd>
+										` + this.skills[i].description + `
+									</dd>
+								</dl>
+							</div>
+						</div>
 					</div>
-					<div class="w3-col s10 m10 l10">
-						<dt>` + this.title + `</dt>
-						<dd>` + this.description_short + `</dd>
-						<button id="` + this.image + `-modal" class="btn" data-toggle="modal"
-					data-target="#detailModal">Read more</button>
+					`;
+		}
+
+		
+
+	
+			output += `	
+				</div>
+					</div>
+					<div class="w3-col s12 l6 skill-img">
+						<img src='images/projects/nojs.png' alt=''>
 					</div>
 				</div>
 			</div>
@@ -179,62 +210,30 @@ class Project {
 
 	// Show count position
 	countProject(i) {
-		let count = "";
+		let count = 0;
+		let output = "";
 		if (this.id == 1) {
-			count += "<li data-target='#projectCarousel' data-slide-to='" + 0 + "' class='active' title='Project " + this.id + " - " + this.title + "'></li>";
+			output += "<li data-target='#projectCarousel' data-slide-to='" + 0 + "' class='active' title='Project " + this.id + " - " + this.title + "'></li>";
 		} else {
-			count += "<li data-target='#projectCarousel' data-slide-to='" + this.id + "' title='Project " + this.id + " - " + this.title + "'></li>";
+			let elemId = this.id;
+			output += "<li data-target='#projectCarousel' data-slide-to='" + this.id + "' title='Project " + this.id + " - " + this.title + "'></li>";
 		}
-		return count;
+		return output;
 	}
 
 
 	// Show carousel
 	showCarousel(i) {
 
-		let output = "",
-			count = "";
-		if (this.id == 1) {
-			output += "<div class='carousel-item active'> <!-- Carousel item -->";
-		} else {
-			output += "<div class='carousel-item'> <!-- Carousel item -->";	
-		}
+		let output = "", count = "";
+		
 
 		// Output
 		output += `
+					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-7 w3-center project-preview-img">
-							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 project-info-carousel">
-							<dl>
-								<dt class="project-title">` + this.title + `</dt>
-								<dd class="mb-2"><i class="w3-text-grey">` + this.type + `</i></dd>
-							</dl>
-												
-							<div class='project-description'>
-								
-							<dl id='featureList'>
-								<dt></dt>
-		`;
-
-		for (let i = 0; i < this.features.length; i++) {
-			output += `
-								<dd><i class='fa fa-check'></i>` + this.features[i].name + `</dd>
-			`;
-
-		}
-		output += `
-							</dl>
-							<ul class='tech-list'>`;
-
-		for (let j = 0; j < this.technologies.length; j++) {
-			output += `<li><img src='images/technologies/` + this.technologies[j].name + `.png' alt='' title='` + this.technologies[j].name + `' class='tech-icon'></li>`;
-
-		}
-		output += `
-							</ul>
-						</div>
+						<div class="col-xs-6 project-preview-img">
+							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />		
 						
 						<ul class='project-options-container'> 
 						
@@ -254,7 +253,7 @@ class Project {
 					</div <!-- End card -->
 				
 				</div>
-			</div>
+				</div>
 		`;
 		return output;
 	}

@@ -150,21 +150,24 @@ decorator = new Skillset(
 
 	/* 
 	Project List
+		Complete:
 		1. cafes
-		2. Car-repair
-		3. Diabetes
-		4. Efexacademy
-		5. Emblem
-		6. Handyman
-		7. Intranet
-		8. Jamaica
-		9. London
-		10. Childcare
-		11. Hair Stylist
-		12. Housing 
-		13. Cookbook
-		14. Photo Gallery
-		15. Portfolio
+		2. car-repair
+		3. diabetes
+		4. efexacademy
+		5. emblem
+		6. Jamaica
+		7. London
+		8. Hair Stylist
+		9. Photo Gallery
+		10. Portfolio
+
+		Incomplete:
+		20. handyman
+		21. intranet
+		22. Childcare
+		23. Housing 
+		24. Cookbook
 	 */
 
 
@@ -192,7 +195,7 @@ decorator = new Skillset(
 	),
 
 	carrepair = new Project(
-		1,
+		2,
 		"Car Repair",
 		"Website",
 		"carrepair",
@@ -281,55 +284,8 @@ decorator = new Skillset(
 		"emblem",
 	),
 
-	handyman = new Project(
-		6,
-		"Handy Man",
-		"Website",
-		"handyman",
-		[
-			{ "name": "Custom Design" },
-			{ "name": "Carousel" },
-			{ "name": "Google Map" }
-		],
-		[
-			{ "name": "php" },
-			{ "name": "html5" },
-			{ "name": "css3" },
-			{ "name": "javascript" },
-			{ "name": "w3" },
-			{ "name": "maya" },
-			{ "name": "krita" }
-		],
-		"A website to promote company services.",
-		"handyman",
-	),
-
-	intranet = new Project(
-		7,
-		"Intranet",
-		"Web application",
-		"intranet",
-		[
-			{ "name": "Custom Design" },
-			{ "name": "Login & Register" },
-			{ "name": "C.R.U.D" }
-		],
-		[
-			{ "name": "php" },
-			{ "name": "html5" },
-			{ "name": "css3" },
-			{ "name": "javascript" },
-			{ "name": "bootstrap" },
-			{ "name": "w3" },
-			{ "name": "mysql" },
-			{ "name": "krita" }
-		],
-		"A intranet to facilitate univerty services.",
-		"intranet",
-	),
-
 	jamaica = new Project(
-		8,
+		6,
 		"Jamaica Travel",
 		"Website",
 		"jamaica",
@@ -352,7 +308,7 @@ decorator = new Skillset(
 	),
 
 	london = new Project(
-		9,
+		7,
 		"London Guide",
 		"Website",
 		"london",
@@ -374,8 +330,123 @@ decorator = new Skillset(
 		"london-guide",
 	),
 
-	pacca = new Project(
+	parees = new Project(
+		8,
+		"Hair Stylist",
+		"Website",
+		"parees",
+		[
+			{ "name": "Custom Design" },
+			{ "name": "Carousel" },
+			{ "name": "Device Integration" }
+		],
+		[
+			{ "name": "html5" },
+			{ "name": "css3" },
+			{ "name": "javascript" },
+			{ "name": "bootstrap" },
+			{ "name": "krita" },
+
+		],
+		"A website for company services.",
+		"parees",
+	),
+
+	photogallery = new Project(
 		10,
+		"Photo Gallery",
+		"Web ppplication",
+		"photogallery",
+		[
+			{ "name": "Custom Design" },
+			{ "name": "File Upload" },
+			{ "name": "Device Integration" }
+		],
+		[
+			{ "name": "html5" },
+			{ "name": "css3" },
+			{ "name": "javascript" },
+			{ "name": "bootstrap" },
+			{ "name": "krita" },
+
+		],
+		"A web application for photos.",
+		"photo",
+	),
+
+	portfolio = new Project(
+		9,
+		"Portfolio",
+		"Website",
+		"portfolio",
+		[
+			{ "name": "Custom Design" },
+			{ "name": "Carousel" },
+			{ "name": "External Links" }
+		],
+		[
+			{ "name": "html5" },
+			{ "name": "css3" },
+			{ "name": "javascript" },
+			{ "name": "bootstrap" },
+			{ "name": "krita" },
+
+		],
+		"A website for my projects.",
+		"portfolio",
+	);
+
+
+	
+	handyman = new Project(
+		20,
+		"Handy Man",
+		"Website",
+		"handyman",
+		[
+			{ "name": "Custom Design" },
+			{ "name": "Carousel" },
+			{ "name": "Google Map" }
+		],
+		[
+			{ "name": "php" },
+			{ "name": "html5" },
+			{ "name": "css3" },
+			{ "name": "javascript" },
+			{ "name": "w3" },
+			{ "name": "maya" },
+			{ "name": "krita" }
+		],
+		"A website to promote company services.",
+		"handyman",
+	),
+
+	intranet = new Project(
+		21,
+		"Intranet",
+		"Web application",
+		"intranet",
+		[
+			{ "name": "Custom Design" },
+			{ "name": "Login & Register" },
+			{ "name": "C.R.U.D" }
+		],
+		[
+			{ "name": "php" },
+			{ "name": "html5" },
+			{ "name": "css3" },
+			{ "name": "javascript" },
+			{ "name": "bootstrap" },
+			{ "name": "w3" },
+			{ "name": "mysql" },
+			{ "name": "krita" }
+		],
+		"A intranet to facilitate univerty services.",
+		"intranet",
+	),
+
+	pacca = new Project(
+		22,
 		"Child Care",
 		"Website",
 		"pacca",
@@ -398,30 +469,8 @@ decorator = new Skillset(
 		"pacca",
 	),
 
-	parees = new Project(
-		11,
-		"Hair Stylist",
-		"Website",
-		"parees",
-		[
-			{ "name": "Custom Design" },
-			{ "name": "Carousel" },
-			{ "name": "Device Integration" }
-		],
-		[
-			{ "name": "html5" },
-			{ "name": "css3" },
-			{ "name": "javascript" },
-			{ "name": "bootstrap" },
-			{ "name": "krita" },
-
-		],
-		"A website for company services.",
-		"parees",
-	),
-
 	housing = new Project(
-		12,
+		23,
 		"Housing",
 		"Mobile application",
 		"housing",
@@ -446,7 +495,7 @@ decorator = new Skillset(
 	),
 
 	cookbook = new Project(
-		13,
+		24,
 		"Cookbook",
 		"Mobile application",
 		"cookbook",
@@ -467,48 +516,5 @@ decorator = new Skillset(
 		],
 		"A mobile app for cooking.",
 		"cookbook",
-	),
-
-	photogallery = new Project(
-		14,
-		"Photo Gallery",
-		"Web ppplication",
-		"photogallery",
-		[
-			{ "name": "Custom Design" },
-			{ "name": "File Upload" },
-			{ "name": "Device Integration" }
-		],
-		[
-			{ "name": "html5" },
-			{ "name": "css3" },
-			{ "name": "javascript" },
-			{ "name": "bootstrap" },
-			{ "name": "krita" },
-
-		],
-		"A web application for photos.",
-		"photo",
-	),
-
-	portfolio = new Project(
-		15,
-		"Portfolio",
-		"Website",
-		"portfolio",
-		[
-			{ "name": "Custom Design" },
-			{ "name": "Carousel" },
-			{ "name": "External Links" }
-		],
-		[
-			{ "name": "html5" },
-			{ "name": "css3" },
-			{ "name": "javascript" },
-			{ "name": "bootstrap" },
-			{ "name": "krita" },
-
-		],
-		"A website for my projects.",
-		"portfolio",
 	);
+
