@@ -173,7 +173,7 @@ class Project {
 		output += `
 					<div class="col-sm-4 col-md-6 col-lg-6 project">
 						<div class="card">
-							<img class='img-card' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
+							<a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank'  title="Click to view website"><img class='img-card' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
 							
 						</div>
 				 	 </div>
@@ -198,7 +198,7 @@ class Project {
 		output += `
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-7 w3-center project-preview-img">
-							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
+						<a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank' title="Click to view website"><img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
 						</div>
 					</div>
 				</div>
