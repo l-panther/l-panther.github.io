@@ -1,7 +1,7 @@
 (function ($) {
 	"use strict";
 
-	let carouselContent = "", slideCount = "";
+	let carouselContent = "", cardContent = "", slideCount = "";
 	
 
 	// Create Developer instance from class
@@ -43,8 +43,7 @@
 	................................................. */
 	$("#webMissionList").html(developer.getWebMission());
 
-	
-	
+
 	/* ..........................................
 	Skills
 	................................................. */ 
@@ -81,16 +80,18 @@
 	 */
 
 	// Array of projects
-	const projects = [carrepair, diabetes, efexacademy, parees];
+	const projects = [cafes, carrepair, diabetes, efexacademy, emblem, parees];
 
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
+		cardContent += projects[i].showCard(i);			
 		carouselContent += projects[i].showCarousel(i);			
 		slideCount += projects[i].countProject(i);			
 	}
 
 	// Insert output into html 
 	$("#carouselList").html(carouselContent);
+	$("#cardList").html(cardContent);
 	$("#slideCount").html(slideCount);
 
 
@@ -106,43 +107,5 @@
 			$(elemId).html("");
 		});
 	}
-
-	// Skills
-	getModalContent("#web-modal", "#web-details", web.getDetails());
-	getModalContent("#technician-modal", "#technician-details", technician.getDetails());
-	getModalContent("#modelling-modal", "#modelling-details", modelling.getDetails());
-	getModalContent("#decorator-modal", "#decorator-details", decorator.getDetails());
-
-	
-	// Projects
-	getModalContent("#carrepair-modal", "#carrepair-details", carrepair.getDetails());
-	getModalContent("#diabetes-modal", "#diabetes-details", diabetes.getDetails());
-	getModalContent("#efexacademy-modal", "#efexacademy-details", efexacademy.getDetails());	
-	getModalContent("#emblem-modal", "#emblem-details", emblem.getDetails());	
-	getModalContent("#london-modal", "#london-details", london.getDetails());	
-
-	// Clear Skill Modal
-	clearModalContent("#web-details");
-	clearModalContent("#technician-details");
-	clearModalContent("#modelling-details");
-	clearModalContent("#decorator-details");
-		
-	// Clear  Project Modal
-	clearModalContent("#cafes-details");
-	clearModalContent("#carrepair-details");
-	clearModalContent("#diabetes-details");
-	clearModalContent("#efexacademy-details");
-	clearModalContent("#emblem-details");
-	clearModalContent("#london-details");
-
-	// Preview Website
-	getModalContent("#carrepair-preview", "#project-details", carrepair.getDetails());
-	getModalContent("#diabetes-preview", "#project-details", diabetes.getDetails());
-	getModalContent("#efexacademy-preview", "#project-details", efexacademy.getDetails());
-	getModalContent("#emblem-preview", "#project-details", emblem.getDetails());
-	getModalContent("#jamaica-preview", "#project-details", jamaica.getDetails());
-	getModalContent("#london-preview", "#project-details", london.getDetails());
-	getModalContent("#parees-preview", "#project-details", parees.getDetails());
-
 
 }(jQuery));

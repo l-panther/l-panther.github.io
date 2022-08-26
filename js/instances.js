@@ -21,7 +21,7 @@ const web = new Skillset(
 	"Web Development",
 	"web",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Front-end development allows me to be ashetically creative and back-end developemnt allows me to combine logic and algorithmic thinking to solve computing problems.</p>",
+	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Front-end development allows me to be ashetically creative and back-end developemnt allows me to combine logic and algorithmic thinking to solve computing problems.</p><p>Front-end development allows me utilise image manipulation and occasional 3D modeling</p>",
 	[
 		{
 			"id": 1,
@@ -78,7 +78,7 @@ technician = new Skillset(
 	]
 ),
 
-modelling = new Skillset(
+modeling = new Skillset(
 	4,
 	"Artist / 3D Modeling",
 	"modelling",
@@ -190,7 +190,7 @@ decorator = new Skillset(
 			{ "name": "json" },
 			{ "name": "krita" }
 		],
-		"A website guide for cafes in London.",
+		"A website guide for cafes.",
 		"cafes",
 	),
 
@@ -212,13 +212,13 @@ decorator = new Skillset(
 			{ "name": "json" },
 			{ "name": "krita" }
 		],
-		"A website to advertise mobile car repair services",
+		"A website to advertise mobile car repair services and preview work completed on variety of vechiles. My version of an existing <a href='http://www.mobilecarbodyrepair.co/m'>website for mobile car body repair</a>",
 		"car-repair",
 	),
 
 	diabetes = new Project(
 		3,
-		"Diabetes - BMI Test",
+		"Diabetes",
 		"Web application",
 		"diabetes",
 		[

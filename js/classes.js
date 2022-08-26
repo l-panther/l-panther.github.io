@@ -94,75 +94,23 @@ class Skillset {
 
 	// Get skills
 	getSkill() {
-		let output = `		
-		
-			<div class="col-xs-12 col-md-12 col-lg-12 skill">
-				<div class="w3-row">
-					
-					<div class="w3-col s12 l6">
-						<h2>` + this.title + `</h2>
-						<p class="w3-margin-top w3-margin-bottom">` + this.description_long + `</p>
-			
-				<div class='w3-row'>
-		`;
-		for (let i = 0; i < this.skills.length; i++) {
-			
-			output += `
-					<div class='w3-col s12 w3-margin-bottom detail'>
-						<div class="w3-row">
-							<div class="w3-col s3">
-								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt=''>
-						
-							</div>
-							<div class="w3-col s9">
-										<dl>
-									<dt>
-										` + this.skills[i].title + `
-									</dt>
-									<dd>
-										` + this.skills[i].description + `
-									</dd>
-								</dl>
-							</div>
-						</div>
-					</div>
-					`;
-		}
-
-		
-
+			let output = ``;	
 	
-			output += `	
-				</div>
-					</div>
-					<div class="w3-col s12 l6 skill-img">
-						<img src='images/projects/nojs.png' alt=''>
-					</div>
-				</div>
-			</div>
-		`;		
-		
-		return output;
-	}
-
-
-	// Get details
-	getDetails() {
-
-		let output = "";
-		output += `
-			<div class='text-container'>
+			// Output
+			output += `
+			<div class="col-xs-12 skill">
 				<h2>` + this.title + `</h2>
-				<p class="w3-margin-top w3-margin-bottom">` + this.description_long + `</p>
-			
-				<div class='w3-row'>
+
+				<p>` + this.description_long + `</p>
+					
+				<div class='w3-row w3-margin-top'>
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
 			
 			output += `
-					<div class='w3-col s12 w3-margin-bottom detail'>
+					<div class='w3-col s12 m10 w3-margin-bottom detail'>
 						<div class="w3-row">
-							<div class="w3-col s2">
+							<div class="w3-col s2 w3-center">
 								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt=''>
 						
 							</div>
@@ -180,17 +128,12 @@ class Skillset {
 					</div>
 					`;
 		}
-
-		
-
-	
-			output += `	
-				</div>
-				<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>
+		output += `
 			</div>
-		</div>`;
+			</div>
+			`;
 		return output;
-	}	
+	}
 }
 
 
@@ -207,7 +150,6 @@ class Project {
 		this.git = git;
 	}
 
-
 	// Show count position
 	countProject(i) {
 		let count = 0;
@@ -223,46 +165,46 @@ class Project {
 
 
 	// Show carousel
-	showCarousel(i) {
+	showCard(i) {
 
 		let output = "", count = "";
-		
 
 		// Output
 		output += `
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					<div class="col-sm-4 col-md-6 col-lg-6 project">
+						<div class="card">
+							<img class='img-card' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
+							
+						</div>
+				 	 </div>
+		`;
+		return output;
+	}
+
+
+	
+	// Show carousel
+	showCarousel(i) {
+
+		let output = "",
+			count = "";
+		if (this.id == 1) {
+			output += "<div class='carousel-item active'> <!-- Carousel item -->";
+		} else {
+			output += "<div class='carousel-item'> <!-- Carousel item -->";	
+		}
+
+		// Output
+		output += `
 					<div class="row">
-						<div class="col-xs-6 project-preview-img">
-							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />		
-						
-						<ul class='project-options-container'> 
-						
-							<li> 
-								<div id="` + this.image + `-preview" class='btn' title='View project in new tab'><a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank'><i class='fa fa-eye'></i></a></div>
-							</li>	
-
-							<!-- <li>
-								<button id="` + this.image + `-preview" class='btn' title='View project'><a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank'><i class='fa fa-eye'></i></a></button>
-							</li> --> <!-- End column -->	
-
-							<li>
-								<div class="btn" title='View source code'><a href='https://github.com/l-panther/` + this.git + `' target='_blank'><i class='fa fa-list'></i></a></div>
-							</li> <!-- End column -->	
-
-						</ul <!-- End .button-container -->
-					</div <!-- End card -->
-				
-				</div>
+						<div class="col-sm-12 col-md-6 col-lg-7 w3-center project-preview-img">
+							<img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' />
+						</div>
+					</div>
 				</div>
 		`;
 		return output;
 	}
 
-	getDetails() {
-		let output = `
-		<iframe src="https://192.168.0.25:80/server/` + this.git + `/" frameborder="0"></iframe>`;
-	
-		return output;
-	}
 
 }
