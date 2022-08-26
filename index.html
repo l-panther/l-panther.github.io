@@ -66,12 +66,11 @@
 							<li class="nav-item">
 								<a class="nav-link" href="#home">Home</a>
 							</li>
-					
 							<li class="nav-item">
-								<a class="nav-link" href="#web-projects">Projects</a>
+								<a class="nav-link" href="#web-projects">Development</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#skills">Skills</a>
+								<a class="nav-link" href="#projects">Projects</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#footer">Contact</a>
@@ -89,16 +88,17 @@
 			<!-- Hero -->
 			<div id="hero">
 				<div class="main-container">
+
 					<div class="row">
-						
+				
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						
 							<h1>Hi, I'm Leroy</h1>
 							<h2>UI/UX Developer</h2>
-							<p class="w3-margin-bottom">Developing interactive and responsive web applications for mobile, tablet and desktop</p>
+							<p class="w3-margin-bottom">Design and development of interactive and responsive web applications for mobile, tablet and desktop</p>
 					
 							<div class="w3-center small-img">
-								<img src="images/hero/desktop.png" alt="">
+								<img src="images/about/coder.png" alt="">
 							</div>
 
 							<a href="#web-projects" class="w3-btn">VIEW MY WORK</a>
@@ -106,13 +106,34 @@
 						</div>
 
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 w3-center large-img">
-							<img src="images/hero/desktop.png" alt="">
+							<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+								  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner">
+								  <div class="carousel-item active">
+									<img src="images/skills/web/web-large.png" class="d-block w-100" alt="...">
+								  </div>
+								  <div class="carousel-item">
+									<img src="images/skills/technician/technician-large.png" class="d-block w-100" alt="...">
+								  </div>
+								  <div class="carousel-item">
+									<img src="images/skills/modelling/modelling-large.png" class="d-block w-100" alt="...">
+								  </div>
+								</div>
+								</div> 
+							
+							</div> -->
+							<img src="images/about/coder.png" alt="">
 						</div>
 					</div> <!-- End .w3-row -->
+
 				</div> <!-- End .main-container -->
 			</div> <!-- End #hero -->
 
-	
+			
 			<!-- Web Mission -->
 			<div id="web-mission" class="section">
 				<div class="main-container">
@@ -127,61 +148,51 @@
 					</div>
 				</div> <!-- End .main-container -->
 			</div> <!-- End #web-mission .section -->
-
-
+			
 			<!-- Web Portfolio -->
 			<div id="web-projects" class="section">
 				<div class="main-container">
 					<div class="row">
-						<div class="col-sm-12 w3-center">
-							<h2>Latest <span class="theme-txt">Projects</span></h2>
-							<p>A collection of projects I have completed using custom design, template design, hard coding and object-oriented programming techniques. Implemented using web and server technologies, such as HTML5, JavaScript, PHP and Bootstrap.</p>
-							
-							<!-- Projects -->
-							<div id="carouselList" class="row"></div>	
+						<div id="development" class="col-sm-12 col-md-6">
+							<div id="skillList"></div>
 						</div>
-					</div>
-				</div>
-			</div> <!-- End skills -->
+					
+						<div  id="projects" class="col-sm-12 col-md-6">
 
-
-			<!-- Skills -->
-			<div id="skills" class="section">
-				<div class="main-container">
-					<div class="row">
-						<div class="col-xs-12">
-
-							<div id="skillList" class="row"></div>
+									
+							<!-- Carousel -->
+							<div id="projectCarousel" class="carousel slide w3-hide-medium w3-hide-large" data-ride="carousel">
+								<noscript><img src="images/projects/nojs.png" alt="" style="width:100%"></noscript>
 								
-						</div>
-					</div>
-				</div>
-
-				<p class="w3-center w3-small w3-margin-top">For more information, please <a href="data/cv-developer.pdf" target="_blank" class="web-link">check out my CV</a>.</p>
-			</div> <!-- End about -->
-
-
-			<!-- Web Portfolio --
-			<div id="about" class="w3-white section">
-				<div class="main-container">
-					<div class="row">
-						<div class="col-sm-12 col-md-6 w3-center">
-							<h2>About <span class="theme-txt">Leroy</span></h2>
-							<p>A collection of projects I have completed using custom design, template design, hard coding and object-oriented programming techniques. Implemented using web and server technologies, such as HTML5, JavaScript, PHP and Bootstrap.</p>
 						
-						</div>
-							
-							<!- Projects --
-							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 w3-center">
-								<img src="images/about/coder.png" alt="" id="coder">
+								<!-- The slideshow -->
+								<div class="carousel-inner">
+									<div id="carouselList"></div>
+								</div>
+
+								<!-- Left and right controls -->
+								<a class="carousel-control-prev" href="#projectCarousel" data-slide="prev"
+									title="Previous Project">
+									<span class="fa fa-chevron-left"></span>
+								</a>
+								<a class="carousel-control-next" href="#projectCarousel" data-slide="next"
+									title="Next Project">
+									<span class="fa fa-chevron-right"></span>
+								</a>
+
+								<!-- Index indicators -->
+								<ol class="carousel-indicators" id="slideCount"></ol>
+
 							</div>
+							<div id="cardList" class="row w3-hide-small"></div>
+
+						</div>
 					</div>
 				</div>
-			</div> <!- End skills -->
-
-		</main> <!-- End main -->
-
+			</div>
 		
+		</main> <!-- End main -->
+	
 		<!-- To top -->
 		<div id="toTop" class="w3-center main-container"><a href="#page">Back to top <i class="fa fa-arrow-up"></i></a></div>
 	
@@ -222,7 +233,7 @@
 			<!-- Copyright -->
 			<div id="copyright">
 				<div class="main-container w3-center">
-					<p>&copy; <span id="footerDate"></span> Leroy Russell. All Rights Reserved.</p>
+					<p>&copy; <span id="footerDate"></span> Leroy Russell</p>
 				</div>
 			</div>
 		
