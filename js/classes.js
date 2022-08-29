@@ -129,11 +129,71 @@ class Skillset {
 					`;
 		}
 		output += `
-			</div>
+					<div class="w3-center skill-img-lg">
+						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="">
+					</div>
+				</div>
 			</div>
 			`;
 		return output;
 	}
+
+
+	getDetails() {
+		let output = ``;
+
+				
+		if(this.image != "decorator") {
+			
+			output += `<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>`;
+							
+		} else {
+			output += `	
+			
+				<video controls poster="images/skills/decorator/bg.png">
+					<source src="media/before.mp4" type="video/mp4">
+					<source src="media/before.ogg" type="video/ogg">
+					<source src="media/before.webm" type="video/webm">
+				</video>`;
+			
+		}
+			
+		output += `<div class="col-sm-12">
+					<h2>` + this.title + `</h2>
+				</div>
+				<div class="col-sm-12 col-md-12 mb-5">
+					
+					<p>` + this.description_long + `</p>
+				</div>
+				<div class="pt-5 pb-5 features">
+				`;
+		
+		for (let i = 0; i < this.skills.length; i++) {
+
+			output += `
+					
+						<div class="w3-row p-3">
+							<div class="w3-col s2">
+								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt=''>
+						
+							</div>
+							<div class="w3-col s10">
+										<dl>
+									<dt>
+										` + this.skills[i].title + `
+									</dt>
+									<dd>
+										` + this.skills[i].description + `
+									</dd>
+								</dl>
+							</div>
+						</div>
+					`;
+		}
+		 	output += `</div></div>`;
+		return output;
+	}
+
 }
 
 

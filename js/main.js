@@ -47,7 +47,7 @@
 	/* ..........................................
 	Skills
 	................................................. */ 
-	const skills = [web];
+	const skills = [web], artContent = art;
 	let output = "";
 	for (let i = 0; i < skills.length; i++) {
 		output += skills[i].getSkill();
@@ -108,4 +108,17 @@
 		});
 	}
 
+	// Skills
+	getModalContent("#technician-modal", "#technician-details", technician.getDetails());
+	getModalContent("#art-modal-details", "#art-details", artContent.getDetails());
+	getModalContent("#modelling-modal-details", "#modelling-details", artContent.getDetails());
+	getModalContent("#decorator-modal", "#decorator-details", decorator.getDetails());
+	
+	// Clear Skill Modal
+	clearModalContent("#technician-details");
+	clearModalContent("#art-details");
+	clearModalContent("#modelling-details");
+	clearModalContent("#decorator-details");
+			
+	
 }(jQuery));
