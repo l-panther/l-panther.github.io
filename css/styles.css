@@ -65,11 +65,13 @@ fieldset, .carousel-item .active {
 
 video { 
 	width: 100%; 
-	height: 500px;
-	background: #fff; 
-	background-size: cover;
-	padding: 20px 50px;
-	margin: auto}
+	height: 320px;
+	background: #2c5374; 
+	padding: 0px 50px;
+	margin: 0}
+
+.modal .collapse { 
+	background: #2c5374; }
 
 
 /*------------------------------------------------------------------ 
@@ -144,6 +146,13 @@ i { padding: 0px 4px; }
 	width: 100%;
 	border-radius: 20px;
 	font-size: 0.85em !important;
+}
+
+.modal .btn {
+	margin: 20px 0px 20px 10px !important;
+	background: #f0f0f0 !important;
+	color: #2c5374 !important;
+	border: 1px solid #2c5374 !important;
 }
 
 /*------------------------------------------------------------------ 
@@ -253,7 +262,7 @@ i { padding: 0px 4px; }
 
 #projects { 
 	padding: 10px;
-	margin-top: 50px; }
+	margin-top: 20px; }
 
 .carousel-indicators { 
 	position: relative !important;
@@ -274,6 +283,10 @@ i { padding: 0px 4px; }
 	border-radius: 100%;
 	color: #355f92 !important;
 	opacity: 0.4;
+ }
+
+#projectCarousel span:hover { 
+	opacity: 1;
  }
 
 .project { padding: 10px; }
@@ -344,6 +357,8 @@ i { padding: 0px 4px; }
 
 .modal-content { 
 	color: #141414;
+	box-shadow: 1px 1px 40px 0px #141414;
+	border: 1px solid #141414
 }
 
 .modal-content img { 
@@ -357,7 +372,11 @@ i { padding: 0px 4px; }
 .modal-header .close { 
 	width: 100%;
 	text-align: right !important;
+	font-size: 1em;
 	color: #2c5374; }
+
+.modal-header .close-icon { 
+	font-size: 26px;}
 
 #technician-skill { background: #2c5374; }
 
