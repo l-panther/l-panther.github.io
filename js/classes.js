@@ -102,7 +102,7 @@ class Skillset {
 				<h2>` + this.title + `</h2>
 
 				<p>` + this.description_long + `</p>
-					
+				
 				<div class='w3-row w3-margin-top'>
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
@@ -141,31 +141,43 @@ class Skillset {
 
 	getDetails() {
 		let output = ``;
-
-				
+			
+		output += `<div class="col-sm-12">
+					<h2>` + this.title + `</h2>
+				</div>
+				<div class="col-sm-12 col-md-12">
+					
+					<p>` + this.description_long + `</p>
+				</div>`;
+							
 		if(this.image != "decorator") {
 			
 			output += `<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>`;
 							
 		} else {
-			output += `	
-			
-				<video controls poster="images/skills/decorator/bg.png">
+			output += `
+			<button data-toggle="collapse" data-target="#video1" class="btn btn-default">Job 1</button>
+			<button data-toggle="collapse" data-target="#video2" class="btn btn-default">Job 2</button>
+
+			<img src='images/skills/decorator/stroke.png' alt=''>
+			<div id="video1" class="collapse">
+				<video controls poster="images/skills/decorator/video-before.png">
 					<source src="media/before.mp4" type="video/mp4">
 					<source src="media/before.ogg" type="video/ogg">
 					<source src="media/before.webm" type="video/webm">
-				</video>`;
+				</video>
+			</div>
+			<div id="video2" class="collapse">
+				<video controls poster="images/skills/decorator/video-after.png">
+					<source src="media/complete.mp4" type="video/mp4">
+					<source src="media/complete.ogg" type="video/ogg">
+					<source src="media/complete.webm" type="video/webm">
+				</video>
+			</div>
+				`;
 			
 		}
-			
-		output += `<div class="col-sm-12">
-					<h2>` + this.title + `</h2>
-				</div>
-				<div class="col-sm-12 col-md-12 mb-5">
-					
-					<p>` + this.description_long + `</p>
-				</div>
-				<div class="pt-5 pb-5 features">
+		output += `<div class="pb-5 features">
 				`;
 		
 		for (let i = 0; i < this.skills.length; i++) {
