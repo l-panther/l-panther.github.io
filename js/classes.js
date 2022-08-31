@@ -103,12 +103,12 @@ class Skillset {
 
 				<p>` + this.description_long + `</p>
 				
-				<div class='w3-row w3-margin-top'>
+				<div class='w3-row mt-4'>
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
 			
 			output += `
-					<div class='w3-col s12 m10 w3-margin-bottom detail'>
+					<div class='w3-col s12 m6 l11 w3-margin-bottom features'>
 						<div class="w3-row">
 							<div class="w3-col s2 w3-center">
 								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt=''>
@@ -145,39 +145,12 @@ class Skillset {
 		output += `<div class="col-sm-12">
 					<h2>` + this.title + `</h2>
 				</div>
-				<div class="col-sm-12 col-md-12">
+				<div class="col-sm-12 col-md-12 pb-5">
 					
 					<p>` + this.description_long + `</p>
-				</div>`;
-							
-		if(this.image != "decorator") {
-			
-			output += `<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>`;
-							
-		} else {
-			output += `
-			<button data-toggle="collapse" data-target="#video1" class="btn btn-default">Job 1</button>
-			<button data-toggle="collapse" data-target="#video2" class="btn btn-default">Job 2</button>
-
-			<img src='images/skills/decorator/stroke.png' alt=''>
-			<div id="video1" class="collapse">
-				<video controls poster="images/skills/decorator/video-before.png">
-					<source src="media/before.mp4" type="video/mp4">
-					<source src="media/before.ogg" type="video/ogg">
-					<source src="media/before.webm" type="video/webm">
-				</video>
-			</div>
-			<div id="video2" class="collapse">
-				<video controls poster="images/skills/decorator/video-after.png">
-					<source src="media/complete.mp4" type="video/mp4">
-					<source src="media/complete.ogg" type="video/ogg">
-					<source src="media/complete.webm" type="video/webm">
-				</video>
-			</div>
-				`;
-			
-		}
-		output += `<div class="pb-5 features">
+				</div>
+				<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>
+				<div class="pb-5 features">
 				`;
 		
 		for (let i = 0; i < this.skills.length; i++) {
@@ -222,6 +195,14 @@ class Project {
 		this.git = git;
 	}
 
+	getScreenshot() {
+		let output = `<figure>
+						<a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank' title="Click to view website"><img class='project-img' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
+						<figcaption>` + this.title + `</figcaption>
+					</figure>`
+		return output;
+	}
+
 	// Show count position
 	countProject(i) {
 		let count = 0;
@@ -243,11 +224,8 @@ class Project {
 
 		// Output
 		output += `
-					<div class="col-sm-4 col-md-6 col-lg-6 project">
-						<div class="card">
-							<a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank'  title="Click to view website"><img class='img-card' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
-							
-						</div>
+					<div class="col-sm-4 col-md-3 col-lg-6 project">
+					` + this.getScreenshot() + `	
 				 	 </div>
 		`;
 		return output;
@@ -270,7 +248,7 @@ class Project {
 		output += `
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-7 w3-center project-preview-img">
-						<a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank' title="Click to view website"><img class='img-carousel' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
+						` + this.getScreenshot() + `	
 						</div>
 					</div>
 				</div>

@@ -21,7 +21,7 @@ const web = new Skillset(
 	"Web Development",
 	"web",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	"As a Web Developer, I plan, design and develop web systems using the latest web technologies such as HTML5, CSS3 JavaScript, ReactJs and Django. Front-end development allows me to be ashetically creative with cascading style sheets, <span id='art-modal-details' data-toggle='modal' data-target='#detailModal'>image manipution</span>. Back-end developemnt allows me to combine logic and algorithmic thinking to solve computing problems.</p><p class='pt-3'>Using object-orientated programming techniques contributes to clean code which easier sclae manage and troubleshoot managable </p><p class='pt-3'>Whether building computer systems as a <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>PC Technician</span> or home renovation as a <span id='decorator-modal' data-toggle='modal' data-target='#detailModal'>Painter and Decorator</span>, using the right methodology is essential for productivity and ensuring project requirements are met.</p>",
+	"As a Web Develper, I develop the web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, ReactJs and Django. My current portfolio consists of websites and web applications using templates and custom design techniques. Utilisation of object-orientated programming allows for more robust and scalable system. <span id='art-modal-details' data-toggle='modal' data-target='#detailModal'>image manipution</span>.</p><p class='pt-3'> <b>Back-end developemnt</b><br> allows me to combine logic and algorithmic thinking to solve computing problems. Using object-orientated programming techniques contributes to clean code which easier sclae manage and troubleshoot managable </p><p class='pt-3'>Whether developing web system or <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>building computer systems</span>, using the appropriate methodology is essential to productivity and meeting system requirements.</p>",
 	[
 		{
 			"id": 1,
@@ -55,47 +55,47 @@ technician = new Skillset(
 	"PC Technician",
 	"technician",
 	"Installation, configuration and maintainence of hardware and software for computer systems",
-	"As a PC Technician. I build and replair computer systems, ensuring hardware and software requrements are met. .",
+	"As a PC Technician, I build, replair and maintain computer systems, running Microsoft and Linux operating systems.",
 	[	{
 			"id": 1,
 			"title": "Hardware",
 			"image": "hardware",
-			"description": ["Installation and configuration of internal components, such as, motherboard, CPU, memory modules and hard drive"],
+			"description": ["Installation and configuration of internal components, such as motherboard, CPU, memory modules and hard drive"],
 		},
 		{
 			"id": 2,
 			"title": "Software",
 			"image": "software",
-			"description": ["Installation and configuration of  operating systems and applicaiotns for Microsoft and Linux"]
+			"description": ["Microsoft Windows 7, 10, Server 2016, Ubuntu 19.04 and Mint 21.04 operating system installation and configuration"]
 			,
 		},
 		{
 			"id": 3,
 			"title": "Networking",
 			"image": "network",
-			"description": ["Setup of routers, printers and other perphirials for business or home networks"],
+			"description": ["Setup of routers, printers and other peripheral  devices for business and home networks"],
 		},
 	]
 ),
 
 art = new Skillset(
 	4,
-	"Artist / 3D Modeling",
+	"2D/3D Artist",
 	"modelling",
 	"Sketch, detail, model, texture and lighting  of various 2D and 3D ojbects",
-	"As an Artist, a few sheets of A4 paper, a sharp pencil, a sharpener, a rubber and a pack of colouring pencils was all I needed to create or replicate imagery. Nowadays, I use computer software for digital illustrations, image manipulation, and creation three-dimensional objects",    
+	"As an Artist, I use computer software <i>Krita</i>, <i>ZBrush</i>  and <i>Maya</i> for image manipulation, digital scuplting and creating three-dimensional objects",    
 	[
 		{
 			"id": 1,
 			"title": "Illustration",
 			"image": "sketch",
-			"description": ["Establish prespective and proportion guide for object or scene before adding detail"],
+			"description": ["Sktetch interpretation or visual explanation before adding detail"],
 		},
 		{
 			"id": 2,
 			"title": "Colouring",
 			"image": "colour",
-			"description": ["Block out areas with base colour for shading and highlights"],
+			"description": ["Add base colour, shading and highlights"],
 		},
 		{
 			"id": 3,
