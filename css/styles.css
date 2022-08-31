@@ -41,15 +41,27 @@ dd,
 i,
 video,
 .modal,
-.modal-header,
 .modal-body,
-button {
-	margin: 0 !important;
+button,
+figure {
+	margin: 0;
 	padding: 0;
 	font-size: 100%;
-	border: none !important;
+	border: none;
 	box-sizing: border-box;
-	text-shadow: none !important;
+	text-shadow: none;
+}
+
+.modal-header { border: none}
+
+figcaption { 
+	padding-top: 5px;
+	font-size: 0.75em;
+	font-weight: 600;
+	text-align: center;
+	color: #9b9b9b;
+	text-transform: capitalize;
+	font-style: italic;
 }
 
 img, video { width: 100%; }
@@ -261,6 +273,7 @@ i { padding: 0px 4px; }
 }
 
 #projects { 
+	
 	padding: 10px;
 	margin-top: 20px; }
 
@@ -268,11 +281,12 @@ i { padding: 0px 4px; }
 	position: relative !important;
 	margin-top: 40px; }
 
-#projectCarousel .img-carousel, .img-card { box-shadow: 1px 1px 10px 0px #adadad; }
+figure .project-img { box-shadow: 1px 1px 10px 0px #adadad !important; }
 
 #projectCarousel a { width: 40px; }
 
 #projects #slideCount .active { background: #2c5374; }
+#projects #slideCount li { height: 10px; width: 10px; border-radius: 100%;margin: 0px 3px !important}  
 
 #projects li { background: rgb(196, 196, 196); }
 
@@ -286,7 +300,7 @@ i { padding: 0px 4px; }
  }
 
 #projectCarousel span:hover { 
-	opacity: 1;
+	opacity: 0.8;
  }
 
 .project { padding: 10px; }
@@ -340,10 +354,15 @@ i { padding: 0px 4px; }
 
 }
 
-#webMissionList dt, .project h5, .skill h3 { 
+#webMissionList dt, .project h5, .skill h3, .modal-content h2 { 
 	font-family: "Chelsea Market";
 	padding: 0px 0px 5px;
 	font-weight: 900;
+}
+
+.modal-content h2 { 
+	padding-bottom: 10px;
+	font-size: 1.4em;
 }
 
 .modal-content .features { 
@@ -366,7 +385,7 @@ i { padding: 0px 4px; }
 }
 
 .modal-content .features img { 
-	width: 80%;
+	width: 100%;
 }
 
 .modal-header .close { 
