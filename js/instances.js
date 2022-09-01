@@ -21,8 +21,7 @@ const web = new Skillset(
 	"Web Development",
 	"web",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	["As a Web Develper, I develop the web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and w3.CSS. My current portfolio consists of websites and web applications built using object-orietation, templates and custom design techniques.</p>.",
-	"<p class='pt-3'>Data retrival from variables, json files and MySQL database provide a back-end while use of <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> for <span id='art-modal-details' data-toggle='modal' data-target='#detailModal'>image manipution and 3D modelling</span> to enhance the front-end.</p>"],
+	"As a Web Develper, I develop the web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and w3.CSS. My current portfolio consists of websites and web applications built using object-orietation, templates and custom design techniques.</p><p class='pt-3'>Data retrival from variables, json files and MySQL database provide a back-end while use of <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> for <span id='art-modal-details' data-toggle='modal' data-target='#detailModal'>image manipution and 3D modelling</span> to enhance the front-end.</p>",
 	[
 		{
 			"id": 1,
@@ -56,7 +55,7 @@ technician = new Skillset(
 	"PC Technician",
 	"technician",
 	"Installation, configuration and maintainence of hardware and software for computer systems",
-	["As a PC Technician, I build, replair and maintain computer systems, running Microsoft and Linux operating systems."],
+	"As a PC Technician, I build, replair and maintain computer systems, running Microsoft and Linux operating systems.",
 	[	{
 			"id": 1,
 			"title": "Hardware",
@@ -84,7 +83,7 @@ art = new Skillset(
 	"2D/3D Artist",
 	"modelling",
 	"Sketch, detail, model, texture and lighting  of various 2D and 3D ojbects",
-	["As an Artist, I use computer software <i>Krita</i>, <i>ZBrush</i>  and <i>Maya</i> for image manipulation, digital scuplting and creating three-dimensional objects."],    
+	"As an Artist, I use computer software <i>Krita</i>, <i>ZBrush</i>  and <i>Maya</i> for image manipulation, digital scuplting and creating three-dimensional objects.",    
 	[
 		{
 			"id": 1,
@@ -125,7 +124,7 @@ decorator = new Skillset(
 	"Painter &amp; Decorator",
 	"decorator",
 	"Remove stains, fill holes, sand and paint internal and external surfaces",
-	["Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS."],
+	"Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS.",
 	[
 		{
 			"id": 1,
