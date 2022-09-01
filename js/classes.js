@@ -145,12 +145,12 @@ class Skillset {
 		output += `<div class="col-sm-12">
 					<h2>` + this.title + `</h2>
 				</div>
-				<div class="col-sm-12 col-md-12 pb-5">
+				<div class="col-sm-12 col-md-12 pb-4">
 					
 					<p>` + this.description_long + `</p>
 				</div>
 				<img src='images/skills/` + this.image + `/` + this.image + `-large.png' alt=''>
-				<div class="pb-5 features">
+				<div class="pb-4 features">
 				`;
 		
 		for (let i = 0; i < this.skills.length; i++) {
