@@ -1,4 +1,4 @@
-
+                                                                                                                                                                                                                                                                  
 /*
 	constructor for class: id, title, image, statement short, statement long, skills) 
 	
@@ -21,7 +21,7 @@ const web = new Skillset(
 	"Web Development",
 	"web",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	"As a Web Develper, I develop the web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and w3.CSS. My current portfolio consists of websites and web applications built using object-orietation, templates and custom design techniques.</p><p class='pt-3'>Data retrival from variables, json files and MySQL database provide a back-end while use of <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> for <span id='art-modal-details' data-toggle='modal' data-target='#detailModal'>image manipution and 3D modelling</span> to enhance the front-end.</p>",
+	"As a Web Develper, I develop the web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and w3.CSS. My current portfolio consists of websites and web applications built using object-orietation, templates and custom design techniques.</p><p class='pt-3'>For front-end development, I uilise my skills as a <span id='art-modal-details' data-toggle='modal' data-target='#detailModal'>2D/3D Artist</span>, to  manipulate and create digital images using <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> Krita and Maya. The back-end is implemented by hard coding data into vairables, retrieval pf data from json files or querying a database.</p>",
 	[
 		{
 			"id": 1,
