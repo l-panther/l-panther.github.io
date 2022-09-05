@@ -103,18 +103,18 @@ class Skillset {
 
 				<p>` + this.description_long + `</p>
 				
-				<div class='w3-row mt-4'>
+				<div class='row mt-4'>
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
 			
 			output += `
-					<div class='w3-col s12 m6 l11 w3-margin-bottom features'>
+					<div class='col-sm-12 col-md-6 col-lg-11 w3-margin-bottom features'>
 						<div class="w3-row">
-							<div class="w3-col s2 w3-center">
-								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt=''>
+							<div class="w3-col s2 m2 w3-center">
+								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt='' class="skill-img">
 						
 							</div>
-							<div class="w3-col s10">
+							<div class="w3-col s10 m9">
 										<dl>
 									<dt>
 										` + this.skills[i].title + `
