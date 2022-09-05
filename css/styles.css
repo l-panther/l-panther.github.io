@@ -262,6 +262,7 @@ i { padding: 0px 4px; }
 /* Portfolio */
 #web-projects { 
 	background: #eee;
+	padding-bottom: 30px;
 	color: #313131; }
 
 #web-projects .btn { 
@@ -305,13 +306,15 @@ figure .project-img { box-shadow: 1px 1px 10px 0px #adadad !important; }
 
 .project { padding: 10px; }
 
-.project-preview-img img{ width: 80% !important;}
+.project-preview-img img { width: 80% !important;}
+
+.project .skill-img { width: 100%;}
 
 #web-projects .btn:hover { color: #355f92; }
 
 #web-projects .btn:hover, #skills .web-link { text-decoration: underline; }
 
-#web-projects dl, #web-projects .tech-list { text-align: left !important;font-size: 0.85em; }
+#web-projects dl, #web-projects .tech-list { text-align: left !important; }
 
 .project-options-container { 
 	width: 80px;
@@ -338,9 +341,7 @@ figure .project-img { box-shadow: 1px 1px 10px 0px #adadad !important; }
 	color: #141414; }
 
 /* Skills */
-.skill img { 
-	width: 60%;
-}
+.skill .skill-img { width: 50px; }
 
 .skill-img-lg img { 
 	width: 80%;
@@ -497,9 +498,11 @@ figure .project-img { box-shadow: 1px 1px 10px 0px #adadad !important; }
 		margin: auto;
 	}
 
-#projects { 
-	padding: 20px;
-	margin-top: 30px; }
+	#projects { 
+		padding: 20px;
+		margin-top: 30px; }
+
+	.skill .skill-img { width: 75%; }
 
 	.skill-img-lg img { 
 		display: none;
@@ -535,5 +538,7 @@ figure .project-img { box-shadow: 1px 1px 10px 0px #adadad !important; }
 	.web-mission-item { margin: 0px 0px 25px !important; }
 
 	.web-mission-item img { width: 100%; }
+
+	.skill .skill-img { width: 60px; }
 
 }
