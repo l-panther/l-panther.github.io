@@ -16,8 +16,11 @@ Installation
 ------------
 No installation needed.
 
-This website can be viewed by double clicking: index.html
-or by uploading files to a web server and navigating to the root web folder.
+This website can be viewed by double clicking the 'index.html' file
+or by uploading folder to a web server and navigating to the root directory via address bar in your web browesr.
+
+## Example of url path 
+## http://localhost/server/portfolio/
 
 Configuration
 -------------
