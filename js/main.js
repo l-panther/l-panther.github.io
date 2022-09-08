@@ -80,7 +80,7 @@
 	 */
 
 	// Array of projects
-	const projects = [cafes, carrepair, diabetes, efexacademy, emblem, parees];
+	const projects = [cafes, carrepair, diabetes, efexacademy, emblem, london, parees, portfolio];
 
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
