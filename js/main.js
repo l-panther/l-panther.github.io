@@ -7,6 +7,7 @@
 	// Create Developer instance from class
 	const developer = new Developer();
 
+	$('[data-toggle="tooltip"]').tooltip();
 
 	/* ..........................................
 	Navbar Bar
@@ -80,7 +81,7 @@
 	 */
 
 	// Array of projects
-	const projects = [cafes, carrepair, diabetes, efexacademy, emblem, london, parees, portfolio];
+	const projects = [cafes, carrepair, diabetes, efexacademy, emblem, intranet, jamaica, london, parees, portfolio];
 
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {

@@ -26,6 +26,7 @@ class Developer {
 				description: "Regular testing, bug fixes and updates"
 			}
 		];
+		this.cv = "More information about my skills and experience can be found on <span><a href='data/leroy_cv.pdf' target='_blank'>my cv</a></span>.";
 	}
 
 
@@ -79,10 +80,11 @@ class Developer {
 
 
 // Skill
-class Skillset {
+class Skillset extends Developer {
 
 	// id, title, folder, image, statement, skills
-	constructor(id, title, image, description_short, description_long, skills) {
+	constructor(id, title, image, description_short, description_long, skills, cv) {
+		super(cv);
 		this.id = id;
 		this.title = title;
 		this.image = image;
@@ -101,9 +103,12 @@ class Skillset {
 			<div class="col-xs-12 skill">
 				<h2>` + this.title + `</h2>
 
-				<p>` + this.description_long + `</p>
+				<p class="pt-2">` + this.description_long + `</p>
 				
 				<div class='row mt-4'>
+					<div class="col-sm-12 col-md-12 w3-center">
+						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="" class="w3-hide-medium w3-hide-small">
+					</div>
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
 			
@@ -114,8 +119,8 @@ class Skillset {
 								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt='' class="skill-img">
 						
 							</div>
-							<div class="w3-col s10 m9">
-										<dl>
+							<div class="w3-col s10 m10">
+								<dl class="pl-1">
 									<dt>
 										` + this.skills[i].title + `
 									</dt>
@@ -129,8 +134,9 @@ class Skillset {
 					`;
 		}
 		output += `
-					<div class="w3-center skill-img-lg">
-						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="">
+					<div class="col-sm-12 col-md-12 w3-center sill-img-lg">
+						<img src="images/skills/` + this.image + `/` + this.image + `-med.png" alt="" class="w3-hide-small w3-hide-large">
+						<img src="images/skills/` + this.image + `/` + this.image + `-small.png" alt="" class="w3-hide-medium w3-hide-large">
 					</div>
 				</div>
 			</div>
@@ -197,21 +203,26 @@ class Project {
 
 	getScreenshot() {
 		let output = `<figure>
-						<a href='#'><img class='project-img' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
+						<a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank' title="Click to view website"><img class='project-img' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
+						
 						<figcaption>` + this.title + `</figcaption>
-					</figure>`
+
+					</figure>
+					`
+		function changeImage() {
+			
+		}
 		return output;
 	}
 
 	// Show count position
 	countProject(i) {
-		let count = 0;
 		let output = "";
 		if (this.id == 1) {
-			output += "<li data-target='#projectCarousel' data-slide-to='" + 0 + "' class='active' title='Project " + this.id + " - " + this.title + "'></li>";
+			output += "<li data-target='#projectCarousel' data-slide-to='" + i + "' class='active' title='Project " + this.id + " - " + this.title + "'></li>";
 		} else {
 			let elemId = this.id;
-			output += "<li data-target='#projectCarousel' data-slide-to='" + this.id + "' title='Project " + this.id + " - " + this.title + "'></li>";
+			output += "<li data-target='#projectCarousel' data-slide-to='" + i + "' title='Project " + this.id + " - " + this.title + "'></li>";
 		}
 		return output;
 	}
@@ -220,7 +231,7 @@ class Project {
 	// Show carousel
 	showCard(i) {
 
-		let output = "", count = "";
+		let output = "";
 
 		// Output
 		output += `
