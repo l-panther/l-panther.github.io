@@ -105,22 +105,25 @@ class Skillset extends Developer {
 
 				<p class="pt-2">` + this.description_long + `</p>
 				
-				<div class='row mt-4'>
-					<div class="col-sm-12 col-md-12 w3-center">
-						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="" class="w3-hide-medium w3-hide-small">
+				<div class='row'>
+					<div class="col-sm-12 col-md-7 col-lg-12 w3-center">
+						<img src="images/skills/` + this.image + `/` + this.image + `-small.png" alt="" class="w3-hide-medium w3-hide-large">
+						<img src="images/skills/` + this.image + `/` + this.image + `-med.png" alt="" class="w3-hide-small w3-hide-large">
+						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="" class="w3-hide-small w3-hide-medium">
 					</div>
+					<div class='col-sm-12 col-md-5 col-lg-11 features'>
+						
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
 			
 			output += `
-					<div class='col-sm-12 col-md-6 col-lg-11 w3-margin-bottom features'>
 						<div class="w3-row">
 							<div class="w3-col s2 m2 w3-center">
 								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt='' class="skill-img">
-						
+								
 							</div>
 							<div class="w3-col s10 m10">
-								<dl class="pl-1">
+								<dl>
 									<dt>
 										` + this.skills[i].title + `
 									</dt>
@@ -130,13 +133,13 @@ class Skillset extends Developer {
 								</dl>
 							</div>
 						</div>
-					</div>
 					`;
 		}
 		output += `
+					
+					</div>
 					<div class="col-sm-12 col-md-12 w3-center sill-img-lg">
-						<img src="images/skills/` + this.image + `/` + this.image + `-med.png" alt="" class="w3-hide-small w3-hide-large">
-						<img src="images/skills/` + this.image + `/` + this.image + `-small.png" alt="" class="w3-hide-medium w3-hide-large">
+						<img src="images/skills/` + this.image + `/` + this.image + `-med.png" alt="" class="w3-hide-small w3-hide">
 					</div>
 				</div>
 			</div>
