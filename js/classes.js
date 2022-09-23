@@ -206,7 +206,7 @@ class Project {
 
 	getScreenshot() {
 		let output = `<figure>
-						<a href='http://192.168.0.25:80/server/` + this.git + `' target='_blank' title="Click to view website"><img class='project-img' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
+						<a href='#' title="Click to view website"><img class='project-img' src='images/projects/` + this.image + `.png' alt='Website ` + this.id + ` screenshot' /></a>
 						
 						<figcaption>` + this.title + `</figcaption>
 
