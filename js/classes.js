@@ -103,21 +103,21 @@ class Skillset extends Developer {
 			<div class="col-xs-12 skill">
 				<h2>` + this.title + `</h2>
 
-				<p class="pt-2">` + this.description_long + `</p>
+				<p class="pt-2 mb-4">` + this.description_long + `</p>
 				
-				<div class='row'>
-					<div class="col-sm-12 col-md-7 col-lg-12 w3-center">
+				<div class='w3-row'>
+					<div class="w3-col s12 m5 l12 w3-center">
 						<img src="images/skills/` + this.image + `/` + this.image + `-small.png" alt="" class="w3-hide-medium w3-hide-large">
 						<img src="images/skills/` + this.image + `/` + this.image + `-med.png" alt="" class="w3-hide-small w3-hide-large">
 						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="" class="w3-hide-small w3-hide-medium">
 					</div>
-					<div class='col-sm-12 col-md-5 col-lg-11 features'>
+					<div class='w3-col s12 m7 l12 features'>
 						
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
 			
 			output += `
-						<div class="w3-row">
+						<div class="w3-row mt-4">
 							<div class="w3-col s2 m2 w3-center">
 								<img src='images/skills/` + this.image + `/` + this.skills[i].image + `.png' alt='' class="skill-img">
 								
