@@ -280,8 +280,6 @@ i { padding: 0px 4px; }
 	position: relative !important;
 	margin-top: 40px; }
 
-figure .project-img { box-shadow: 1px 1px 10px 0px #adadad !important; }
-
 figure div { 
 	display: flex;
 	justify-content: center;
@@ -352,7 +350,8 @@ font-size: 60px !important}
 .skill { padding: 0px 12px; }
 
 
-.skill h2, .skill p, #projects h2, #projects p, #projects figcaption { text-align: center; }
+.skill h2, #projects h2, #projects figcaption { text-align: center; }
+.skill p, #projects p { text-align: justify; }
 
 .skill .skill-img { width: 50px; }
 
@@ -522,7 +521,7 @@ font-size: 60px !important}
 		margin: auto;
 	}
 
-	.skill .skill-img { width: 100%; }
+	.skill .skill-img { width: 80%; }
 
 	.skill-img-lg img { 
 		display: none;
