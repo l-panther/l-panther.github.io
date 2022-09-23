@@ -303,11 +303,11 @@ font-size: 60px !important}
 	padding: 15px;
 	border-radius: 100%;
 	color: #355f92 !important;
-	opacity: 0.4;
+	opacity: 0.6;
  }
 
 #projectCarousel span:hover { 
-	opacity: 0.8;
+	opacity: 01;
  }
 
 .project { padding: 10px; }
