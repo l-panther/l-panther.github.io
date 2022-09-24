@@ -20,6 +20,7 @@ const web = new Skillset(
 	1,
 	"Web Development",
 	"web",
+	"Directional arrows surrounding a wireframe with notation of sectioned areas, web technologies such as HTML5 and CSS3 beneath a laptop and a mockup of a webpage",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
 	"As a Web Develper, I develop the web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and W3.CSS. For front-end development, I uilise my skills as a <span id='art-modal-details' data-toggle='modal' data-target='#detailModal'>2D/3D Artist</span>, to manipulate and create digital images using <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> Krita and Maya. Implementation of back-end development is achieved by hard coding data into vairables, retrieving of data from json files and querying databases.</p><p class='w3-hide-small w3-hide-medium pt-3'>My current portfolio consists of websites and web applications built using object-orietation, templates and custom design techniques.</p>",
 	[
@@ -54,6 +55,7 @@ technician = new Skillset(
 	2,
 	"PC Technician",
 	"technician",
+	"A computer processing unit (CPU)",
 	"Installation, configuration and maintainence of hardware and software for computer systems",
 	"As a PC Technician, I build, replair and maintain computer systems, running Microsoft and Linux operating systems.",
 	[	{
@@ -82,6 +84,7 @@ art = new Skillset(
 	4,
 	"2D/3D Artist",
 	"modelling",
+	"A cube, sphere and pyramid",
 	"Sketch, detail, model, texture and lighting  of various 2D and 3D ojbects",
 	"As an Artist, I use computer software <i>Krita</i>, <i>ZBrush</i>  and <i>Maya</i> for image manipulation, digital scuplting and creating three-dimensional objects.",    
 	[
@@ -89,30 +92,35 @@ art = new Skillset(
 			"id": 1,
 			"title": "Illustration",
 			"image": "sketch",
+			"image_description": "A pencil with some drawn lines",
 			"description": ["Sktetch interpretation or visual explanation before adding detail"],
 		},
 		{
 			"id": 2,
 			"title": "Colouring",
 			"image": "colour",
+			"image_description": "A colour palete and paint brush",
 			"description": ["Add base colour, shading and highlights"],
 		},
 		{
 			"id": 3,
 			"title": "Modeling / Scupting",
 			"image": "3d",
+			"image_description": "A three-dimensional cude",
 			"description": ["Create complex geometry by combining primitive objects and manipulating verticles, edges and faces"],
 		},
 		{
 			"id": 4,
 			"title": "Lighting",
 			"image": "lighting",
+			"image_description": "A spotlight",
 			"description": ["Add lighting to illuminate scene and cast shadows to replicate real-world"],
 		},
 		{
 			"id": 5,
 			"title": "Materials",
 			"image": "texture",
+			"image_description": "3 tier layer of possible materials",
 			"description": ["Apply diffuse colour, normal map, bump map and other map types for desired level of realism"],
 		},
 
@@ -130,12 +138,14 @@ decorator = new Skillset(
 			"id": 1,
 			"title": "Preperation",
 			"image": "scrapper",
+			"image_descrption": "A scrapper",
 			"description": ["Repair surface with appropriate compound before sanding and painting"],
 		},
 		{
 			"id": 2,
 			"title": "Painting",
 			"image": "roller",
+			"image_descrption": "A paint roller",
 			"description": ["Mould treatment, stain removal and painting of ceilings, walls and doors"],
 		},
 	]
