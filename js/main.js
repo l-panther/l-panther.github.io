@@ -96,13 +96,13 @@
 	$("#carouselList").html(carouselContent);
 	$("#cardList").html(cardContent);
 	$("#slideCount").html(slideCount);
-	$("#portfolio_description_sm-screen").html(developer.portfolio_description);
+	$(".portfolio_description").html(developer.portfolio_description);
 
 
 	// Get skills
 	getModalContent("#technician-modal", "#technician-details", technician.getDetails());
 	getModalContent("#artist-modal", "#artist-details", artContent.getDetails());
-	getModalContent("#decorator-modal", "#decorator-details", decoratorContent.getDetails());
+	getModalContent(".decorator-modal", "#decorator-details", decoratorContent.getDetails());
 	
 	// Clear skill Modal
 	clearModalContent("#technician-details");

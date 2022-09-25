@@ -31,7 +31,7 @@ class Developer {
 			}
 		];
 		this.cv = `More information about my skills and experience can be found on <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
-		this.portfolio_description = `Whether web design or  <span id="decorator-modal" data-toggle="modal" data-target="#detailModal">interior design</span>, I enjoy anything that enjoy some form of being creative, either problem solving or presentation. My current portfolio consists of websites and web applications for catering, travel and health. Each project is built using a different methods of implementation, with my most recent ddeveloped with object-orietation. For variety, I have also incorporated templates, as well as custom design techniques. You view all my repositories and code on <span><a href="#">my Github page</a></span>`;
+		this.portfolio_description = `Whether web design or  <span class="decorator-modal" data-toggle="modal" data-target="#detailModal">interior design</span>, I enjoy anything that enjoy some form of being creative, either problem solving or presentation. My current portfolio consists of websites and web applications for catering, travel and health. Each project is built using a different methods of implementation, with my most recent ddeveloped with object-orietation. For variety, I have also incorporated templates, as well as custom design techniques. You view all my repositories and code on <span><a href="#">my Github page</a></span>`;
 	}
 
 
@@ -107,7 +107,7 @@ class Skillset extends Developer {
 				<h2>` + this.title + `</h2>
 
 				<p class="pt-2 mb-4">` + this.description_long + `</p>
-				<p class="w3-hide-small w3-hide-medium mb-4 portfolio_description_lg-screen">` + this.portfolio_description + `</p>
+				<p class="w3-hide-small w3-hide-medium mb-4 portfolio_description">` + this.portfolio_description + `</p>
 				
 				<div class="w3-row">
 					<div class="w3-col s12 m5 l12 w3-center">
