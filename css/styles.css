@@ -75,12 +75,14 @@ fieldset, .carousel-item .active {
 	border: none;
 }
 
+.video-container { 
+	padding: 20px;
+	background: #2c5374; }
+
 video { 
 	width: 100%; 
-	height: 320px;
-	background: #2c5374; 
-	padding: 0px 50px;
-	margin: 0}
+	margin: auto !important;
+}
 
 .modal .collapse { 
 	background: #2c5374; }
@@ -362,7 +364,7 @@ font-size: 60px !important}
 
 .skill-img { margin: 30px 0px; }
 
-.skill span { 
+.skill span, .portfolio_description_sm-screen span, .portfolio_description_lg-screen span { 
 	text-decoration: underline;
 	color: #2c5374;
 	cursor: pointer;
@@ -392,7 +394,8 @@ font-size: 60px !important}
 .modal-content { 
 	color: #141414;
 	box-shadow: 1px 1px 40px 0px #141414;
-	border: 1px solid #141414
+	border: 1px solid #141414;
+	overflow: hidden;
 }
 
 .modal-content img { 
@@ -570,7 +573,7 @@ font-size: 60px !important}
 
 	.skill .skill-icon { width: 50px; }
 
-	.skill-img { margin: 50px 0px 30px; }
+	.skill-img { margin: 30px 0px; }
 
 	#projects { 
 		padding: 10px 20px;
