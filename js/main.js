@@ -48,7 +48,9 @@
 	/* ..........................................
 	Skills
 	................................................. */ 
-	const skills = [web], artContent = art;
+	const skills = [web], 
+		artContent = art,
+		decoratorContent = decorator;
 	let output = "";
 	for (let i = 0; i < skills.length; i++) {
 		output += skills[i].getSkill();
@@ -81,7 +83,7 @@
 	 */
 
 	// Array of projects
-	const projects = [cafes, carrepair, diabetes, emblem, jamaica, london, parees];
+	const projects = [cafes, carrepair, diabetes, efexacademy, emblem, jamaica, london, parees];
 
 	// For length of result, output content
 	for (var i = 0; i < projects.length; i++) {
@@ -94,15 +96,18 @@
 	$("#carouselList").html(carouselContent);
 	$("#cardList").html(cardContent);
 	$("#slideCount").html(slideCount);
+	$("#portfolio_description_sm-screen").html(developer.portfolio_description);
 
 
 	// Get skills
 	getModalContent("#technician-modal", "#technician-details", technician.getDetails());
 	getModalContent("#artist-modal", "#artist-details", artContent.getDetails());
+	getModalContent("#decorator-modal", "#decorator-details", decoratorContent.getDetails());
 	
 	// Clear skill Modal
 	clearModalContent("#technician-details");
 	clearModalContent("#artist-details");
+	clearModalContent("#decorator-details");
 			
 	
 	// Get content for modal

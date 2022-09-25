@@ -31,6 +31,7 @@ class Developer {
 			}
 		];
 		this.cv = `More information about my skills and experience can be found on <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
+		this.portfolio_description = `Whether web design or  <span id="decorator-modal" data-toggle="modal" data-target="#detailModal">interior design</span>, I enjoy anything that enjoy some form of being creative, either problem solving or presentation. My current portfolio consists of websites and web applications for catering, travel and health. Each project is built using a different methods of implementation, with my most recent ddeveloped with object-orietation. For variety, I have also incorporated templates, as well as custom design techniques. You view all my repositories and code on <span><a href="#">my Github page</a></span>`;
 	}
 
 
@@ -85,12 +86,12 @@ class Developer {
 class Skillset extends Developer {
 
 	// id, title, folder, image, statement, skills
-	constructor(id, title, image, image_description, description_short, description_long, skills, cv) {
-		super(cv);
+	constructor(id, title, image, image_description, description_short, description_long, skills) {
+		super();
 		this.id = id;
 		this.title = title;
 		this.image = image;
-		this.image_description = image_description;
+		this.image_description = image_description; 
 		this.description_short = description_short;
 		this.description_long = description_long;
 		this.skills = skills;
@@ -99,14 +100,14 @@ class Skillset extends Developer {
 
 	// Get skills
 	getSkill() {
-			let output = ``;	
-	
+			
 			// Output
-			output += `
+			let output = `
 			<div class="col-xs-12 skill">
 				<h2>` + this.title + `</h2>
 
 				<p class="pt-2 mb-4">` + this.description_long + `</p>
+				<p class="w3-hide-small w3-hide-medium mb-4 portfolio_description_lg-screen">` + this.portfolio_description + `</p>
 				
 				<div class="w3-row">
 					<div class="w3-col s12 m5 l12 w3-center">
@@ -149,9 +150,7 @@ class Skillset extends Developer {
 
 
 	getDetails() {
-		let output = ``;
-			
-		output += `
+		let output = `
 				<div class="col-sm-12">
 					<h2>` + this.title + `</h2>
 				</div>
@@ -160,7 +159,30 @@ class Skillset extends Developer {
 					<p>` + this.description_long + `</p>
 				</div>
 				<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt=" ` + this.image_description + `">
-				<div class="pb-4 features">
+				`;
+				
+				if(this.id === 4) {
+					output += `
+						<div class="row video-container">
+							<div class="col-sm-6">
+								<video controls poster="">
+									<source src="media/mould.mp4" type="video/mp4">
+									<source src="media/mould.ogg" type="video/ogg">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class="col-sm-6">
+								<video controls poster="">
+									<source src="media/mould2.mp4" type="video/mp4">
+									<source src="media/mould2.ogg" type="video/ogg">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+						`;
+				}
+				
+				output += `<div class="pb-4 features">
 				`;
 		
 		for (let i = 0; i < this.skills.length; i++) {
@@ -192,8 +214,9 @@ class Skillset extends Developer {
 
 
 // Project
-class Project {
+class Project extends Developer {
 	constructor(id, title, type, image, features, technologies, description, git) {
+		super();
 		this.id = id;
 		this.title = title;
 		this.type = type;
@@ -231,10 +254,7 @@ class Project {
 	// Show carousel
 	showCard(i) {
 
-		let output = "";
-
-		// Output
-		output += `
+		let output = `
 					<div class="col-sm-4 col-md-3 col-lg-6 project">
 					` + this.getScreenshot() + `	
 				 	 </div>
@@ -247,8 +267,8 @@ class Project {
 	// Show carousel
 	showCarousel(i) {
 
-		let output = "",
-			count = "";
+		let output = "";
+								
 		if (this.id == 1) {
 			output += '<div class="carousel-item active"> <!-- Carousel item -->';
 		} else {
@@ -264,6 +284,7 @@ class Project {
 					</div>
 				</div>
 		`;
+
 		return output;
 	}
 

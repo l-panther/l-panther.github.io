@@ -22,7 +22,7 @@ const web = new Skillset(
 	"web",
 	"Directional arrows surrounding a wireframe with notation of sectioned areas, web technologies such as HTML5 and CSS3 beneath a laptop and a mockup of a webpage",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	"As a Web Develper, I develop the web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and W3.CSS. For front-end development, I uilise my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal'>2D/3D Artist</span>, to manipulate and create digital images using <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> Krita and Maya. Implementation of back-end development is achieved by hard coding data into vairables, retrieving of data from json files and querying databases.</p><p class='w3-hide-small w3-hide-medium pt-3'>My current portfolio consists of websites and web applications built using object-orietation, templates and custom design techniques.</p>",
+	`As a Web Develper, I plan, design, develop and test web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and W3.CSS. For front-end development, I uilise my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal'>2D/3D Artist</span>, to manipulate and create digital images using <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> Krita and Blender for personalisation and branding. Back-end development is achieved by various methods of implementation, such as hard coding data, retrieving data from json files and querying a database.`,
 	[
 		{
 			"id": 1,
@@ -81,7 +81,7 @@ technician = new Skillset(
 ),
 
 art = new Skillset(
-	4,
+	3,
 	"2D/3D Artist",
 	"modelling",
 	"A cube, sphere and pyramid",
@@ -128,9 +128,10 @@ art = new Skillset(
 ),
 
 decorator = new Skillset(
-	5,
+	4,
 	"Painter &amp; Decorator",
 	"decorator",
+	"A paint roller",
 	"Remove stains, fill holes, sand and paint internal and external surfaces",
 	"Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS.",
 	[
