@@ -96,30 +96,27 @@
 	$("#slideCount").html(slideCount);
 
 
-	// Insert output into html 
+	// Get skills
+	getModalContent("#technician-modal", "#technician-details", technician.getDetails());
+	getModalContent("#artist-modal", "#artist-details", artContent.getDetails());
+	
+	// Clear skill Modal
+	clearModalContent("#technician-details");
+	clearModalContent("#artist-details");
+			
+	
+	// Get content for modal
 	function getModalContent(elemId1, elemId2, method) {
 		$(elemId1).click(function () {
 			$(elemId2).html(method);
 		});
 	}
 
+	// Clear content for modal
 	function clearModalContent(elemId) {
 		$(".modal button").click(function () {
 			$(elemId).html("");
 		});
 	}
 
-	// Skills
-	getModalContent("#technician-modal", "#technician-details", technician.getDetails());
-	getModalContent("#art-modal-details", "#art-details", artContent.getDetails());
-	getModalContent("#modelling-modal-details", "#modelling-details", artContent.getDetails());
-	getModalContent("#decorator-modal", "#decorator-details", decorator.getDetails());
-	
-	// Clear Skill Modal
-	clearModalContent("#technician-details");
-	clearModalContent("#art-details");
-	clearModalContent("#modelling-details");
-	clearModalContent("#decorator-details");
-			
-	
 }(jQuery));

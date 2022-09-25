@@ -110,9 +110,9 @@ class Skillset extends Developer {
 				
 				<div class="w3-row">
 					<div class="w3-col s12 m5 l12 w3-center">
-						<img src="images/skills/` + this.image + `/` + this.image + `-small.png" alt="` + this.image_description + `" class="w3-hide-medium w3-hide-large">
-						<img src="images/skills/` + this.image + `/` + this.image + `-med.png" alt="` + this.image_description + `" class="w3-hide-small w3-hide-large">
-						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="` + this.image_description + `" class="w3-hide-small w3-hide-medium">
+						<img src="images/skills/` + this.image + `/` + this.image + `-small.png" alt="` + this.image_description + `" class="w3-hide-medium w3-hide-large skill-img">
+						<img src="images/skills/` + this.image + `/` + this.image + `-med.png" alt="` + this.image_description + `" class="w3-hide-small w3-hide-large skill-img">
+						<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt="` + this.image_description + `" class="w3-hide-small w3-hide-medium skill-img">
 					</div>
 					<div class="w3-col s12 m7 l12 features">
 						
@@ -122,7 +122,7 @@ class Skillset extends Developer {
 			output += `
 						<div class="w3-row mt-4">
 							<div class="w3-col s2 m2 w3-center">
-								<img src="images/skills/` + this.image + `/` + this.skills[i].image + `.png" alt="` + this.skills[i].image_description + `" class="skill-img">
+								<img src="images/skills/` + this.image + `/` + this.skills[i].image + `.png" alt="` + this.skills[i].image_description + `" class="skill-icon">
 								
 							</div>
 							<div class="w3-col s10 m10">
@@ -151,7 +151,8 @@ class Skillset extends Developer {
 	getDetails() {
 		let output = ``;
 			
-		output += `<div class="col-sm-12">
+		output += `
+				<div class="col-sm-12">
 					<h2>` + this.title + `</h2>
 				</div>
 				<div class="col-sm-12 col-md-12 pb-4">
@@ -205,7 +206,7 @@ class Project {
 
 	getScreenshot() {
 		let output = `<figure>
-						<a href="http://192.168.0.25:80/server/` + this.git + `" target="_blank" title="Click to view website"><img class="project-img" src="images/projects/` + this.image + `.png" alt="Screenshot of ` + this.image + `usserface for mobile and desktop" /></a>
+						<a href="http://192.168.0.35:80/server/` + this.git + `" target="_blank" title="Click to view website"><img class="project-img" src="images/projects/` + this.image + `.png" alt="Screenshot of ` + this.image + `usserface for mobile and desktop" /></a>
 						
 						<figcaption>` + this.title + `</figcaption>
 
