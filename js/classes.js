@@ -166,15 +166,15 @@ class Skillset extends Developer {
 						<div class="row video-container">
 							<div class="col-sm-6">
 								<video controls poster="">
-									<source src="media/mould.mp4" type="video/mp4">
-									<source src="media/mould.ogg" type="video/ogg">
+									<source src="media/mould_before.mp4" type="video/mp4">
+									<source src="media/mould_before.webm" type="video/webm">
 									Your browser does not support the video tag.
 								</video>
 							</div>
 							<div class="col-sm-6">
 								<video controls poster="">
-									<source src="media/mould2.mp4" type="video/mp4">
-									<source src="media/mould2.ogg" type="video/ogg">
+									<source src="media/mould_after.mp4" type="video/mp4">
+									<source src="media/mould_after.webm" type="video/webm">
 									Your browser does not support the video tag.
 								</video>
 							</div>
