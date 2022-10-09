@@ -164,7 +164,16 @@ class Skillset extends Developer {
 				if(this.id === 4) {
 					output += `
 						<div class="row video-container">
-							<div class="col-sm-12">
+							<div class="col-sm-6">
+								<dl>
+									<dt>fdf</dt>
+									<dd>jkj</dd>
+									<dd>jkj</dd>
+									<dd>jkj</dd>
+									<dd>jkj</dd>
+								</dl>
+							</div>
+							<div class="col-sm-6">
 								<video controls poster="">
 									<source src="media/mould_before.mp4" type="video/mp4">
 									<source src="media/mould_before.webm" type="video/webm">
