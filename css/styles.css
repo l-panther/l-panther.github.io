@@ -511,6 +511,10 @@ font-size: 60px !important}
 		float: right;
 	}
 
+	#hero {
+		padding: 40px 30px;
+	}
+
 	#hero img {
 		width: 80%;
 		margin-top: 0px;
@@ -556,7 +560,7 @@ font-size: 60px !important}
 	#header-logo { width: 60px; }
 	
 	/* Hero */
-	#hero { padding: 30px 50px 60px; }
+	#hero { padding: 30px 50px; }
 
 	#hero h1 { 
 		font-size:2.8em;
