@@ -22,7 +22,7 @@ const web = new Skillset(
 	"web",
 	"Directional arrows surrounding a wireframe with notation of sectioned areas, web technologies such as HTML5 and CSS3 beneath a laptop and a mockup of a webpage",
 	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	`As a Web Develper, I plan, design, develop and test web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and W3.CSS. For front-end development, I uilise my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal'>2D/3D Artist</span>, to manipulate and create digital images using <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> Krita and Blender for personalisation and branding. Back-end development is achieved by various methods of implementation, such as hard coding data, retrieving data from json files and querying a database.`,
+	`As a Web Develper, I plan, design, develop and test web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and W3.CSS. For <b>front-end development</b>, I uilise my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal'>2D/3D Artist</span>, to manipulate and create digital images using <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>computer software</span> Krita and Blender for personalisation, branding and overall ashetics of user interface. <b>Back-end development</b> is achieved using various methods of implementation, such as hard coding data, retrieving data from json files and querying a database. <br><br>To ensure <i>scalibility</i>, <i>usability</i> and <i>accessibility</i>, it is essental to choose the most appropriatte methodology and technology to successfully meet system requirements for functionality, prsentation and deliver of robust <b>full-stack</b> applications.`,
 	[
 		{
 			"id": 1,
@@ -57,7 +57,7 @@ technician = new Skillset(
 	"technician",
 	"A computer processing unit (CPU)",
 	"Installation, configuration and maintainence of hardware and software for computer systems",
-	"As a PC Technician, I build, replair and maintain computer systems, running Microsoft and Linux operating systems.",
+	"As a PC Technician, I build, replair and maintain computer systems, running Microsoft and Linux operating systems. Utilisation of these skills kee",
 	[	{
 			"id": 1,
 			"title": "Hardware",
@@ -86,7 +86,7 @@ art = new Skillset(
 	"modelling",
 	"A cube, sphere and pyramid",
 	"Sketch, detail, model, texture and lighting  of various 2D and 3D ojbects",
-	"As an Artist, I use computer software <i>Krita</i>, <i>ZBrush</i>  and <i>Maya</i> for image manipulation, digital scuplting and creating three-dimensional objects.",    
+	"As an Artist, I create and manipulate digital images using computer software <i>Krita</i> and<i>Blender</i> for image manipulation, digital scuplting and creating three-dimensional objects.",    
 	[
 		{
 			"id": 1,
@@ -133,14 +133,14 @@ decorator = new Skillset(
 	"decorator",
 	"A paint roller",
 	"Remove stains, fill holes, sand and paint internal and external surfaces",
-	"Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS.",
+	"Outside the world of computing, I repair, maintain and apply finishes to a variety of different surfaces. Requiring a slightly more hands-on approach, painting and decorating combines technical ability and attention to detail to succussfully prolong the internal and external life of a building.",
 	[
 		{
 			"id": 1,
 			"title": "Preperation",
 			"image": "scrapper",
 			"image_descrption": "A scrapper",
-			"description": ["Repair surface with appropriate compound before sanding and painting"],
+			"description": ["Repair surface with appropriate compound before sanding and applying finishes"],
 		},
 		{
 			"id": 2,

@@ -31,7 +31,7 @@ class Developer {
 			}
 		];
 		this.cv = `More information about my skills and experience can be found on <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
-		this.portfolio_description = `Whether web design or  <span class="decorator-modal" data-toggle="modal" data-target="#detailModal">interior design</span>, I enjoy anything that enjoy some form of being creative, either problem solving or presentation. My current portfolio consists of websites and web applications for catering, travel and health. Each project is built using a different methods of implementation, with my most recent ddeveloped with object-orietation. For variety, I have also incorporated templates, as well as custom design techniques. You view all my repositories and code on <span><a href="#">my Github page</a></span>`;
+		this.portfolio_description = `My current portfolio consists of websites and web applications developed using a vareity of different methods, including object-orietation, templates, and custom design techniques. All project code can be viewed on <span><a href="https://github.com/l-panther/" target="_blank">my Github page</a></span> or <span><a href="data/leroy_cv.pdf" target="_blank">check out my CV</a></span> for more information about my skills.`;
 	}
 
 
@@ -160,30 +160,7 @@ class Skillset extends Developer {
 				</div>
 				<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt=" ` + this.image_description + `">
 				`;
-				
-				if(this.id === 4) {
-					output += `
-						<div class="row video-container">
-							<div class="col-sm-6">
-								<dl>
-									<dt>fdf</dt>
-									<dd>jkj</dd>
-									<dd>jkj</dd>
-									<dd>jkj</dd>
-									<dd>jkj</dd>
-								</dl>
-							</div>
-							<div class="col-sm-6">
-								<video controls poster="">
-									<source src="media/mould_before.mp4" type="video/mp4">
-									<source src="media/mould_before.webm" type="video/webm">
-									Your browser does not support the video tag.
-								</video>
-							</div>
-						</div>
-						`;
-				}
-				
+			
 				output += `<div class="pb-4 features">
 				`;
 		
