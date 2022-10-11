@@ -203,9 +203,9 @@ i { padding: 0px 4px; }
 	padding: 40px 30px 80px;
 	color: #f2f2f2;
 	text-align: center;
-	background: url("../images/bg.jpg") no-repeat;
-	background-size: cover;
 	background: #2c5374;
+	background: url("../images/about/coder-bg.png") no-repeat;
+	background-size: cover;
 }
 
 #hero h1 {
@@ -585,6 +585,5 @@ font-size: 60px !important}
 		margin-top: 0px; }
 
 	.skill h2, #projects h2 { text-align: center; }
-
 
 }
