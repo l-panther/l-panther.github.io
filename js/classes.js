@@ -31,7 +31,7 @@ class Developer {
 			}
 		];
 		this.cv = `More information about my skills and experience can be found on <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
-		this.portfolio_description = `My current portfolio consists of websites and web applications developed using a vareity of different methods, including object-orietation, templates, and custom design techniques. All project code can be viewed on <span><a href="https://github.com/l-panther/" target="_blank">my Github page</a></span> or <span><a href="data/leroy_cv.pdf" target="_blank">check out my CV</a></span> for more information about my skills.`;
+		this.portfolio_description = `My current portfolio consists of websites and web applications for catering, travel and health. Each project is built using a different methods of implementation, with my most recent ddeveloped with object-orietation. For variety, I have also incorporated templates, as well as custom design techniques. You view all my repositories and code on <span><a href="https://github.com/l-panther/">my Github page</a></span> or for more information about my skills <span><a href="data/leroy_cv.pdf" target="_blank">check out my CV</a></span>`;
 	}
 
 
@@ -208,7 +208,7 @@ class Project extends Developer {
 
 	getScreenshot() {
 		let output = `<figure>
-						<a href="http://192.168.0.35:80/server/` + this.git + `" target="_blank" title="Click to view website"><img class="project-img" src="images/projects/` + this.image + `.png" alt="Screenshot of ` + this.image + `usserface for mobile and desktop" /></a>
+						<a href="http://192.168.116.129:80/server/` + this.git + `" target="_blank" title="Click to view website"><img class="project-img" src="images/projects/` + this.image + `.png" alt="Screenshot of ` + this.image + `usserface for mobile and desktop" /></a>
 						
 						<figcaption>` + this.title + `</figcaption>
 
