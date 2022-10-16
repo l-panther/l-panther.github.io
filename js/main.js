@@ -102,7 +102,7 @@
 	// Get skills
 	getModalContent("#technician-modal", "#technician-details", technician.getDetails());
 	getModalContent("#artist-modal", "#artist-details", artContent.getDetails());
-	getModalContent(".decorator-modal", "#decorator-details", decoratorContent.getDetails());
+	getModalContent("#decorator-modal", "#decorator-details", decoratorContent.getDetails());
 	
 	// Clear skill Modal
 	clearModalContent("#technician-details");

@@ -31,7 +31,7 @@ class Developer {
 			}
 		];
 		this.cv = `More information about my skills and experience can be found on <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
-		this.portfolio_description = `My current portfolio consists of websites and web applications for catering, travel and health. Each project is built using a different methods of implementation, with my most recent ddeveloped with object-orietation. For variety, I have also incorporated templates, as well as custom design techniques. You view all my repositories and code on <span><a href="https://github.com/l-panther/">my Github page</a></span> or for more information about my skills <span><a href="data/leroy_cv.pdf" target="_blank">check out my CV</a></span>`;
+		this.portfolio_description = `My current portfolio showcases my front-end and back-end development expertise using templates, as well as custom design techniques. For information about my additional creative and technical skills as a <span id='technician-modal' data-toggle='modal' data-target='#detailModal'>PC Technician</span> and <span id='decorator-modal' data-toggle='modal' data-target='#detailModal'>Painter and Decorator</span> you can <span><a href="data/leroy_cv.pdf" target="_blank">view my CV</a></span> or <span><a href=”https://github.com/l-panther/”>check out my Github</a></span> page for all my code and repositories.`;
 	}
 
 
@@ -106,7 +106,7 @@ class Skillset extends Developer {
 			<div class="col-xs-12 skill">
 				<h2>` + this.title + `</h2>
 
-				<p class="pt-2 mb-4">` + this.description_long + `</p>
+				<p class="pt-2 pb-3">` + this.description_long + `</p>
 				<p class="w3-hide-small w3-hide-medium mb-4 portfolio_description">` + this.portfolio_description + `</p>
 				
 				<div class="w3-row">
