@@ -146,7 +146,7 @@ i { padding: 0px 4px; }
 .theme-color-bg {
 	background: #125f9c !important;
 	background: #3e3f5f !important;
-	background: url("../images/main/bg.jpg") no-repeat !important;
+	background: url("../images/hero/bg.jpg") no-repeat !important;
 	background-size: cover !important;
 	color: #f2f2f2 !important;
 }
@@ -204,7 +204,7 @@ i { padding: 0px 4px; }
 	color: #f2f2f2;
 	text-align: center;
 	background: #2c5374;
-	background: url("../images/about/coder-bg.png") no-repeat;
+	background: url("../images/hero/coder-bg.png") no-repeat;
 	background-size: cover;
 }
 
