@@ -31,9 +31,8 @@ class Developer {
 			}
 		];
 		this.cv = `More information about my skills and experience can be found on <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
-		this.portfolio_description = `My current portfolio showcases my front-end and back-end development expertise using templates, as well as custom design techniques. For information about my additional creative and technical skills as a <span class='technician-modal' data-toggle='modal' data-target='#detailModal'>PC Technician</span> and <span class='decorator-modal' data-toggle='modal' data-target='#detailModal'>Painter and Decorator</span> you can <span><a href="data/leroy_cv.pdf" target="_blank">view my CV</a></span> or <span><a href="https://github.com/l-panther/" target="_blank">check out my Github</a></span> page for all my code and repositories.`;
+		this.portfolio_description = `My current portfolio is a selection of front-end and back-end development web projects I completed using templates, object-orientation and custom design techniques. Click on an image to view the web system or you can <span class="theme-link"><a href="https://github.com/l-panther/" target="_blank">view my Github page</a></span> if you are interested in the code.`;
 	}
-
 
 	// Get Name
 	getName() {

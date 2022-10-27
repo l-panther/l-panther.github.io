@@ -18,14 +18,13 @@ Skill List
 // Project object
 const web = new Skillset(
 	1,
-	"Web Development",
+	"User Interface <span class='theme-txt'>Design</span>",
 	"web",
-	"Directional arrows surrounding a wireframe with notation of sectioned areas, web technologies such as HTML5 and CSS3 beneath a laptop and a mockup of a webpage",
-	"Plan, design, develop and test web systems using the latest web technologies</p>",
-	`As a Web Developer, I plan, design, develop and test web system using the latest web and server technologies such as HTML5, CSS3 JavaScript, PHP, Bootstrap and W3.CSS, including frameworks and libraries Django and React. Developing a variety of full-stack websites and web applications for various industries including catering, health and travel.</p>
+	"Directional arrows point to a notated wireframe of a web page showing placement of navigation and other elements. Directional arrows point from wireframe to a laptop with icons for HTML, CSS JavaScript, PHP, jSON and Krita. Direction arrow then point to a mockup design of the wire frome with notation for clickable image and other functionality.",
+	"Plan, design, develop and test web systems using the latest web and server technologies</p>",
+	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries Django and React. Web systems are built to meet client requirements which involes both front end development and back-end development. Using basic HTML and CSS according to web standards for Front-end development and frameworks and databases for back-end development </p>
 
-	<p class="pb-3">To enhance presentation and overall aesthetics, I utilise my skills as an <span id='artist-modal' data-toggle='modal' data-target='#detailModal'>2D/3D Artist</span> to create and manipulate digital imagery using computer software
-	Krita and Blender. All development is built in accordance to W3C specifications using various implementation techniques, such as object-orientation or hard coding to retrieve data from json files and querying a database to for scalable and robust systems. 
+	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end development, I combine my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='theme-link'>2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='theme-link'>computer software</span> to create and manipulate digital images. 	
 	`,
 	[
 		{
@@ -61,7 +60,7 @@ technician = new Skillset(
 	"technician",
 	"A computer processing unit (CPU)",
 	"Installation, configuration and maintainence of hardware and software for computer systems",
-	"As a PC Technician, I build, replair and maintain computer systems, running Microsoft and Linux operating systems.",
+	"As a PC Technician, I build desktops, replair laptops and maintain computer systems, running Microsoft and Linux operating systems. ",
 	[	{
 			"id": 1,
 			"title": "Hardware",
@@ -90,7 +89,7 @@ art = new Skillset(
 	"modelling",
 	"A cube, sphere and pyramid",
 	"Sketch, detail, model, texture and lighting  of various 2D and 3D ojbects",
-	"As an Artist, I enjoy creating and manipulating images experimenting with two-dimensional and three-dimensinal use computer software <i>Krita</i>, <i>ZBrush</i>  and <i>Maya</i> for image manipulation, digital scuplting and creating three-dimensional objects.",    
+	"As an Artist, I use computer software <i>Krita</i> and <i>Blender</i> to create and manipulate logos, icons other images for the user interface.",    
 	[
 		{
 			"id": 1,
@@ -137,21 +136,28 @@ decorator = new Skillset(
 	"decorator",
 	"A paint roller",
 	"Remove stains, fill holes, sand and paint internal and external surfaces",
-	"Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS.",
+	"Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS <a href='http://localhost/server/todo/decorator' target='_blank'>check out what I do</a>.",
 	[
 		{
 			"id": 1,
 			"title": "Preperation",
 			"image": "scrapper",
 			"image_descrption": "A scrapper",
-			"description": ["Repair surface with appropriate compound before sanding and painting"],
+			"description": ["Repair of surface damage and other imperfections using various compounds"],
 		},
 		{
 			"id": 2,
 			"title": "Painting",
 			"image": "roller",
 			"image_descrption": "A paint roller",
-			"description": ["Mould treatment, stain removal and painting of ceilings, walls and doors"],
+			"description": ["Apply finishes to walls, ceiilings and other surfaces using a brush and roller"],
+		},
+		{
+			"id": 3,
+			"title": "Wallpaper",
+			"image": "roller",
+			"image_descrption": "A paint roller",
+			"description": ["Apply of variety wallpapers to walls"],
 		},
 	]
 );
