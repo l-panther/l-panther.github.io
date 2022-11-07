@@ -30,7 +30,7 @@ class Developer {
 				description: "Regular testing, bug fixes and updates"
 			}
 		];
-		this.cv = `More information about my skills and experience can be found on <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
+		this.cv = `For more information about my additional skills in computing and <span class='art-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-white'>contstruction</span>, please check out <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
 		this.portfolio_description = `My current portfolio is a selection of front-end and back-end development web projects I completed using templates, object-orientation and custom design techniques. Click on an image to view the web system or you can <span class="theme-link"><a href="https://github.com/l-panther/" target="_blank">view my Github page</a></span> if you are interested in the code.`;
 	}
 
@@ -78,6 +78,13 @@ class Developer {
 		}
 		return output;
 	}
+
+
+	// Get CV
+	getCV() {
+		return this.cv
+	}
+
 }
 
 
@@ -90,7 +97,7 @@ class Skillset extends Developer {
 		this.id = id;
 		this.title = title;
 		this.image = image;
-		this.image_description = image_description; 
+		this.image_description = image_description;
 		this.description_short = description_short;
 		this.description_long = description_long;
 		this.skills = skills;
@@ -99,9 +106,9 @@ class Skillset extends Developer {
 
 	// Get skills
 	getSkill() {
-			
-			// Output
-			let output = `
+
+		// Output
+		let output = `
 			<div class="col-xs-12 skill">
 				<h2>` + this.title + `</h2>
 
@@ -118,7 +125,7 @@ class Skillset extends Developer {
 						
 		`;
 		for (let i = 0; i < this.skills.length; i++) {
-			
+
 			output += `
 						<div class="w3-row mt-4">
 							<div class="w3-col s2 m2 w3-center">
@@ -159,10 +166,10 @@ class Skillset extends Developer {
 				</div>
 				<img src="images/skills/` + this.image + `/` + this.image + `-large.png" alt=" ` + this.image_description + `">
 				`;
-			
-				output += `<div class="pb-4 features">
+
+		output += `<div class="pb-4 features">
 				`;
-		
+
 		for (let i = 0; i < this.skills.length; i++) {
 
 			output += `
@@ -184,7 +191,7 @@ class Skillset extends Developer {
 					</div>
 				`;
 		}
-		 	output += `</div></div>`;
+		output += `</div></div>`;
 		return output;
 	}
 
@@ -241,16 +248,16 @@ class Project extends Developer {
 	}
 
 
-	
+
 	// Show carousel
 	showCarousel(i) {
 
 		let output = "";
-								
+
 		if (this.id == 1) {
 			output += '<div class="carousel-item active"> <!-- Carousel item -->';
 		} else {
-			output += '<div class="carousel-item"> <!-- Carousel item -->';	
+			output += '<div class="carousel-item"> <!-- Carousel item -->';
 		}
 
 		// Output

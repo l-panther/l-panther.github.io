@@ -22,9 +22,9 @@ const web = new Skillset(
 	"web",
 	"Directional arrows point to a notated wireframe of a web page showing placement of navigation and other elements. Directional arrows point from wireframe to a laptop with icons for HTML, CSS JavaScript, PHP, jSON and Krita. Direction arrow then point to a mockup design of the wire frome with notation for clickable image and other functionality.",
 	"Plan, design, develop and test web systems using the latest web and server technologies</p>",
-	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries Django and React. Web systems are built to meet client requirements which involes both front end development and back-end development. Using basic HTML and CSS according to web standards for Front-end development and frameworks and databases for back-end development </p>
+	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries Django and React. Web systems are built to meet client requirements which involes both front end development and back-end development. Using basic HTML and CSS according to web standards for Front-end development and frameworks and databases for back-end development.</p>
 
-	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end development, I combine my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='theme-link'>2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='theme-link'>computer software</span> to create and manipulate digital images. 	
+	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end development, I combine my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='modal-link'>2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-blue'>computer software</span> to create and manipulate digital images. 	
 	`,
 	[
 		{
