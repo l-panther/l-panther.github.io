@@ -66,8 +66,9 @@ figcaption {
 
 img, video { width: 100%; }
 
-li {
+ul, .w3-ul li, li {
 	list-style: none;
+	text-decoration: none !important;
 }
 
 fieldset, .carousel-item .active {
@@ -120,7 +121,7 @@ h4 {
 
 h1 { font-size: 1.2em; }
 
-h2 { font-size: 1.8em; }
+h2 { font-size: 1.8em; 	font-family: "Chelsea Market";}
 
 dt { font-size: 1.05em; }
 
@@ -128,7 +129,7 @@ i { padding: 0px 4px; }
 
 .main-container {
 	width: 100%;
-	max-width: 80em;
+	max-width: 1400px;
 	margin: auto;
 }
 
@@ -141,11 +142,13 @@ i { padding: 0px 4px; }
 	color: #2c5374 !important;
 }
 
-.theme-link {
+.modal-link, .link-blue {
 	text-decoration: underline;
 	color: #2c5374;
 	cursor: pointer;
 }
+
+.link-white { color: #d1d1d1; }
 
 .white-txt { color:rgb(218, 218, 218); }
 
@@ -156,7 +159,6 @@ i { padding: 0px 4px; }
 	background-size: cover !important;
 	color: #f2f2f2 !important;
 }
-
 
 .btn {
 	background: #afafaf;
@@ -173,6 +175,10 @@ i { padding: 0px 4px; }
 	background: #f0f0f0 !important;
 	color: #2c5374 !important;
 	border: 1px solid #2c5374 !important;
+}
+.page-divide { 
+	margin-top: -8px; 
+	margin-bottom: -5px; 
 }
 
 /*------------------------------------------------------------------ 
@@ -210,7 +216,7 @@ i { padding: 0px 4px; }
 	color: #f2f2f2;
 	text-align: center;
 	background: #2c5374;
-	background: url("../images/hero/coder-bg.png") no-repeat;
+	background: url("../images/hero/coder-bg-mid.png") no-repeat;
 	background-size: cover;
 }
 
@@ -279,7 +285,6 @@ i { padding: 0px 4px; }
 
 #projects { 
 	background: rgb(228, 227, 227);
-	
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 30px; }
@@ -314,7 +319,7 @@ font-size: 60px !important}
  }
 
 #projectCarousel span:hover { 
-	opacity: 01;
+	opacity: 1;
  }
 
 .project { padding: 10px; }
@@ -431,6 +436,14 @@ font-size: 60px !important}
 
 #modelling-skill { background: #2c5374; }
 
+/* About */
+#about { 
+	background: linear-gradient(#2c5374, #101010);
+	background: #2c5374;
+ }
+
+#about img { width: 100%; }
+
 /* To top */
 #toTop { 
 	background: #101010;
@@ -512,7 +525,7 @@ font-size: 60px !important}
 	}
 
 	#hero {
-		padding: 40px 30px;
+		padding: 40px 30px 80px;
 	}
 
 	#hero img {
@@ -543,6 +556,10 @@ font-size: 60px !important}
 	}
 
 	#projects { padding: 80px 50px; }
+
+	/* About */
+	#about img { width: 70%; }
+
 	
 }
 
@@ -560,7 +577,11 @@ font-size: 60px !important}
 	#header-logo { width: 60px; }
 	
 	/* Hero */
-	#hero { padding: 30px 50px; }
+	#hero { 
+		padding: 30px 50px;
+		background: url("../images/hero/coder-bg.png") no-repeat;
+		background-size: cover;
+	}
 
 	#hero h1 { 
 		font-size:2.8em;
@@ -568,7 +589,7 @@ font-size: 60px !important}
 
 	#hero p { float: right; width: 400px; }
 
-	#hero img { width: 400px; }
+	#hero img { width: 80%; }
 	
 	/* Skills */
 	.web-mission-item { margin: 0px 0px 25px !important; }
@@ -585,5 +606,7 @@ font-size: 60px !important}
 		margin-top: 0px; }
 
 	.skill h2, #projects h2 { text-align: center; }
+
+	#about img { width: 100%; }
 
 }
