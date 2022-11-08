@@ -365,7 +365,7 @@ font-size: 60px !important}
 
 
 .skill h2, #projects h2, #projects figcaption { text-align: center; }
-.skill p, #projects p { text-align: justify; }
+.skill p, #projects p, #about p { text-align: justify; }
 
 .skill .skill-icon { width: 50px; }
 
