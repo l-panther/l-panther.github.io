@@ -30,8 +30,8 @@ class Developer {
 				description: "Regular testing, bug fixes and updates"
 			}
 		];
-		this.cv = `For more information about my additional skills in computing and <span class='art-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-white'>contstruction</span>, please check out <span><a href="data/leroy_cv.pdf" target="_blank">my cv</a></span>.`;
-		this.portfolio_description = `My current portfolio is a selection of front-end and back-end development web projects I completed using templates, object-orientation and custom design techniques. Click on an image to view the web system or you can <span class="theme-link"><a href="https://github.com/l-panther/" target="_blank">view my Github page</a></span> if you are interested in the code.`;
+		this.cv = `For more information about my skills, please <span class="link-white"><a href="data/leroy_cv.pdf" target="_blank">check out my cv</a></span>.`;
+		this.portfolio_description = `My current portfolio is a selection of front-end and back-end development web projects I completed using templates, object-orientation and custom design techniques. Click on an image to view the web system or you can <span class="theme-link link-blue"><a href="https://github.com/l-panther/" target="_blank">view my Github page</a></span> if you are interested in the code.`;
 	}
 
 	// Get Name

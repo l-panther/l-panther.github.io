@@ -31,7 +31,7 @@ const web = new Skillset(
 			"id": 1,
 			"title": "Plan",
 			"image": "plan",
-			"description": ["Gather information for system functionality and non-functional requirements"],
+			"description": ["Gather information for system functional and non-functional requirements"],
 		},
 		{
 			"id": 2,
@@ -43,13 +43,13 @@ const web = new Skillset(
 			"id": 3,
 			"title": "Develop",
 			"image": "develop",
-			"description": ["Build system using latest web technologies and frameworks"],
+			"description": ["Build web system using latest technologies and frameworks"],
 		},
 		{
 			"id": 4,
 			"title": "Test",
 			"image": "test",
-			"description": ["Test system for bugs and errors in functionality and presentation"],
+			"description": ["Test system for bugs and errors in functionality and compatability"],
 		},
 	]
 ),
@@ -78,7 +78,7 @@ technician = new Skillset(
 			"id": 3,
 			"title": "Networking",
 			"image": "network",
-			"description": ["Setup of routers, printers and other peripheral  devices for business and home networks"],
+			"description": ["Setup of routers, printers and other peripheral devices for networking"],
 		},
 	]
 ),
@@ -89,27 +89,27 @@ art = new Skillset(
 	"modelling",
 	"A cube, sphere and pyramid",
 	"Sketch, detail, model, texture and lighting  of various 2D and 3D ojbects",
-	"As an Artist, I use computer software <i>Krita</i> and <i>Blender</i> to create and manipulate logos, icons other images for the user interface.",    
+	"As an Artist, I use computer software <i>Krita</i> to create and manipulate two-dimensional images, including logos, icons and other visual imagery. I also use <i>Blender</i> to create and manipulate three-dimensional objects.",    
 	[
 		{
 			"id": 1,
 			"title": "Illustration",
 			"image": "sketch",
 			"image_description": "A pencil with some drawn lines",
-			"description": ["Sktetch interpretation or visual explanation before adding detail"],
+			"description": ["Sketch interpretation of image before adding detail"],
 		},
 		{
 			"id": 2,
 			"title": "Colouring",
 			"image": "colour",
 			"image_description": "A colour palete and paint brush",
-			"description": ["Add base colour, shading and highlights"],
+			"description": ["Add base colour, shading and highlights to image"],
 		},
 		{
 			"id": 3,
 			"title": "Modeling / Scupting",
-			"image": "3d",
-			"image_description": "A three-dimensional cude",
+			"image": "modeling",
+			"image_description": "A three-dimensional cube",
 			"description": ["Create complex geometry by combining primitive objects and manipulating verticles, edges and faces"],
 		},
 		{
@@ -117,14 +117,14 @@ art = new Skillset(
 			"title": "Lighting",
 			"image": "lighting",
 			"image_description": "A spotlight",
-			"description": ["Add lighting to illuminate scene and cast shadows to replicate real-world"],
+			"description": ["Add lighting to illuminate objects in scene and cast shadows to add realism"],
 		},
 		{
 			"id": 5,
 			"title": "Materials",
 			"image": "texture",
 			"image_description": "3 tier layer of possible materials",
-			"description": ["Apply diffuse colour, normal map, bump map and other map types for desired level of realism"],
+			"description": ["Apply diffuse colour, normal map, bump map and other map types"],
 		},
 
 	]
@@ -135,8 +135,8 @@ decorator = new Skillset(
 	"Painter &amp; Decorator",
 	"decorator",
 	"A paint roller",
-	"Remove stains, fill holes, sand and paint internal and external surfaces",
-	"Property restoration and renovation allows me to get more hands-on and turn voids to homes. Attention to detail ensures excellent preparation and an even better paint job, similar to having excellent HTML and even better CSS <a href='http://localhost/server/todo/decorator' target='_blank'>check out what I do</a>.",
+	"Remove stains, fill holes, sand and paint internal/external surfaces",
+	"As a Painter and Decorator, I repair, prepare and apply finishes to internal and external surfaces for residental and commercial premises.",
 	[
 		{
 			"id": 1,
@@ -150,14 +150,14 @@ decorator = new Skillset(
 			"title": "Painting",
 			"image": "roller",
 			"image_descrption": "A paint roller",
-			"description": ["Apply finishes to walls, ceiilings and other surfaces using a brush and roller"],
+			"description": ["Apply finishes to walls, ceiiings and other surfaces using a brush and roller"],
 		},
 		{
 			"id": 3,
 			"title": "Wallpaper",
-			"image": "roller",
-			"image_descrption": "A paint roller",
-			"description": ["Apply of variety wallpapers to walls"],
+			"image": "paper",
+			"image_descrption": "A roll of wallpaper",
+			"description": ["Apply of variety finishing papers to walls and ceilings"],
 		},
 	]
 );
