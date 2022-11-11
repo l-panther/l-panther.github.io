@@ -113,9 +113,7 @@
 	
 	/* ..........................................
 	About
-	................................................. */
-	$("#cv").html(developer.getCV());
-	
+	................................................. */	
 	// Get content for modal
 	function getModalContent(elemId1, elemId2, method) {
 		$(elemId1).click(function () {
