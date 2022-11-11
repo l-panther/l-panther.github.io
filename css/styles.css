@@ -150,6 +150,8 @@ i { padding: 0px 4px; }
 
 .link-white { color: #d1d1d1; }
 
+.modal-link a:hover { color: #d1d1d1 !important; }
+
 .white-txt { color:rgb(218, 218, 218); }
 
 .theme-color-bg {
@@ -383,6 +385,7 @@ font-size: 60px !important}
 }
 
 .modal-content h2 { 
+	text-align: left !important;
 	padding-bottom: 10px;
 	font-size: 1.4em;
 }
@@ -442,7 +445,7 @@ font-size: 60px !important}
 	background: #2c5374;
  }
 
-#about img { width: 100%; }
+#about img { width: 80%; }
 
 /* To top */
 #toTop { 
@@ -607,6 +610,6 @@ font-size: 60px !important}
 
 	.skill h2, #projects h2 { text-align: center; }
 
-	#about img { width: 100%; }
+	#about img { width: 80%; }
 
 }
