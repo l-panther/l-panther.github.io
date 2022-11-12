@@ -445,6 +445,8 @@ font-size: 60px !important}
 	background: #2c5374;
  }
 
+ .office-container img { padding: 0 0 60px 0 }
+
 #about img { width: 80%; }
 
 /* To top */
@@ -611,5 +613,6 @@ font-size: 60px !important}
 	.skill h2, #projects h2 { text-align: center; }
 
 	#about img { width: 80%; }
+	.office-container img { padding: 80px 0 60px 0 }
 
 }
