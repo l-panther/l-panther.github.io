@@ -7,84 +7,17 @@
 
 /* 
 Skill List
-	1. Web Developer
-	2. PC Technician
-	3. Art
-	4. 3D Modeling
+	1. Art
+	2. Electronics
+	3. PC Technician
+	4. Web
 	5. Paint & Decorator
-	*/
+*/
 
 
-// Project object
-const web = new Skillset(
+// Art
+const art = new Skillset(
 	1,
-	"User Interface <span class='theme-txt'>Design</span>",
-	"web",
-	"Directional arrows point to a notated wireframe of a web page showing placement of navigation and other elements. Directional arrows point from wireframe to a laptop with icons for HTML, CSS JavaScript, PHP, jSON and Krita. Direction arrow then point to a mockup design of the wire frome with notation for clickable image and other functionality.",
-	"Plan, design, develop and test web systems using the latest web and server technologies</p>",
-	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries Django and React. Web systems are built to meet client requirements which involes both front end development and back-end development. Using basic HTML and CSS according to web standards for Front-end development and frameworks and databases for back-end development.</p>
-
-	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end development, I combine my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='modal-link'>2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-blue'>computer software</span> to create and manipulate digital images. 	
-	`,
-	[
-		{
-			"id": 1,
-			"title": "Plan",
-			"image": "plan",
-			"description": ["Gather information for system functional and non-functional requirements"],
-		},
-		{
-			"id": 2,
-			"title": "Design",
-			"image": "design",
-			"description": ["Define entities and their relationships, as well as logic, structure and presentation of system"],
-		},
-		{
-			"id": 3,
-			"title": "Develop",
-			"image": "develop",
-			"description": ["Build web system using latest technologies and frameworks"],
-		},
-		{
-			"id": 4,
-			"title": "Test",
-			"image": "test",
-			"description": ["Test system for bugs and errors in functionality and compatability"],
-		},
-	]
-),
-
-technician = new Skillset(
-	2,
-	"PC Technician",
-	"technician",
-	"A computer processing unit (CPU)",
-	"Installation, configuration and maintainence of hardware and software for computer systems",
-	"As a PC Technician, I build desktops, replair laptops and maintain computer systems, running Microsoft and Linux operating systems. ",
-	[	{
-			"id": 1,
-			"title": "Hardware",
-			"image": "hardware",
-			"description": ["Installation of internal components, such as motherboard, CPU, memory modules and hard drive"],
-		},
-		{
-			"id": 2,
-			"title": "Software",
-			"image": "software",
-			"description": [" Operating system installation and configuration for Microsoft Windows 7, 10, Server 2016, Ubuntu 19.04 and Mint 21.04, including supported applications"]
-			,
-		},
-		{
-			"id": 3,
-			"title": "Networking",
-			"image": "network",
-			"description": ["Setup of routers, printers and other peripheral devices for networking"],
-		},
-	]
-),
-
-art = new Skillset(
-	3,
 	"2D/3D Artist",
 	"modelling",
 	"A cube, sphere and pyramid",
@@ -130,8 +63,105 @@ art = new Skillset(
 	]
 ),
 
-decorator = new Skillset(
+
+electronics = new Skillset(
+	2,
+	"Electricity and Electronics",
+	"electronics",
+	"An electric field",
+	"Testing and replacement of electronic components",
+	"My basic knowledge in electronics allows me to install, remove and test various electrical components using a multi-meter.",    
+	[
+		{
+			"id": 1,
+			"title": "Soldering",
+			"image": "solder",
+			"image_description": "A soldering iron",
+			"description": ["Solder and de-solder of electrical components for installation or removal"],
+		},
+		{
+			"id": 2,
+			"title": "Testing",
+			"image": "test",
+			"image_description": "A electrical testing device",
+			"description": ["Test current, voltage and continutity of electrical components on a circuit board or isolated"],
+		},
+
+
+	]
+),
+
+technician = new Skillset(
+	3,
+	"PC Technician",
+	"technician",
+	"A computer processing unit (CPU)",
+	"Installation, configuration and maintainence of hardware and software for computer systems",
+	"As a PC Technician, I build desktops, replair laptops and maintain computer systems, running Microsoft and Linux operating systems. ",
+	[	{
+			"id": 1,
+			"title": "Hardware",
+			"image": "hardware",
+			"description": ["Installation of internal components, such as motherboard, CPU, memory modules and hard drive"],
+		},
+		{
+			"id": 2,
+			"title": "Software",
+			"image": "software",
+			"description": [" Operating system installation and configuration for Microsoft Windows 7, 10, Server 2016, Ubuntu 19.04 and Mint 21.04, including supported applications"]
+			,
+		},
+		{
+			"id": 3,
+			"title": "Networking",
+			"image": "network",
+			"description": ["Setup of routers, printers and other peripheral devices for networking"],
+		},
+	]
+),
+
+
+web = new Skillset(
 	4,
+	"User Interface <span class='theme-txt'>Design</span>",
+	"web",
+	"Directional arrows point to a notated wireframe of a web page showing placement of navigation and other elements. Directional arrows point from wireframe to a laptop with icons for HTML, CSS JavaScript, PHP, jSON and Krita. Direction arrow then point to a mockup design of the wire frome with notation for clickable image and other functionality.",
+	"Plan, design, develop and test web systems using the latest web and server technologies</p>",
+	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries Django and React. Web systems are built to meet client requirements which involes both front end development and back-end development. Using basic HTML and CSS according to web standards for Front-end development and frameworks and databases for back-end development.</p>
+
+	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end development, I combine my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='modal-link' title="My first interest and hobby">2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-blue' title="CompTia A+ certified 2003 and Level 3 Advanced PC maintenance 2010">computer software</span> to create and manipulate digital images. 	
+	`,
+	[
+		{
+			"id": 1,
+			"title": "Plan",
+			"image": "plan",
+			"description": ["Gather information for system functional and non-functional requirements"],
+		},
+		{
+			"id": 2,
+			"title": "Design",
+			"image": "design",
+			"description": ["Define entities and their relationships, as well as logic, structure and presentation of system"],
+		},
+		{
+			"id": 3,
+			"title": "Develop",
+			"image": "develop",
+			"description": ["Build web system using latest technologies and frameworks"],
+		},
+		{
+			"id": 4,
+			"title": "Test",
+			"image": "test",
+			"description": ["Test system for bugs and errors in functionality and compatability"],
+		},
+	]
+),
+
+
+decorator = new Skillset(
+	5,
 	"Painter &amp; Decorator",
 	"decorator",
 	"A paint roller",

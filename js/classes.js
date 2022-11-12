@@ -78,12 +78,6 @@ class Developer {
 		return output;
 	}
 
-
-	// Get CV
-	getCV() {
-		return this.cv
-	}
-
 }
 
 

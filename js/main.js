@@ -50,8 +50,10 @@
 	................................................. */ 
 	const skills = [web], 
 		artContent = art,
-		decoratorContent = decorator,
-		technicianContent = technician;
+		electronicsContent = electronics,
+		technicianContent = technician,
+		decoratorContent = decorator;
+		
 	let output = "";
 	for (let i = 0; i < skills.length; i++) {
 		output += skills[i].getSkill();
@@ -101,13 +103,15 @@
 
 
 	// Get skills
-	getModalContent("#technician-modal", "#technician-details", technicianContent.getDetails());
 	getModalContent("#artist-modal", "#artist-details", artContent.getDetails());
+	getModalContent("#electronics-modal", "#electronics-details", electronicsContent.getDetails());
+	getModalContent("#technician-modal", "#technician-details", technicianContent.getDetails());
 	getModalContent("#decorator-modal", "#decorator-details", decoratorContent.getDetails());
 	
 	// Clear skill Modal
-	clearModalContent("#technician-details");
 	clearModalContent("#artist-details");
+	clearModalContent("#electronics-details");
+	clearModalContent("#technician-details");
 	clearModalContent("#decorator-details");
 			
 	
@@ -127,7 +131,5 @@
 			$(elemId).html("");
 		});
 	}
-
-
 
 }(jQuery));
