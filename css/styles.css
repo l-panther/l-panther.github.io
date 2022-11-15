@@ -232,7 +232,7 @@ i { padding: 0px 4px; }
 }
 
 #hero img {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	margin: 10px 0px;
 }
@@ -445,9 +445,11 @@ font-size: 60px !important}
 	background: #2c5374;
  }
 
- .office-container img { padding: 0 0 60px 0 }
-
-#about img { width: 80%; }
+ .office-container img { 
+	padding: 0px 30px 60px 30px;
+	margin-top: -30px;
+	width: 90%;
+ }
 
 /* To top */
 #toTop { 
@@ -562,10 +564,8 @@ font-size: 60px !important}
 
 	#projects { padding: 80px 50px; }
 
-	/* About */
-	#about img { width: 70%; }
+	.office-container img { padding: 150px 30px 60px 0 }
 
-	
 }
 
 
@@ -612,7 +612,11 @@ font-size: 60px !important}
 
 	.skill h2, #projects h2 { text-align: center; }
 
-	#about img { width: 80%; }
-	.office-container img { padding: 80px 0 60px 0 }
+	.office-container img { 
+		padding: 100px 0 60px 0;
+		width: 70%
+	}
+
+	#about p { text-align: left; }
 
 }
