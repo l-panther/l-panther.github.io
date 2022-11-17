@@ -127,9 +127,9 @@ web = new Skillset(
 	"web",
 	"Directional arrows point to a notated wireframe of a web page showing placement of navigation and other elements. Directional arrows point from wireframe to a laptop with icons for HTML, CSS JavaScript, PHP, jSON and Krita. Direction arrow then point to a mockup design of the wire frome with notation for clickable image and other functionality.",
 	"Plan, design, develop and test web systems using the latest web and server technologies</p>",
-	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries Django and React. Web systems are built to meet client requirements which involes both front end development and back-end development. Using basic HTML and CSS according to web standards for Front-end development and frameworks and databases for back-end development.</p>
+	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries including Django and React.</p><p class="pb-3">The front-end and back-end requirements of a web system is determined by the needs of the client and ultimately the user of the web system. Full stack developemt combines using basic HTML and CSS according to web standards for Front-end development with frameworks and databases for back-end development.</p>
 
-	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end development, I combine my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='modal-link' title="My first interest and hobby">2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-blue' title="CompTia A+ certified 2003 and Level 3 Advanced PC maintenance 2010">computer software</span> to create and manipulate digital images. 	
+	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end, I utilise my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='modal-link' title="My first interest and hobby">2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-blue' title="CompTia A+ certified 2003 and Level 3 Advanced PC maintenance 2010">computer software</span> to create and manipulate digital images. 	
 	`,
 	[
 		{
@@ -141,6 +141,7 @@ web = new Skillset(
 		{
 			"id": 2,
 			"title": "Design",
+			
 			"image": "design",
 			"description": ["Define entities and their relationships, as well as logic, structure and presentation of system"],
 		},

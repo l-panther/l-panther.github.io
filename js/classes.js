@@ -21,7 +21,7 @@ class Developer {
 				name: "SEO Friendly",
 				image: "seo",
 				image_description: "A magnifying glass in front of a laptop",
-				description: "Optimised to keep you ahead of the competetion"
+				description: "Optimised to keep you ahead of the competition"
 			},
 			{
 				name: "Testing &amp; Bugfixes",
@@ -30,7 +30,7 @@ class Developer {
 				description: "Regular testing, bug fixes and updates"
 			}
 		];
-		this.portfolio_description = `My current portfolio is a selection of front-end and back-end development web projects I completed using templates, object-orientation and custom design techniques. Click on an image to view the web system or you can <span class="theme-link link-blue"><a href="https://github.com/l-panther/" target="_blank">view my Github page</a></span> if you are interested in the code.`;
+		this.portfolio_description = `My current portfolio is a selection of front-end and back-end development web projects I have completed using object-orientation, templates and custom design techniques. Each project can be viewed by clicking on the image or if you are interested in the code you can <span class="theme-link link-blue"><a href="https://github.com/l-panther/" target="_blank">view my Github page</a></span>.`;
 	}
 
 	// Get Name
