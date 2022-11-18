@@ -455,8 +455,8 @@ font-size: 60px !important}
  }
 
  .office-container img { 
-	width: 90%;
-	box-shadow: 1px 1px 10px 0px rgba(16, 43, 67, 0.511);
+	width: 100%;
+	border: 1px solid rgb(36, 36, 36)
  }
 
 /* To top */
@@ -523,6 +523,10 @@ font-size: 60px !important}
 		margin: auto;
 	}
 
+	.office-container img { 
+		width: 80%;
+	 }
+
 }
 
 /*------------------------------------------------------------------ 
@@ -574,6 +578,10 @@ font-size: 60px !important}
 
 	.office-container { padding: 150px 30px 60px 0 }
 
+	.office-container img { 
+		width: 100%
+	}
+
 }
 
 
@@ -621,7 +629,7 @@ font-size: 60px !important}
 	.skill h2, #projects h2 { text-align: center; }
 
 	.office-container { 
-		padding: 100px 0 60px 0;
+		padding: 115px 0 60px 0;
 	}
 
 	.office-container img { 
