@@ -93,6 +93,20 @@ video {
 	background: #2c5374; }
 
 
+/* No javascript */
+.no-js { 
+	background: #2c5374;
+	text-align: center;
+	padding: 20px;
+	color: #f2f2f2 !important;
+}
+
+.no-js h2 { 
+	padding: 0 0 10px 0;
+	margin: 0
+}
+
+
 /*------------------------------------------------------------------ 
 	DEFAULTS  
 -------------------------------------------------------------------*/
@@ -125,7 +139,7 @@ h4 {
 
 h1 { font-size: 1.2em; }
 
-h2 { font-size: 1.8em; 	font-family: "Chelsea Market";}
+h2 { font-size: 1.8em; }
 
 dt { font-size: 1.05em; }
 
@@ -161,7 +175,7 @@ i { padding: 0px 4px; }
 .theme-color-bg {
 	background: #125f9c !important;
 	background: #3e3f5f !important;
-	background: url("../images/hero/bg.jpg") no-repeat !important;
+	background: url("../images/hero/hero-bg.jpg") no-repeat !important;
 	background-size: cover !important;
 	color: #f2f2f2 !important;
 }
@@ -202,8 +216,8 @@ i { padding: 0px 4px; }
 .navbar {
 	padding: 0 !important;
 	background: #2c5374 !important;
-	background: rgb(218, 218, 218);
 }
+
 
 .navbar .main-container {
 	padding: 10px !important;
@@ -215,6 +229,7 @@ i { padding: 0px 4px; }
 	float: none;
 }
 
+main { background: #202020}
 
 /* Hero */
 #hero {
@@ -222,8 +237,9 @@ i { padding: 0px 4px; }
 	color: #f2f2f2;
 	text-align: center;
 	background: #2c5374;
-	background: url("../images/hero/coder-bg-mid.png") no-repeat;
+	background: url("../images/hero/hero-bg.png") no-repeat;
 	background-size: cover;
+	background: #2c5374;
 }
 
 #hero h1 {
@@ -237,12 +253,13 @@ i { padding: 0px 4px; }
 
 #hero img {
 	width: 100%;
-	margin: auto;
-	margin: 10px 0px;
+	margin: 30px 0px -110px 0px;
+	-webkit-transition: width 1s, margin 1s; /* Safari */
+    transition: width 1s, margin 1s;
 }
 
 #hero .w3-btn {
-	background: #202020;
+	background: #171717;
 	margin-top: 20px;
 	padding: 10px 20px;
 	color: antiquewhite !important;
@@ -254,6 +271,7 @@ i { padding: 0px 4px; }
 .large-img { display: none; margin-left: -50px;}
 .small-img { display: block; }
 
+main { 	overflow: hidden;}
 
 /* Mission */
 #web-mission {
@@ -262,6 +280,7 @@ i { padding: 0px 4px; }
 	background: #202020;
 	color: #f2f2f2;
 	text-align: center;
+	padding-top: 60px !important;
 }
 
 #web-mission dt { font-size: 1.05em !important; }
@@ -280,6 +299,9 @@ i { padding: 0px 4px; }
 #web-projects { 
 	background: #eee;
 	color: #313131; }
+
+#portfolio { 
+	background: #e5e4e4; }
 
 #web-projects .btn { 
 	width: 130px;
@@ -449,16 +471,6 @@ font-size: 60px !important}
 	background: #2c5374;
  }
 
- .office-container { 
-	padding: 0px 30px 60px 30px;
-	margin-top: -30px;
- }
-
- .office-container img { 
-	width: 100%;
-	border: 1px solid rgb(36, 36, 36)
- }
-
 /* To top */
 #toTop { 
 	background: #101010;
@@ -502,6 +514,11 @@ font-size: 60px !important}
 	.large-img { display: block; }
 	.small-img { display: none; }
 
+	#hero img { 
+		width: 400px;
+		margin: 0px 0px -200px -100px;
+	 }
+
 }
 
 /*------------------------------------------------------------------ 
@@ -518,14 +535,13 @@ font-size: 60px !important}
 	
 	#hero h2 { font-size: 1.4em; }
 
-	#hero img {
-		width: 100%;
-		margin: auto;
-	}
-
-	.office-container img { 
-		width: 80%;
+	#hero img { 
+		width: 450px;
+		margin: 0px 0px -130px -80px;
 	 }
+
+	/* Web mission  */
+	#web-mission { padding-top: 100px !important; }
 
 }
 
@@ -547,13 +563,15 @@ font-size: 60px !important}
 		padding: 40px 30px 80px;
 	}
 
-	#hero img {
-		width: 80%;
-		margin-top: 0px;
-	}
+	#hero img { 
+		width: 450px;
+		margin: 0px 0px -130px -140px;
+	 }
 
 	/* Web mission  */
-	#web-mission { text-align: left; }
+	#web-mission { 
+		padding-top: 100px !important;
+		text-align: left; }
 
 	#web-mission img { 
 		width: 100%;
@@ -575,13 +593,6 @@ font-size: 60px !important}
 	}
 
 	#projects { padding: 80px 50px; }
-
-	.office-container { padding: 150px 30px 60px 0 }
-
-	.office-container img { 
-		width: 100%
-	}
-
 }
 
 
@@ -600,17 +611,21 @@ font-size: 60px !important}
 	/* Hero */
 	#hero { 
 		padding: 30px 50px;
-		background: url("../images/hero/coder-bg.png") no-repeat;
+		background: url("../images/hero/hero-bg.png") no-repeat;
 		background-size: cover;
+		background: #2c5374;
 	}
 
 	#hero h1 { 
-		font-size:2.8em;
+		font-size: 2.8em;
 		padding-top: 40px; }
 
 	#hero p { float: right; width: 400px; }
 
-	#hero img { width: 80%; }
+	#hero img { 
+		width: 600px;
+		margin: -40px 0px -100px -100px;
+	 }
 	
 	/* Skills */
 	.web-mission-item { margin: 0px 0px 25px !important; }
@@ -627,14 +642,6 @@ font-size: 60px !important}
 		margin-top: 0px; }
 
 	.skill h2, #projects h2 { text-align: center; }
-
-	.office-container { 
-		padding: 115px 0 60px 0;
-	}
-
-	.office-container img { 
-		width: 70%
-	}
 
 	#about p { text-align: left; }
 
