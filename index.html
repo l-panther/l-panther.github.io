@@ -42,7 +42,9 @@
 
 
 <body>
-	<noscript>This website is better with javascript enabled</noscript>
+	
+	<noscript><div class="no-js w3-medium"><h2>JavaScript is disabled</h2><p>This website needs JavaScript for essential functionality. To avoid unexpected behaviour and potential errors, please enable JavaScript in your browser.</p></div></noscript>
+	
 	<div id="page" class="main-container">
 
 		<header>
@@ -67,13 +69,10 @@
 								<a class="nav-link" href="#home">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#web-projects">Development</a>
+								<a class="nav-link" href="#skillLIst">Development</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#projects">Projects</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#about">About</a>
+								<a class="nav-link" href="#web-projects">Projects</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#footer">Contact</a>
@@ -84,7 +83,6 @@
 			</nav> <!-- End navigation -->
 		</header> <!-- End header -->
 
-
 		<!-- Main -->
 		<main role="main">
 
@@ -92,38 +90,46 @@
 			<div id="hero">
 				<div class="main-container">
 
+					<!--<div class="w3-display-container">
+						<img src="images/hero/coder-sm.png" alt="Coder" class="w3-hide-medium w3-hide-large">
+						<img src="images/hero/coder-mid.png" alt="Coder" class="w3-hide-small w3-hide-large">
+						<img src="images/hero/coder-bg.png" alt="Coder" class="w3-hide-small w3-hide-medium">
+						<div class="w3-display-topleft">
+							<h1>Hi, I'm <span>Leroy</span></h1>
+							<h2>Web Developer</h2>
+							<p class="pt-2">A developer of responsive and interactive websites/web
+								applications for mobile, tablet and desktop</p>
+								<a href="#web-projects" class="w3-btn">VIEW MY WORK</a>
+
+			
+						</div>
+					  </div> -->
+
+
 					<div class="row">
 
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
 
 							<h1>Hi, I'm <span>Leroy</span></h1>
-							<h2>UI/UX Developer</h2>
+							<h2>Web Developer</h2>
 							<p class="pt-2 w3-margin-bottom">A developer of responsive and interactive websites/web
 								applications for mobile, tablet and desktop</p>
 
-							<div class="w3-center small-img">
-								<img src="images/hero/coder.png" alt="Man sitting at a computer desk coding">
-							</div>
-
 							<a href="#web-projects" class="w3-btn">VIEW MY WORK</a>
-
+							<div class="w3-center small-img">
+								<img src="images/hero/coder2.png" alt="Man sitting at a computer desk coding">
+							</div>
 						</div>
 
-						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 w3-center large-img">
-							<img src="images/hero/coder.png" alt="Man sitting at a computer desk coding">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 w3-center">
+							<img src="images/hero/coder2.png" alt="Man sitting at a computer desk coding" class="d-none d-sm-block">
 						</div>
-					</div> <!-- End .w3-row -->
+					</div> <!--- End .w3-row -->
 
 				</div> <!-- End .main-container -->
 			</div> <!-- End #hero -->
 
-			<!-- Page divide -->
-			<img src="images/main/blue-black-divide-large.png" alt="Page transition from blue to black"
-				class="w3-hide-small w3-hide-medium page-divide">
-			<img src="images/main/blue-black-divide-mid.png" alt="Page transition from blue to black"
-				class="w3-hide-large page-divide">
-			<!-- End page divide -->
-
+	
 			<!-- Web Mission -->
 			<div id="web-mission" class="section">
 				<div class="main-container">
@@ -139,12 +145,6 @@
 				</div> <!-- End .main-container -->
 			</div> <!-- End #web-mission .section -->
 
-			<!-- Page divide -->
-			<img src="images/main/black-grey-divide-large.png" alt="Page transition from black to grey"
-				class="w3-hide-small w3-hide-medium page-divide">
-			<img src="images/main/black-grey-divide-mid.png" alt="Page transition from black to grey"
-				class="w3-hide-large page-divide">
-			<!-- End page divide -->
 
 			<!-- Web Portfolio -->
 			<div id="web-projects">
@@ -157,7 +157,7 @@
 						<img src="images/main/white-grey-divide-mid.png" alt="Page transition from white to grey"
 							class="w3-hide-large">
 
-						<div id="projects" class="col-sm-12 col-md-12 col-lg-5 section">
+						<div id="portfolio" class="col-sm-12 col-md-12 col-lg-5 section">
 							<h2 class="w3-hide-large"> Latest <span class="theme-txt">Projects</span></h2>
 
 							<p id="portfolio_description_sm-screen"
@@ -216,42 +216,6 @@
 					</div>
 				</div>
 			</div> <!-- End #web-portfolio -->
-
-
-			<!-- Page divide -->
-			<img src="images/main/grey-blue-divide-mid.png" alt="Page transition from blue to black"
-				class="w3-hide-large page-divide">
-			<img src="images/main/grey-blue-divide-large.png" alt="Page transition from blue to black"
-				class="w3-hide-small w3-hide-medium page-divide">
-			<!-- End page divide -->
-
-
-			<div id="about" class="w3-text-white">
-				<div class="main-container">
-					<div class="row">
-						<div class="col-sm-12 col-md-7 col-lg-6 section">
-							<h2 class="w3-center">Why Web Development?</h2>
-							<p>Before studying Computer Science at University in 2016, my aim was to further my studies
-								as a qualified PC Technician, but when given an option of pathways, the intrique of
-								combining problem solving and
-								creativity led me to choose web development. Web developent has allowed me to merge
-								interests in art and
-								technology, contributing to both a challenging and enjoyable process.</p>
-								<p class="pt-3">In addition to my technical skills in computing and web systems, I have a keen interest in animation, <span id='electronics-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-white' title="Level 1 Electronics 2003"> electronics</span>, <span id='decorator-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-white' title="Currently studying Level 2 Painting and Decorating"> interior design</span> and just about anything that involves being creative. For more information about my skills, please <span class="modal-link link-white"><a href="data/leroy_cv.pdf" target="_blank" title="View my qualifications and work experience">check out my cv</a></span></p>
-							</p>
-							<p id="cv" class="pt-3"></p>
-						</div>
-						<div class="col-sm-12 col-md-5 col-lg-6 w3-center office-container">
-							
-							<figure>
-								<img src="images/main/blender.jpg" alt="Computer work station with desktop and bin full of rubbish">
-								<figcaption>Scene creation using computer software Blender</figcaption>
-							</figure>
-							
-						</div>
-					</div>
-				</div>
-			</div>
 
 		</main> <!-- End main -->
 
