@@ -207,6 +207,7 @@ class Project extends Developer {
 
 	getScreenshot() {
 		let output = `<figure>
+		
 						<a href="http://192.168.116.129:80/server/` + this.git + `" target="_blank" title="Click to view website"><img class="project-img" src="images/projects/` + this.image + `.png" alt="Screenshot of ` + this.image + `usserface for mobile and desktop" /></a>
 						
 						<figcaption>` + this.title + `</figcaption>

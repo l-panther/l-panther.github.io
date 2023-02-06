@@ -129,7 +129,7 @@ web = new Skillset(
 	"Plan, design, develop and test web systems using the latest web and server technologies</p>",
 	`As a Web Developer, I plan, design, develop and test web systems using web and server technologies such as HTML5, CSS3 JavaScript and PHP, as well as frameworks and libraries including Django and React.</p><p class="pb-3">The front-end and back-end requirements of a web system is determined by the needs of the client and ultimately the user of the web system. Full stack developemt combines using basic HTML and CSS according to web standards for Front-end development with frameworks and databases for back-end development.</p>
 
-	<p class="pb-3">To further personalise and improve overall aesthectics of the front-end, I utilise my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='modal-link' title="My first interest and hobby">2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-blue' title="CompTia A+ certified 2003 and Level 3 Advanced PC maintenance 2010">computer software</span> to create and manipulate digital images. 	
+	<p class="pb-3">To further personalise and improve overall presentation of the front-end, I utilise my skills as a <span id='artist-modal' data-toggle='modal' data-target='#detailModal' class='modal-link' title="My first interest and hobby">2D/3D Artist</span> with my aptitude for <span id='technician-modal' data-toggle='modal' data-target='#detailModal' class='modal-link link-blue' title="CompTia A+ certified 2003 and Level 3 Advanced PC maintenance 2010">computer software</span> to create and manipulate digital images. 	
 	`,
 	[
 		{

@@ -113,8 +113,7 @@
 	clearModalContent("#electronics-details");
 	clearModalContent("#technician-details");
 	clearModalContent("#decorator-details");
-			
-	
+
 	/* ..........................................
 	About
 	................................................. */	
