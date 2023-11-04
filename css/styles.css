@@ -1,0 +1,715 @@
+/*
+	CSS for Car Repair 
+	By Leroy Russell
+*/
+
+/* -------------------------------- IMPORT FONTS -------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+/* -------------------------------- IMPORT FILES -------------------------------- */
+
+/* -------------------------------- VARIABLES -------------------------------- */
+:root {
+
+	/* Colors */
+	--black: #000000;
+	--darker-grey: #141414;
+	--dark-grey: #191c21;
+	--theme-blue: #155070;
+	--light-blue: #4b8db6;
+	--light-grey: #eeeeee;
+	--off-white: #f2f2f2;
+
+	/* Gradient */
+	--theme-blue-gradient: linear-gradient(#235dad, #264c80);
+
+	/* Font */
+	--text: 'Paytone One', sans-serif;
+	--text2: 'Chelsea Market', sans-serif;
+	--padding: 100px;
+
+	}
+
+/* -------------------------------- CSS RESET -------------------------------- */
+/* margin, padding and font size */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+article,
+blockquote,
+figure,
+figcaption,
+ul,
+ol,
+li,
+a,
+table,
+th,
+tr,
+td,
+dl,
+dt,
+dd,
+form,
+label,
+legend,
+img,
+div,
+header,
+section,
+article,
+main,
+aside,
+footer,
+nav,
+span,
+em,
+audio,
+video
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+/* Set width and display */
+section,
+article,
+header,
+footer,
+nav,
+aside,
+main,
+figure,
+div,
+figcaption {
+	display: block;
+	width: 100%;
+}
+
+/* Border styling */
+img,
+fieldset,
+.modal-header {
+	border: none;
+}
+
+/* List styling */
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+
+/* Link decoration */
+a,
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: var(--white);
+}
+
+img {
+	width: 100%;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+}
+
+/* Text decoration and cursor for links */
+a:hover {
+	/* Set cursor for hover over link */
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Text decoration and cursor for links */
+a:focus {
+	/* Set cursor for hover over link */
+	text-decoration: underline;
+	color: var(--theme-blue);
+}
+
+a:visited {
+	/* Set cursor for hover over link */
+	text-decoration: underline;
+	color: var(--theme-blue);
+}
+
+.active { color: var(--theme-blue) !important; }
+
+.no-js { 
+	background: var(--theme-blue);
+	padding: 20px;
+	color: var(--off-white) !important;
+}
+
+.no-js h2 { padding-bottom: 20px; }
+
+.theme-blue { color: var(--theme-blue); }
+
+
+/* -------------------------------- PAGE DEFAULTS -------------------------------- */
+/* HTML scrolling */
+/* Basic */
+@-ms-viewport {
+	width: device-width;
+}
+
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+@media screen and (max-width: 480px) {
+
+	html,
+	body {
+		min-width: 320px;
+	}
+
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+/* Body */
+body {
+	font-size: 16px;
+	font: 400 15px/1.8 'Poppins', sans-serif;
+	color: var(--white);
+	background: linear-gradient(#000000, #141414, #000000);
+	/* For browsers that do not support gradients */
+	line-height: 1.6;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--text);
+}
+
+h1 { font-weight: bold;}
+
+h2 {
+	font-size: 1em;
+	font-weight: 500;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+.section {
+	padding: 50px 20px;
+}
+
+NAV .active,
+.portfolio-link:focus {
+	color: var(--theme-blue) !important;
+}
+
+.no-file { 
+	padding: 30px 0px;
+}
+
+.no-file, .no-file > h2 { 
+	text-align: left !important;
+}
+
+.no-file > h2 { 
+	padding-bottom: 20px
+}
+
+.divide { 
+	margin-top: -0.8em;
+	margin-bottom: -0.6em;
+  display:  none;
+}
+
+/* ------------------------------ SKIPLINKS ------------------------------ */
+.skiplink {
+	position: absolute;
+	left: -10000px;
+}
+
+.skiplink:focus,
+.skiplink-nav:focus {
+	left: 0;
+	color: var(--black);
+}
+
+.skiplink-nav:focus {
+	position: relative;
+	left: 0;
+	color: var(--dark-grey);
+}
+
+#toTop {
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	background: #141414;
+	color: var(--theme-blue);
+}
+
+/* Skiplink */
+#toTop:hover,
+#toTop a:hover {
+	background: #3f3f3f;
+	color: white;
+}
+
+/* -------------------------------- NAVIGATION -------------------------------- */
+#primarynav {
+	background: #000000 !important;
+}
+
+#primarynav li:first-child{
+	padding-top: 25px !important;
+}
+
+#logo {
+	width: 180px;
+}
+
+/* -------------------------------- HERO -------------------------------- */
+#hero { 
+	background: var(--black)
+}
+
+#hero-inner { 
+	background: url("../images/hero/fog.png") no-repeat; 
+	background-size: cover; 
+	height: auto;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+#hero-inner p { 
+	text-align: center;
+}
+
+#hero h1 { 
+	padding-bottom: 0.5em;
+	font-size: 2em; 
+}
+
+#car { 
+	width: 100%;
+	margin-top: 60px;
+	margin-left: 0px;
+	margin-bottom: -90px;
+	-webkit-transition: width 0.8s; /* Safari */
+    transition: width 1s;
+}
+
+#hero i { 
+	font-size: 22px;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+#red { background-color:rgb(208, 10, 10)}
+#orange { background-color:rgb(230, 130, 36)}
+#yellow { background-color:rgb(213, 243, 18)}
+#green { background-color:rgb(80, 215, 2)}
+#blue { background-color:rgb(0, 102, 176)}
+#purple { background-color:rgb(115, 9, 192)}
+#white { background-color:rgb(221, 221, 221)}
+#black { background-color:rgb(15, 15, 15)}
+
+
+/* -------------------------------- MAIN -------------------------------- */
+#service-preview, #service-preview h3 { 
+	color: rgb(221, 221, 221) !important; 
+}
+
+.page-title {
+	padding: 20px 0px;
+	font-size: 1.6em;
+}
+
+/* Button */
+.button-theme { 	
+	width: 200px;
+	margin: auto;
+	border-radius: 2em;
+	padding: 10px; 
+	font-size: 0.85em;
+	background: var(--black); 
+	border: 1px solid var(--theme-blue);
+	margin-top: 30px;
+}
+
+.button-theme:hover { 
+	box-shadow: 0px 0px 4px 0px #141414; 
+	background: var(--theme-blue);
+	color: #f2f2f2;
+	border: 1px solid #000; 
+}
+
+.main-container {
+	background: var(--dark-grey);
+	color: var(--white);
+}
+
+/* -------------------------------- ABOUT -------------------------------- */
+#about { 
+	background: var(--dark-grey); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(to bottom, var(--black), var(--dark-grey), var(--dark-grey)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(to bottom, var(--black), var(--dark-grey), var(--dark-grey)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, var(--black), var(--dark-grey), var(--dark-grey)); /* Standard syntax */
+	  
+}
+
+#about img { 
+	width: 10
+  0%;
+  margin-top: 2em;
+	padding: 1em;
+  border-radius: 20px;
+}
+
+/* -------------------------------- SERVICES -------------------------------- */
+#services { 
+  background: var(--theme-blue); /* For browsers that do not support gradients */
+	color: var(--light-grey)
+}
+
+#serviceList img { 
+	width: 100%;
+	padding: 10px 10px 10px 0px;
+}
+
+#serviceList dd { 
+	padding-top: 5px;
+}
+
+.service { 
+	height: auto;
+	padding: 20px 0px; }
+
+/* -------------------------------- WORK -------------------------------- */
+#work { background: var(--black);}
+
+#jobList { margin-top: 2em;;}
+
+.job { 
+	padding: 20px 10px 30px 10px; 
+}
+
+#work .button { 
+	width: 100%;
+	color: var(--black); 
+	margin: auto;
+	background: #cbcbcb;
+	padding: 7px; 
+	border-radius: 0px;
+	font-size: 0.9em; 
+}
+	
+#work .button:hover { 
+	background: #a3a3a3;
+}
+
+.job i { 
+	font-size: 14px;
+	padding-left: 5px;
+}
+	
+.modal { background: rgb(0,0,0, 0.9); }
+
+.modal-content { 
+	background: #141414;
+	box-shadow: 1px 1px 14px 0px #000; }
+
+.modal .close { 
+	color: var(--white); 
+	background: var(--theme-blue) !important; 
+	width: 30px;
+	height: 30px;
+	border-radius: 100%; 
+	background: #fff;
+	margin-right: -26px; 
+	margin-top: -30px; 
+	overflow: hidden;
+	padding: 4px 5px; 
+	opacity: 1;
+}
+
+.modal .close:hover { 
+	color: var(--white) !important; 
+	opacity: 1 !important;
+	
+}
+	
+.modal-header { padding: 20px 20px 0px !important; }
+	
+.modal header h2 { 
+	padding-top: 20px;
+	margin: 0px; 
+	color: #efefef; }
+
+.modal img { 
+	width: 100%;
+}
+	
+p, .modal p, dd { 
+	text-align: justify;
+}
+	
+.modal p { 
+	padding: 10px 10px 50px; 
+}
+
+.modal span:hover { cursor: pointer; }
+
+/* Buttons */
+.carousel .control  {
+	opacity: 0.7 !important;
+}
+
+.carousel .control:hover {
+	opacity: 1 !important;
+}
+
+.carousel .control i {
+	color: var(--white) !important;
+	font-size: 50px !important;
+	font-weight: bold;
+}
+
+.carousel-indicators .active { background: var(--theme-blue-gradient) !important;}
+
+.carousel-indicators {
+	margin-top: 20px;
+}
+
+/* -------------------------------- CONTACT -------------------------------- */
+#contact { 
+	background: var(--white);
+	color: var(--off-white)
+}
+
+#contact-details > div { padding: 15px 0px; }
+
+#contact {
+	color: var(--dark-grey) !important;
+}
+
+#contact-details {
+	padding: 40px 20px 20px 0px;
+}
+
+#contact-details a {
+	background-color: var(--theme-blue) !important;
+	border-radius: 100%;
+	margin: 5px 20px 10px 0px; 
+	float: left;
+}
+
+#contact-details a:focus {
+	color: #f2f2f2;;
+}
+
+#contact-details dl { 
+	font-size: 0.8em;
+}
+
+#contact-details dt { 
+	font-size: 1.2em; 
+	font-weight: bold;
+}
+
+#contact-details i { 
+	font-size: 18px;
+	padding: 10px;
+}
+
+#map-container {
+	margin-top: 30px;
+}
+
+#map .gm-style-iw { 
+	width: auto; 
+	padding: 12px 20px;
+	text-align: center; }
+
+#map h4 { 
+	text-align: center;
+	color: #141414;
+}
+
+/* -------------------------------- FOOTER-------------------------------- */
+/* Footer */
+footer {
+    text-align: center;
+    background: #0f0f0f;
+    color: #ffffff;
+    padding: 50px 10px 10px 10px; }
+
+footer img { 
+    width: 20px; 
+	margin: 0px 10px; 
+	border-radius: 5px;
+	opacity: 0.4; }
+
+footer img:hover { 
+	opacity: 1; 
+	transform: scale(1.1); }
+
+footer h3 { 
+	margin-top: 10px; 
+	margin-bottom: 20px; 
+	color: #eee;
+	font-weight: bold; }
+
+footer .sociallinks { padding: 30px 10px; }
+
+footer #copyright {
+	margin: 50px 0px 10px 0px;
+	color: #adadad;
+	font-size: 0.8em; 
+}
+
+
+/* -------------------------------- MEDIA QUERIES: Desktop 578px -------------------------------- */
+@media screen and (min-width: 578px) {
+	#hero-inner { 
+		background: url("../images/hero/fog.png") no-repeat; 
+		background-size: cover; 
+		padding: 60px 0px 40px 20px;
+		text-align: left;
+	}
+
+	#hero-inner, #hero-inner p { 
+		text-align: left;
+	}
+
+	#hero h1 { 
+		padding-top: 15px;
+	 }
+
+	h2 { 
+		text-align: left;
+	}
+
+	#serviceList img { 
+		width: 70px;
+	}
+	
+	#car { 
+		width: 520px;
+		margin-top: -3em;
+		margin-left: 150px;
+		margin-bottom: -80px;
+	}
+}
+
+
+/* -------------------------------- MEDIA QUERIES: Desktop 991px-------------------------------- */
+@media screen and (min-width: 765px) {
+	#hero-inner { 
+		background: url("../images/hero/fog.png") no-repeat; 
+		background-size: cover; 
+		padding: 60px 0px 40px 20px;
+	}
+
+	#hero h1 { 
+		padding-top: 15px; 
+    font-size: 2.3em;
+}
+	
+	#car { 
+		width: 600px;
+		margin-top: 60px;
+		margin-left: -140px;
+	}
+    
+
+	/* -------------------------------- SERVICE -------------------------------- */
+	#serviceList img { 
+		width: 70%;
+	}
+
+}
+
+
+/* -------------------------------- MEDIA QUERIES: Desktop 991px-------------------------------- */
+@media screen and (min-width: 991px) {
+
+	.main-content {
+		width: 100%;
+		max-width: 90em;
+		margin: auto;
+	}
+
+	.section {
+		padding: 80px 50px;
+	}
+
+  #primarynav li:first-child{
+    padding-top: 0px !important;
+  }
+
+	#hero-inner { 
+		background: url("../images/hero/fog.png") no-repeat; 
+		background-size: contain; 
+		padding: 70px 40px 50px 40px;
+	}
+
+	#hero h1 { font-size: 2.6em; }
+
+	#car { 
+		width: 700px;
+		margin-top: 70px;
+		margin-left: -210px;
+		margin-bottom: -100px;
+	}
+
+	#introduction img { 
+		width: 160px;
+		margin-top: 30px !important; }
+	
+	#about .spray-can { 
+    margin-top: 10em;
+		width: 100%;
+	}
+
+	#contact-details { padding: 2em 0 0 5em; }	
+}
+
+/* -------------------------------- END CSS -------------------------------- */
