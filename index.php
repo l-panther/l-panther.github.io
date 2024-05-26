@@ -72,9 +72,6 @@ switch ($page) {
    include 'templates/footer.html';
  ?>
 
-</div>
-
-
 <style>
   #menuBtn { display: block;}
 
