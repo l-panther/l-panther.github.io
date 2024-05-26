@@ -1,0 +1,52 @@
+<!-- #hero -->
+<div id="" class="hero">
+  <!-- .main-content -->
+  <div class="w3-animate-opacity">
+
+     <picture>
+              <source media="(min-width:850px)" srcset="assets/images/involved/hero.jpg">
+              <source media="(min-width:580px)" srcset="assets/images/involved/hero-md.jpg">
+              <source media="(min-width:465px)" srcset="assets/images/involved/hero-sm.jpg">
+              <img src="assets/images/involved/hero-sm.jpg" alt="">
+            </picture> 
+  </div> <!-- End .main-content -->
+</div> <!-- End #hero -->
+
+<style>
+/* -------------- Hero -------------- */
+.carousel-indicators li { 
+	background: var(--darkest-green); 
+	border-radius: 100%;
+	width: 8px;
+	height: 8px;
+	margin: 0px 5px 0px;
+}
+
+.carousel-indicators .active { 
+	border: 1px solid var(--darkest-green); 
+	background: var(--white) !important;
+}
+
+
+/* ========================== MEDIA QUERIES: TABLET ========================== */
+@media screen and (min-width: 600px) {
+
+/* -------------- Hero -------------- */
+.carousel-indicators li { 
+  width: 10px;
+  height: 10px;
+}
+}
+
+/* ========================== MEDIA QUERIES: DESKTOP  ========================== */
+@media screen and (min-width: 992px) {
+
+/* -------------- Hero -------------- */
+.carousel-indicators li { 
+  width: 12px;
+  height: 12px;
+
+}
+}
+/* ========================== END MEDIA QUERIES: DESKTOP  ========================== */
+</style>

@@ -1,0 +1,98 @@
+<!-- #hero -->
+<div id="hero" class="hero">
+  <!-- .main-content -->
+  <div class="w3-animate-opacity">
+
+    <!-- #heroCarousel -->
+    <div id="heroCarousel" class="carousel slide w3-border" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#heroCarousel" data-slide-to="1"></li>
+          <li data-target="#heroCarousel" data-slide-to="2"></li>
+          <li data-target="#heroCarousel" data-slide-to="3"></li>
+        </ol>
+      
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <picture>
+            <source media="(min-width:850px)" srcset="./assets/images/venue/slide-1-lg.jpg">
+            <source media="(min-width:580px)" srcset="./assets/images/venue/slide-1-md.jpg">
+            <source media="(min-width:465px)" srcset="./assets/images/venue/slide-1-sm.jpg">
+            <img src="./assets/images/venue/slide-1-lg.jpg" alt="">
+          </picture> 
+        
+        </div>
+       <!--
+        <div class="carousel-iem">
+          <picture>
+            <source media="(min-width:850px)" srcset="./assets/images/venue/slide-2-lg.jpg">
+            <source media="(min-width:580px)" srcset="./assets/images/venue/slide-2-md.jpg">
+            <source media="(min-width:465px)" srcset="./assets/images/venue/slide-2-sm.jpg">
+            <img src="./assets/images/venue/slide-2-lg.jpg" alt="">
+          </picture> 
+        </div>
+       
+        <div class="carousel-iem">
+          <h2>jkj</h2>
+          <picture>
+            <source media="(min-width:850px)" srcset="./assets/images/venue/slide-3-lg.jpg">
+            <source media="(min-width:580px)" srcset="./assets/images/venue/slide-3-md.jpg">
+            <source media="(min-width:465px)" srcset="./assets/images/venue/slide-3-sm.jpg">
+            <img src="./assets/images/venue/slide-3-lg.jpg" alt="">
+          </picture> 
+        </div>
+        <div class="carousel-iem">
+          <picture>
+            <source media="(min-width:850px)" srcset="./assets/images/venue/slide-4-lg.jpg">
+            <source media="(min-width:580px)" srcset="./assets/images/venue/slide-4-md.jpg">
+            <source media="(min-width:465px)" srcset="./assets/images/venue/slide-4-sm.jpg">
+            <img src="./assets/images/venue/slide-4-lg.jpg" alt="">
+          </picture> 
+        </div>
+      -->
+      </div>
+    </div> <!-- End #heroCarousel -->
+  </div> <!-- End .main-content -->
+</div> <!-- End #hero -->
+
+<style>
+/* -------------- Hero -------------- */
+.carousel-indicators li { 
+	background: var(--white); 
+	border-radius: 100%;
+	width: 8px;
+	height: 8px;
+	margin: 0px 5px 0px;
+}
+
+.carousel-indicators .active { 
+	border: 1px solid var(--black); 
+	background: var(--orange) !important;
+}
+
+
+/* ========================== MEDIA QUERIES: TABLET ========================== */
+@media screen and (min-width: 600px) {
+
+/* -------------- Hero -------------- */
+.carousel-indicators li { 
+  width: 10px;
+  height: 10px;
+}
+}
+
+/* ========================== MEDIA QUERIES: DESKTOP  ========================== */
+@media screen and (min-width: 992px) {
+
+/* -------------- Hero -------------- */
+.carousel-indicators li { 
+  width: 12px;
+  height: 12px;
+
+}
+}
+/* ========================== END MEDIA QUERIES: DESKTOP  ========================== */
+</style>
